@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bemposta weather</title>
+</head>
+<body>
 <style>
 td {
   text-align: center;
@@ -5,7 +11,7 @@ td {
 </style>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-09-07 00:14:23</p>
+<p>Generated at: 2023-09-07 00:18:25</p>
 <p>Tags: [weather]</p>
 <p/>
 <h2>Latest readings</h2>
@@ -30,7 +36,7 @@ td {
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>338 deg</td>
+<td>270 deg</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -42,9 +48,29 @@ td {
 </tr>
 <tr>
 <td>Log date</td>
-<td>2023-09-07 00:13:45</td>
+<td>2023-09-07 00:04:57</td>
 </tr>
 </table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<h2>Readings for the last 24 hours</h2>
+<canvas id="hourlyChart" style="width:100%;max-width:600px;min-width: 400px;"></canvas>
+<script>
+var xValues = ["23:00","22:00","21:00","20:00","19:00","18:00","17:00","16:00","15:00","14:00","13:00","12:00","11:00","10:00","09:00","08:00","07:00","06:00","05:00","04:00","03:00","02:00","01:00","00:00"];
+new Chart("hourlyChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{ 
+      data: [20,20.5,21.0,21,21.6,22,22.7,22.7,24.0,24.3,24,24.1,24.3,23.6,22.2,21.5,20.3,20,20,20,20,20,20,20],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
 <h2>Statistics for the last 7 days</h2>
 
 <p/>
@@ -65,7 +91,7 @@ td {
 <td>25</td>
 <td>22.27</td>
 <td>10.8</td>
-<td>2.772</td>
+<td>2.8</td>
 <td>SSW</td>
 <td>335</td>
 </tr>
@@ -75,7 +101,7 @@ td {
 <td>25</td>
 <td>21.99</td>
 <td>25.2</td>
-<td>4.752</td>
+<td>4.8</td>
 <td>SE</td>
 <td>335</td>
 </tr>
@@ -85,7 +111,7 @@ td {
 <td>24</td>
 <td>21.03</td>
 <td>21.6</td>
-<td>5.436</td>
+<td>5.4</td>
 <td>SE</td>
 <td>335</td>
 </tr>
@@ -95,7 +121,7 @@ td {
 <td>20</td>
 <td>19.26</td>
 <td>14.4</td>
-<td>4.32</td>
+<td>4.3</td>
 <td>ESE</td>
 <td>335</td>
 </tr>
@@ -115,3 +141,5 @@ td {
 <th>Precip. mm</th>
 </tr>
 </table>
+</body>
+</html>
