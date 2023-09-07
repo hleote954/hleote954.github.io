@@ -11,7 +11,7 @@ td {
 </style>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-09-07 21:50:57</p>
+<p>Generated at: 2023-09-07 21:53:58</p>
 <p>Tags: [weather]</p>
 <p/>
 <h2>Latest readings</h2>
@@ -80,6 +80,9 @@ new Chart("hourlyTempChart",
   }
 });
 </script>
+<table>
+<tr>
+<td>
 <canvas id="hourlyWindChart" style="width:100%;max-width:900px;min-width: 600px;"></canvas>
 <script>
 var xLabels = ["22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00"];
@@ -110,6 +113,8 @@ new Chart("hourlyWindChart",
   }
 });
 </script>
+</td>
+<td>
 <canvas id="windPrevalenceChart" style="width:100%;max-width:900px;min-width: 600px;"></canvas>
 <script>
 var xLabels = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
@@ -129,10 +134,13 @@ new Chart("windPrevalenceChart",
   options: {
     legend: {display: false}
     ,
-    title: {display: true, text: "Wind prevalence", fontSize: 16}
+    title: {display: true, text: "Wind prevalence (%)", fontSize: 16}
   }
 });
 </script>
+</td>
+</tr>
+</table>
 <h2>Statistics for the last 7 days</h2>
 
 <p/>
