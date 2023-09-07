@@ -11,7 +11,7 @@ td {
 </style>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-09-07 12:54:32</p>
+<p>Generated at: 2023-09-07 12:59:27</p>
 <p>Tags: [weather]</p>
 <p/>
 <h2>Latest readings</h2>
@@ -57,7 +57,6 @@ td {
 </table>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <h2>Last 24 hourly readings</h2>
-<h3>Temperature (C)</h3>
 <canvas id="hourlyTempChart" style="width:100%;max-width:600px;min-width: 400px;"></canvas>
 <script>
 var xLabels = ["13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00"];
@@ -76,10 +75,11 @@ new Chart("hourlyTempChart",
   },
   options: {
     legend: {display: false}
+    ,
+    title: {display: true, text: "Temperature, avg. and max. (C)", fontSize: 16}
   }
 });
 </script>
-<h3>Wind (km/h)</h3>
 <canvas id="hourlyWindChart" style="width:100%;max-width:600px;min-width: 400px;"></canvas>
 <script>
 var xLabels = ["13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00"];
@@ -104,7 +104,7 @@ new Chart("hourlyWindChart",
   options: {
     legend: {display: false}
     ,
-    title: {display: true, text: "Temperatures (C)", fontSize: 16}
+    title: {display: true, text: "Wind, avg. and max. (km/h)", fontSize: 16}
   }
 });
 </script>
@@ -188,7 +188,7 @@ new Chart("dailyTempChart",
   options: {
     legend: {display: false}
     ,
-    title: {display: true, text: "Temperatures (C)", fontSize: 16}
+    title: {display: true, text: "Daily temperature, avg. and max. (C)", fontSize: 16}
   }
 });
 </script>
