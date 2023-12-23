@@ -1,0 +1,32 @@
+body {
+    /*font-family: 'Courier New', monospace;*/
+    font-family: Arial, sans-serif;
+  }
+
+td {
+    font-family: 'Courier New', monospace;
+    text-align: left;
+}
+
+.tab_readings td {
+    text-align: center;
+}
+
+table, th {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.tab_readings tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+.alt_row_color tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
