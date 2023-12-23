@@ -22,6 +22,10 @@ table, th, td {
     padding: 5px;
 }
 
+table[id="tab_climate"] td {
+    text-align: center;
+}
+
 .tab_readings tr:nth-child(even) {
     background-color: #D6EEEE;
   }
