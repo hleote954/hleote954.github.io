@@ -2,40 +2,68 @@
 <html>
 <head>
 <meta http-equiv="refresh" content="900">
-<meta name="description" content="Bemposta real-time weather data">
-<title>Bemposta weather station</title>
+<title>Bemposta weather</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-12-26 23:01:18</p>
+<p>Generated at: 2023-12-26 23:02:33</p>
 <p>Tags: [weather]</p>
-<p/>
-<p/>
 <p/>
 <h2>Latest readings</h2>
 
 <p/>
-<strong>(NO DATA AVAILABLE)</strong>
-<p/>
-<p/>
-<h3>System status</h3>
-
-<p/>
-<table title="tab_system_readings" class="alt_row_color">
+<table title="tab_latest_readings" class="alt_row_color">
 <tr>
 <th>Name</th>
 <th>Value</th>
 </tr>
 <tr>
+<td>Temperature</td>
+<td>9.3 C</td>
+</tr>
+<tr>
+<td>Humidity</td>
+<td>92 %</td>
+</tr>
+<tr>
+<td>Accum. precipitation</td>
+<td>486 mm</td>
+</tr>
+<tr>
+<td>Wind dir.</td>
+<td>338 deg</td>
+</tr>
+<tr>
+<td>Wind speed</td>
+<td>0.0 km/h</td>
+</tr>
+<tr>
+<td>Wind gust</td>
+<td>0.0 km/h</td>
+</tr>
+<tr>
+<td>Log date</td>
+<td>2023-12-26 23:00:42</td>
+</tr>
+<tr>
+<td>Battery OK</td>
+<td>1</td>
+</tr>
+<tr>
 <td>System uptime</td>
 <td>1 Day, 9 Hours</td>
 </tr>
+<tr>
+<td>Free disk space</td>
+<td>50 GB</td>
+</tr>
+<tr>
+<td>WiFi signal</td>
+<td>Link:53. Level:-57. Noise:-256</td>
+</tr>
 </table>
-<p/>
-<p/>
-<p/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
 <h2>Last 48 hourly readings</h2>
 <script>
@@ -60,7 +88,7 @@ function getGradient(ctx, chartArea, minValue, maxValue) {
 <canvas id="hourlyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00"];
+var xLabels = ["00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"];
 new Chart("hourlyTempChart",
 {
   type: "line",
@@ -68,7 +96,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [11.3,11.0,9.8,9.8,8.5,8.1,7.8,6.9,6.7,8.0,10.7,14.1,16.5,17.7,17.5,17.9,17.5,17.3,15.0,14.2,13.4,12.6,11.8,10.9,10.4,9.7,9.3,8.9,8.4,7.9,7.9,7.9,7.8,7.5,9.4,12.4,15.9,16.7],
+      data: [9.1,9.4,9.7,9.6,9.7,9.7,10.0,10.5,11.0,12.3,14.6,16.2,17.0,17.6,17.1,17.3,16.9,14.7,13.1,12.1,11.5,11.5,10.8,9.7,9.2,8.9,8.7,8.4,8.6,8.6,8.2,7.9,9.4,11.1,13.6,15.9,16.8,16.5,16.9,16.9,16.2,14.8,13.1,12.2,11.3,10.5,9.4,9.3],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -81,13 +109,13 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 6.7;
-          maxValue = 17.9;
+          minValue = 7.9;
+          maxValue = 17.6;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [78,81,85,84,86,87,87,89,90,85,78,68,64,71,80,80,81,82,89,92,93,95,96,96,96,97,97,97,97,97,98,98,98,97,97,91,83,82],
+      data: [96,96,95,95,95,95,94,93,92,89,82,72,63,60,62,62,66,71,76,79,81,83,86,90,91,90,90,91,91,91,93,93,88,83,74,67,66,65,65,69,73,78,85,87,86,87,90,92],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -135,7 +163,7 @@ new Chart("hourlyTempChart",
 <canvas id="hourlyWindChart"></canvas>
 </div>
 <script>
-var xLabels = ["23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00"];
+var xLabels = ["00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"];
 new Chart("hourlyWindChart",
 {
   type: "line",
@@ -143,14 +171,14 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0.9,0.2,0.3,0.8,0.8,0.7,1.7,1.3,1.6,1.2,1.3,2.0,2.6,4.6,4.4,5.2,5.0,2.7,0.1,0.0,0.0,0.1,0.3,0.3,0.8,0.6,1.3,2.1,2.6,2.1,2.5,1.6,1.7,1.6,1.7,2.3,2.6,2.4],
+      data: [1.1,1.2,1.6,1.5,1.0,1.0,0.7,1.2,0.7,0.2,0.0,1.7,5.0,3.8,5.2,5.1,3.9,2.7,2.1,3.2,1.8,0.5,1.0,0.6,0.8,0.8,0.8,0.4,0.7,1.3,1.7,1.1,0.4,2.2,1.6,1.5,2.3,2.6,3.8,3.0,2.1,0.2,0.0,0.1,0.5,0.8,1.0,0.0],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
       fill: false
     },
     {
-      data: [6.1,4.3,2.5,5.8,4.3,4.7,8.6,6.5,5.4,6.5,5.0,8.6,6.8,9.0,12.2,10.4,11.2,8.6,2.9,2.2,0.0,3.6,2.9,4.0,4.3,3.2,4.0,6.5,6.8,7.6,8.6,5.4,5.8,5.4,7.6,8.6,7.9,7.6],
+      data: [5.4,6.5,6.8,4.3,7.6,4.3,4.7,5.8,4.3,3.2,1.8,9.0,13.0,9.7,12.6,10.4,11.5,9.0,6.5,9.0,9.0,4.0,4.3,3.6,4.0,5.4,5.4,4.7,4.0,6.1,6.5,5.4,4.7,5.8,7.2,6.8,8.6,8.6,9.0,8.6,9.4,2.9,1.8,2.9,6.5,3.6,4.0,0.0],
       borderColor: "magenta",
       label: "Gusts",
       tension: 0.4,
@@ -185,7 +213,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [3,8,28,25,6,3,12,9,3,3,0,0,0,0,0,0],
+      data: [2,3,19,22,5,3,7,7,9,16,3,1,0,0,1,2],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -203,11 +231,8 @@ new Chart("windPrevalenceChart",
 </table>
 <p/>
 <p/>
-<p/>
 <h2>Last 30 daily statistics</h2>
 
-<p/>
-<p/>
 <p/>
 <table title="tab_daily_statistics" class="tab_readings">
 <tr>
@@ -574,7 +599,6 @@ new Chart("dailyTempChart",
 </script>
 <p/>
 <p/>
-<p/>
 <h2>Last 12 monthly statistics</h2>
 
 <p/>
@@ -661,7 +685,6 @@ new Chart("monthlyTempChart",
   }
 });
 </script>
-<p/>
 <p/>
 <p/>
 <h2>Climate</h2>
