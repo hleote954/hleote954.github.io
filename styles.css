@@ -5,7 +5,8 @@ body {
   }
 
 td {
-    font-family: 'Courier New', monospace;
+    /*font-family: 'Courier New', monospace;*/
+    font-family: 'Consolas', monospace;
     text-align: left;
 }
 
@@ -18,13 +19,17 @@ table, th {
 }
 
 table, th, td {
-    border: 1px solid;
     border-collapse: collapse;
     padding: 5px;
 }
 
-table[id="tab_climate"] td {
+table[id="tab_climate"] td,th {
+    border: 1px solid;
     text-align: center;
+}
+
+.tab_readings {
+    border: 1px solid;
 }
 
 .tab_readings tr:nth-child(even) {
