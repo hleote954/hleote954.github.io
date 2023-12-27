@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-12-27 13:03:47</p>
+<p>Generated at: 2023-12-27 13:14:24</p>
 <p>Tags: [weather]</p>
 <p/>
 <p/>
@@ -28,7 +28,7 @@
 </tr>
 <tr>
 <td>Humidity</td>
-<td>77 %</td>
+<td>76 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -36,19 +36,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>158 deg</td>
+<td>135 deg</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>5.76 km/h</td>
+<td>9.72 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>6.84 km/h</td>
+<td>9.72 km/h</td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2023-12-27 13:03:35</td>
+<td>2023-12-27 13:13:35</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -80,7 +80,7 @@ function getGradient(ctx, chartArea, minValue, maxValue) {
 const downArrowImg = new Image(20,20);
 downArrowImg.src = "down_arrow.png";
 </script>
-<div style="position: relative; height:350px; width:900px;max-width:1200px;min-width: 600px;">
+<div style="position: relative; height:350px; width:1200px;max-width:1200px;min-width: 600px;">
 <canvas id="hourlyTempChart"></canvas>
 </div>
 <script>
@@ -92,7 +92,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [17.1,17.3,16.9,14.7,13.1,12.1,11.5,11.5,10.8,9.7,9.2,8.9,8.7,8.4,8.6,8.6,8.2,7.9,9.4,11.1,13.6,15.9,16.8,16.5,16.9,16.9,16.2,14.8,13.1,12.2,11.3,10.5,9.3,9.2,8.7,7.9,7.7,7.2,6.8,6.5,6.3,6.6,7.8,10.4,12.5,15.4,15.5,15.2],
+      data: [17.1,17.3,16.9,14.7,13.1,12.1,11.5,11.5,10.8,9.7,9.2,8.9,8.7,8.4,8.6,8.6,8.2,7.9,9.4,11.1,13.6,15.9,16.8,16.5,16.9,16.9,16.2,14.8,13.1,12.2,11.3,10.5,9.3,9.2,8.7,7.9,7.7,7.2,6.8,6.5,6.3,6.6,7.8,10.4,12.5,15.4,15.5,15.1],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -111,7 +111,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [62,62,66,71,76,79,81,83,86,90,91,91,90,91,91,91,93,93,88,83,74,67,66,65,65,69,73,78,85,87,86,87,91,91,92,93,93,94,94,94,95,94,90,83,79,73,75,77],
+      data: [62,62,66,71,76,79,81,83,86,90,91,91,90,91,91,91,93,93,88,83,74,67,66,65,65,69,73,78,85,87,86,87,91,91,92,93,93,94,94,94,95,94,90,83,79,73,75,76],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -155,7 +155,7 @@ new Chart("hourlyTempChart",
 <table>
 <tr>
 <td>
-<div style="position: relative; height:350px; width:900px;max-width:1200px;min-width: 600px;">
+<div style="position: relative; height:350px; width:1200px;max-width:1200px;min-width: 600px;">
 <canvas id="hourlyWindChart"></canvas>
 </div>
 <script>
@@ -167,7 +167,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [5.2,5.1,3.9,2.7,2.1,3.2,1.8,0.5,1.0,0.6,0.8,0.7,0.8,0.4,0.7,1.3,1.7,1.1,0.4,2.2,1.6,1.5,2.3,2.6,3.8,3.0,2.1,0.2,0.0,0.1,0.5,0.8,0.9,0.6,0.2,0.3,0.4,0.9,1.6,1.7,2.3,1.0,0.8,1.9,2.3,4.9,6.5,8.0],
+      data: [5.2,5.1,3.9,2.7,2.1,3.2,1.8,0.5,1.0,0.6,0.8,0.7,0.8,0.4,0.7,1.3,1.7,1.1,0.4,2.2,1.6,1.5,2.3,2.6,3.8,3.0,2.1,0.2,0.0,0.1,0.5,0.8,0.9,0.6,0.2,0.3,0.4,0.9,1.6,1.7,2.3,1.0,0.8,1.9,2.3,4.9,6.5,7.7],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
@@ -204,7 +204,7 @@ new Chart("hourlyWindChart",
 </script>
 </td>
 <td>
-<div style="position: relative; height:350px; width:900px;max-width:1200px;min-width: 600px;">
+<div style="position: relative; height:350px; width:1200px;max-width:1200px;min-width: 600px;">
 <canvas id="windPrevalenceChart"></canvas>
 </div>
 <script>
@@ -216,7 +216,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [4,4,14,17,4,3,9,7,8,11,3,4,4,3,2,3],
+      data: [4,4,13,16,4,3,10,8,8,11,3,4,3,3,2,3],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -563,7 +563,7 @@ new Chart("windPrevalenceChart",
 </tr>
 </table>
 <p/>
-<div style="position: relative; height:350px; width:900px;max-width:1200px;min-width: 600px;">
+<div style="position: relative; height:350px; width:1200px;max-width:1200px;min-width: 600px;">
 <canvas id="dailyTempChart"></canvas>
 </div>
 <script>
@@ -652,7 +652,7 @@ new Chart("dailyTempChart",
 </tr>
 </table>
 <p/>
-<div style="position: relative; height:350px; width:900px;max-width:1200px;min-width: 600px;">
+<div style="position: relative; height:350px; width:1200px;max-width:1200px;min-width: 600px;">
 <canvas id="monthlyTempChart"></canvas>
 </div>
 <script>
@@ -818,7 +818,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>1 Day, 23 Hours</td>
+<td>2 Days, 0 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -826,7 +826,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:54. Level:-56. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
