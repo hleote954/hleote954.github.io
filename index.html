@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-12-29 23:33:23</p>
+<p>Generated at: 2023-12-29 23:48:47</p>
 <p/>
 <p/>
 <p/>
@@ -27,7 +27,7 @@
 </tr>
 <tr>
 <td>Humidity</td>
-<td>87 %</td>
+<td>88 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2023-12-29 23:32:45</td>
+<td>2023-12-29 23:48:45</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -198,7 +198,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [5.4,5.8,7.9,7.6,6.5,7.6,7.9,9.0,4.7,8.6,9.0,12.2,13.0,14.4,12.2,12.2,9.4,4.0,5.8,2.2,4.3,5.8,4.3,4.7,4.7,8.6,6.8,6.5,8.3,7.9,5.0,5.4,8.6,9.0,8.6,7.9,9.0,11.5,9.4,9.0,7.9,8.6,7.9,4.0,4.0,5.4,2.9,0.0],
+      data: [5.4,5.8,7.9,7.6,6.5,7.6,7.9,9.0,4.7,8.6,9.0,12.2,13.0,14.4,12.2,12.2,9.4,4.0,5.8,2.2,4.3,5.8,4.3,4.7,4.7,8.6,6.8,6.5,8.3,7.9,5.0,5.4,8.6,9.0,8.6,7.9,9.0,11.5,9.4,9.0,7.9,8.6,7.9,4.0,4.0,5.4,2.9,2.2],
       borderColor: "magenta",
       label: "Gusts",
       tension: 0.4,
@@ -213,7 +213,7 @@ new Chart("hourlyWindChart",
         return windBarbsImgs[Math.round(knots/5)];
       },
       rotation: function(context, options) {
-        const xPointRotation = [45,45,68,68,68,45,68,45,68,68,68,135,135,135,135,135,112,68,68,22,292,315,0,45,68,22,68,45,45,45,68,45,68,68,68,68,158,135,158,158,158,135,135,68,45,45,68,];
+        const xPointRotation = [45,45,68,68,68,45,68,45,68,68,68,135,135,135,135,135,112,68,68,22,292,315,0,45,68,22,68,45,45,45,68,45,68,68,68,68,158,135,158,158,158,135,135,68,45,45,68,68];
         const index = context.dataIndex;
         return xPointRotation[index] + 90;
       },
@@ -234,7 +234,15 @@ new Chart("hourlyWindChart",
           callbacks: {
             afterLabel: function (context) {
               const index = context.dataIndex;
-              const xDirection = [Error rendering chart: Value cannot be null. (Parameter 's')
+              const xDirection = ["NE","NE","ENE","ENE","ENE","NE","ENE","NE","ENE","ENE","ENE","SE","SE","SE","SE","SE","ESE","ENE","ENE","NNE","WNW","NW","N","NE","ENE","NNE","ENE","NE","NE","NE","ENE","NE","ENE","ENE","ENE","ENE","SSE","SE","SSE","SSE","SSE","SE","SE","ENE","NE","NE","ENE","ENE"];
+              return 'Direction: ' + xDirection[index];
+            }
+          }
+        }
+    },
+  }
+});
+</script>
 </td>
 <td>
 <div style="position: relative; height:450px; width:900px;max-width:1200px;min-width: 600px;">
@@ -249,7 +257,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,8,20,23,7,8,15,16,2,0,0,0,0,0,0,1],
+      data: [0,8,20,24,7,8,15,16,2,0,0,0,0,0,0,1],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -945,7 +953,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:64. Level:-46. Noise:-256</td>
+<td>Link:58. Level:-52. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
