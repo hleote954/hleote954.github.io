@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2023-12-30 06:18:38</p>
+<p>Generated at: 2023-12-30 06:34:00</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td>10.1 C</td>
+<td>10.0 C</td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNW</td>
+<td>NNE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>3.96 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>3.96 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2023-12-30 06:18:23</td>
+<td>2023-12-30 06:33:59</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -55,7 +55,7 @@
 </tr>
 <tr>
 <td>Min. Temperature (last 24hrs)</td>
-<td>10.1 C</td>
+<td>10.0 C</td>
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
@@ -213,7 +213,7 @@ new Chart("hourlyWindChart",
         return windBarbsImgs[Math.round(knots/5)];
       },
       rotation: function(context, options) {
-        const xPointRotation = [45,68,68,68,135,135,135,135,135,112,68,68,22,292,315,0,45,68,22,68,45,45,45,68,45,68,68,68,68,158,135,158,158,158,135,135,68,45,45,68,68,45,45,22,22,22,45,337];
+        const xPointRotation = [45,68,68,68,135,135,135,135,135,112,68,68,22,292,315,0,45,68,22,68,45,45,45,68,45,68,68,68,68,158,135,158,158,158,135,135,68,45,45,68,68,45,45,22,22,22,45,22];
         const index = context.dataIndex;
         return xPointRotation[index] + 90;
       },
@@ -234,7 +234,7 @@ new Chart("hourlyWindChart",
           callbacks: {
             afterLabel: function (context) {
               const index = context.dataIndex;
-              const xDirection = ["NE","ENE","ENE","ENE","SE","SE","SE","SE","SE","ESE","ENE","ENE","NNE","WNW","NW","N","NE","ENE","NNE","ENE","NE","NE","NE","ENE","NE","ENE","ENE","ENE","ENE","SSE","SE","SSE","SSE","SSE","SE","SE","ENE","NE","NE","ENE","ENE","NE","NE","NNE","NNE","NNE","NE","NNW"];
+              const xDirection = ["NE","ENE","ENE","ENE","SE","SE","SE","SE","SE","ESE","ENE","ENE","NNE","WNW","NW","N","NE","ENE","NNE","ENE","NE","NE","NE","ENE","NE","ENE","ENE","ENE","ENE","SSE","SE","SSE","SSE","SSE","SE","SE","ENE","NE","NE","ENE","ENE","NE","NE","NNE","NNE","NNE","NE","NNE"];
               return 'Direction: ' + xDirection[index];
             }
           }
@@ -257,7 +257,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,7,17,20,7,9,19,14,2,1,0,0,0,1,1,1],
+      data: [4,20,35,13,3,4,8,6,1,0,0,0,0,0,1,4],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -953,11 +953,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:64. Level:-46. Noise:-256</td>
+<td>Link:65. Level:-45. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+40.8°C</td>
+<td>+37.6°C</td>
 </tr>
 </table>
 </body>
