@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-01-20 02:27:43</p>
+<p>Generated at: 2024-01-20 02:42:58</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #005FFF;"><span style="color: #ffffff;">10.3 C</span></td>
+<td style="background-color: #0066FF;"><span style="color: #ffffff;">10.5 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>W</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>0.0 km/h</td>
+<td>2.16 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>2.16 km/h  <img src="images/Symbol_wind_speed_01.png" alt="W" title="W" style="width:20px;height:20px;transform:rotate(360deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-01-20 02:27:34</td>
+<td>2024-01-20 02:42:58</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -55,7 +55,7 @@
 </tr>
 <tr>
 <td>Min. Temperature (last 24hrs)</td>
-<td>10.3 C</td>
+<td>10.2 C</td>
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [16.8,16.6,16.8,16.9,16.7,16.6,17.2,17.8,16.6,16.6,17.4,18.0,17.5,17.1,17.0,17.0,16.9,15.4,15.4,15.6,14.8,13.9,14.3,15.1,15.1,15.1,15.5,15.6,15.0,14.5,14.7,14.9,13.7,13.3,14.8,16.0,16.0,15.5,14.8,14.0,13.7,13.4,13.7,12.9,12.2,12.5,12.0,10.6],
+      data: [16.8,16.6,16.8,16.9,16.7,16.6,17.2,17.8,16.6,16.6,17.4,18.0,17.5,17.1,17.0,17.0,16.9,15.4,15.4,15.6,14.8,13.9,14.3,15.1,15.1,15.1,15.5,15.6,15.0,14.5,14.7,14.9,13.7,13.3,14.8,16.0,16.0,15.5,14.8,14.0,13.7,13.4,13.7,12.9,12.2,12.5,12.0,10.3],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -130,13 +130,13 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 10.6;
+          minValue = 10.3;
           maxValue = 18.0;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [95,96,96,97,96,95,93,93,94,95,91,89,92,94,96,96,96,95,96,96,96,97,98,98,97,97,95,90,93,93,92,91,94,92,86,80,76,76,78,80,79,81,78,81,83,79,83,88],
+      data: [95,96,96,97,96,95,93,93,94,95,91,89,92,94,96,96,96,95,96,96,96,97,98,98,97,97,95,90,93,93,92,91,94,92,86,80,76,76,78,80,79,81,78,81,83,79,83,89],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,14 +191,14 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [4.5,5.7,5.3,7.0,7.6,7.3,5.8,3.4,3.9,1.8,4.5,5.5,2.3,2.2,4.8,7.3,8.0,2.0,2.6,4.9,2.5,0.9,1.7,5.5,2.3,4.9,10.4,9.9,9.9,9.0,9.7,14.1,11.0,10.4,12.1,12.3,13.7,11.6,11.0,8.4,4.4,2.4,6.6,1.6,1.6,2.7,2.0,0.0],
+      data: [4.5,5.7,5.3,7.0,7.6,7.3,5.8,3.4,3.9,1.8,4.5,5.5,2.3,2.2,4.8,7.3,8.0,2.0,2.6,4.9,2.5,0.9,1.7,5.5,2.3,4.9,10.4,9.9,9.9,9.0,9.7,14.1,11.0,10.4,12.1,12.3,13.7,11.6,11.0,8.4,4.4,2.4,6.6,1.6,1.6,2.7,2.0,0.3],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
       fill: false
     },
     {
-      data: [13.0,14.4,15.8,17.3,15.8,12.6,15.8,9.4,15.8,8.6,11.5,15.8,8.6,6.5,11.5,15.8,16.6,11.2,17.3,16.6,10.8,4.7,8.6,12.2,7.9,16.6,18.4,24.5,24.5,20.2,21.6,28.8,26.6,27.4,32.8,32.0,32.0,31.7,27.7,19.1,13.0,10.8,18.4,8.6,13.7,11.2,15.8,0.0],
+      data: [13.0,14.4,15.8,17.3,15.8,12.6,15.8,9.4,15.8,8.6,11.5,15.8,8.6,6.5,11.5,15.8,16.6,11.2,17.3,16.6,10.8,4.7,8.6,12.2,7.9,16.6,18.4,24.5,24.5,20.2,21.6,28.8,26.6,27.4,32.8,32.0,32.0,31.7,27.7,19.1,13.0,10.8,18.4,8.6,13.7,11.2,15.8,4.3],
       borderColor: "magenta",
       label: "Gusts",
       tension: 0.4,
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2,1,1,1,1,1,2,6,8,17,11,14,8,16,9,3],
+      data: [2,1,0,1,1,0,2,6,8,17,10,16,8,15,9,3],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -978,11 +978,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:45. Level:-65. Noise:-256</td>
+<td>Link:57. Level:-53. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+41.9°C</td>
+<td>+37.6°C</td>
 </tr>
 </table>
 </body>
