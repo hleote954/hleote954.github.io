@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-02-08 19:11:59</p>
+<p>Generated at: 2024-02-08 19:27:08</p>
 <p/>
 <p/>
 <p/>
@@ -23,31 +23,31 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00EEFF;"><span style="">14.5 C</span></td>
+<td style="background-color: #00F4FF;"><span style="">14.7 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>95 %</td>
+<td>96 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
-<td>566.8 mm</td>
+<td>568.0 mm</td>
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SSW</td>
+<td>SW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>18.0 km/h</td>
+<td>13.32 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>21.24 km/h  <img src="images/Symbol_wind_speed_02.png" alt="SSW" title="SSW" style="width:20px;height:20px;transform:rotate(292deg);"/></td>
+<td>14.4 km/h  <img src="images/Symbol_wind_speed_02.png" alt="SW" title="SW" style="width:20px;height:20px;transform:rotate(315deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-02-08 19:11:43</td>
+<td>2024-02-08 19:26:55</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
 <td>Precipitation (last 24hrs)</td>
-<td>15.6 mm</td>
+<td>16.8 mm</td>
 </tr>
 </table>
 <p/>
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0.0,0.1,0.0,0.0,0.4,0.7,0.3,0.9,0.3,0.4,0.0,0.3,0.4,0.0,4.7,7.2,8.0,9.0,8.6,8.0,6.1,4.2,2.9,2.8,0.5,2.4,4.0,3.3,5.1,5.3,5.1,5.5,6.2,8.2,8.4,7.5,8.4,9.6,9.5,9.5,11.2,9.7,9.8,11.6,14.7,14.3,16.3,17.4],
+      data: [0.0,0.1,0.0,0.0,0.4,0.7,0.3,0.9,0.3,0.4,0.0,0.3,0.4,0.0,4.7,7.2,8.0,9.0,8.6,8.0,6.1,4.2,2.9,2.8,0.5,2.4,4.0,3.3,5.1,5.3,5.1,5.5,6.2,8.2,8.4,7.5,8.4,9.6,9.5,9.5,11.2,9.7,9.8,11.6,14.7,14.3,16.3,17.0],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
@@ -219,7 +219,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [225,68,45,45,45,22,45,68,22,45,45,45,45,68,202,180,202,202,180,180,202,202,202,202,158,180,202,158,158,158,158,180,180,202,202,202,202,202,202,202,202,202,202,202,202,202,202,202];
+          const xPointRotation = [225,68,45,45,45,22,45,68,22,45,45,45,45,68,202,180,202,202,180,180,202,202,202,202,158,180,202,158,158,158,158,158,180,202,202,202,202,202,180,202,202,202,202,202,202,202,202,202];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -245,7 +245,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["SW","ENE","NE","NE","NE","NNE","NE","ENE","NNE","NE","NE","NE","NE","ENE","SSW","S","SSW","SSW","S","S","SSW","SSW","SSW","SSW","SSE","S","SSW","SSE","SSE","SSE","SSE","S","S","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW"];
+                const xDirection = ["SW","ENE","NE","NE","NE","NNE","NE","ENE","NNE","NE","NE","NE","NE","ENE","SSW","S","SSW","SSW","S","S","SSW","SSW","SSW","SSW","SSE","S","SSW","SSE","SSE","SSE","SSE","SSE","S","SSW","SSW","SSW","SSW","SSW","S","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,1,1,1,0,2,5,17,25,33,9,4,1,0,0,0],
+      data: [0,0,0,0,0,3,5,16,25,36,9,3,1,1,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -980,7 +980,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>21 Days, 16 Hours</td>
+<td>21 Days, 17 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -988,11 +988,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:45. Level:-65. Noise:-256</td>
+<td>Link:44. Level:-66. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+41.9°C</td>
+<td>+39.2°C</td>
 </tr>
 </table>
 </body>
