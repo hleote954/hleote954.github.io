@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-02-16 15:29:28</p>
+<p>Generated at: 2024-02-16 15:44:33</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF51;"><span style="">20.1 C</span></td>
+<td style="background-color: #00FF39;"><span style="">20.8 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NE</td>
+<td>WSW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>6.12 km/h</td>
+<td>8.64 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>6.84 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NE" title="NE" style="width:20px;height:20px;transform:rotate(135deg);"/></td>
+<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-02-16 15:28:55</td>
+<td>2024-02-16 15:44:31</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
-<td>20.1 C</td>
+<td>20.8 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed  (last 24hrs)</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [19.5,19.2,19.4,19.4,19.1,19.1,18.8,18.7,18.1,17.7,17.8,18,17.9,17.7,17.7,17.1,16.9,18.1,18.0,18.6,19.2,19.5,19.6,19.1,18.4,17.5,16.5,15.2,14.5,14.1,14.3,14.4,14.0,13.6,12.7,12.4,12.5,12.3,12.3,11.8,12.6,15.0,17.3,18.1,19.1,19.5,19.7,19.8],
+      data: [19.5,19.2,19.4,19.4,19.1,19.1,18.8,18.7,18.1,17.7,17.8,18,17.9,17.7,17.7,17.1,16.9,18.1,18.0,18.6,19.2,19.5,19.6,19.1,18.4,17.5,16.5,15.2,14.5,14.1,14.3,14.4,14.0,13.6,12.5,12.4,12.5,12.3,12.3,11.8,12.6,15.0,17.3,18.1,19.1,19.5,19.7,19.9],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -131,12 +131,12 @@ new Chart("hourlyTempChart",
             return;
           }
           minValue = 11.8;
-          maxValue = 19.8;
+          maxValue = 19.9;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [78,79,75,73,74,75,77,79,83,87,89,90,92,94,95,95,95,93,93,86,80,76,72,72,74,78,85,89,91,92,92,91,92,93,95,95,96,95,95,95,94,87,79,68,61,59,59,58],
+      data: [78,79,75,73,74,75,77,79,83,87,89,90,92,94,95,95,95,93,93,86,80,76,72,72,74,78,85,89,91,92,92,91,92,93,95,95,96,95,95,95,94,87,79,68,61,59,59,57],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7.6,8.2,9.2,9.9,9.7,11.5,10.8,9.6,7.3,5.8,5.2,5.6,2.5,1.4,3.5,1.7,0.3,2.9,3.7,8.3,11.5,12.1,11.1,10.5,10.3,7.7,3.7,1.9,0.8,0.0,0.0,0.9,0.8,2.3,0.3,0.3,0.8,0.1,0.6,0.5,0.2,0.2,2.6,5.3,6.9,6.7,7.1,6.2],
+      data: [7.6,8.2,9.2,9.9,9.7,11.5,10.8,9.6,7.3,5.8,5.2,5.6,2.5,1.4,3.5,1.7,0.3,2.9,3.7,8.3,11.5,12.1,11.1,10.5,10.3,7.7,3.7,1.9,0.8,0.0,0.0,0.9,0.8,2.3,0.2,0.3,0.8,0.1,0.6,0.5,0.2,0.2,2.6,5.3,6.9,6.7,7.1,5.8],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2,2,3,9,9,11,4,2,1,3,5,19,10,11,6,2],
+      data: [5,5,4,2,1,1,0,0,0,1,3,13,14,27,16,6],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -988,11 +988,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:42. Level:-68. Noise:-256</td>
+<td>Link:43. Level:-67. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+43.5°C</td>
+<td>+39.7°C</td>
 </tr>
 </table>
 </body>
