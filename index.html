@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-03-03 07:34:54</p>
+<p>Generated at: 2024-03-03 07:50:07</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #003DFF;"><span style="color: #ffffff;">9.3 C</span></td>
+<td style="background-color: #0066FF;"><span style="color: #ffffff;">10.5 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>91 %</td>
+<td>90 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-03-03 07:34:54</td>
+<td>2024-03-03 07:50:06</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [13.4,14.5,15.0,16.2,17.3,17.4,17.2,17.2,16.5,15.4,13.8,12.9,12.0,10.6,10.0,10.7,10.5,10.5,10.1,10.2,10.6,10.3,10.1,10.4,11.6,13.8,15.8,17.0,17.3,16.6,16.0,15.8,14.3,14.1,13.7,14.0,13.5,12.7,12.4,12.2,12.2,11.4,11.2,10.4,9.9,10.4,9.7,8.9],
+      data: [13.4,14.5,15.0,16.2,17.3,17.4,17.2,17.2,16.5,15.4,13.8,12.9,12.0,10.6,10.0,10.7,10.5,10.5,10.1,10.2,10.6,10.3,10.1,10.4,11.6,13.8,15.8,17.0,17.3,16.6,16.0,15.8,14.3,14.1,13.7,14.0,13.5,12.7,12.4,12.2,12.2,11.4,11.2,10.4,9.9,10.4,9.7,9.0],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -130,7 +130,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 8.9;
+          minValue = 9.0;
           maxValue = 17.4;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [3,2,5,0,0,0,0,0,0,1,2,11,39,23,10,4],
+      data: [3,1,5,0,0,0,0,0,0,1,2,9,42,23,9,3],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -998,7 +998,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:53. Level:-57. Noise:-256</td>
+<td>Link:47. Level:-63. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
