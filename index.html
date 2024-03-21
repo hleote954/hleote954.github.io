@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-03-21 03:15:12</p>
+<p>Generated at: 2024-03-21 03:30:24</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00ADFF;"><span style="color: #ffffff;">12.6 C</span></td>
+<td style="background-color: #00A6FF;"><span style="color: #ffffff;">12.4 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>86 %</td>
+<td>87 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,15 +39,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.52 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.52 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-03-21 03:15:11</td>
+<td>2024-03-21 03:30:23</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -55,7 +55,7 @@
 </tr>
 <tr>
 <td>Min. Temperature (last 24hrs)</td>
-<td>12.6 C</td>
+<td>12.4 C</td>
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0.5,1.5,0.8,1.3,3.9,2.8,1.3,3.5,4.6,6.2,5.1,4.7,8.8,8.8,8.1,5.7,4.3,4.2,5.1,5.2,4.0,4.3,4.3,4.7,2.0,0.6,0.7,1.1,0.8,2.9,3.0,6.6,8.4,9.4,9.8,7.8,4.9,3.5,5.1,6.3,4.6,2.6,0.9,0.0,0.7,4.3,2.1,3.2],
+      data: [0.5,1.5,0.8,1.3,3.9,2.8,1.3,3.5,4.6,6.2,5.1,4.7,8.8,8.8,8.1,5.7,4.3,4.2,5.1,5.2,4.0,4.3,4.3,4.7,2.0,0.6,0.7,1.1,0.8,2.9,3.0,6.6,8.4,9.4,9.8,7.8,4.9,3.5,5.1,6.3,4.6,2.6,0.9,0.0,0.7,4.3,2.1,2.9],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
@@ -219,7 +219,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [0,315,337,315,315,315,68,292,292,135,135,135,248,248,248,292,292,292,248,292,292,248,248,248,248,270,315,270,68,248,248,158,202,202,248,248,292,248,292,292,292,292,315,315,45,45,68,337];
+          const xPointRotation = [0,315,337,315,315,315,68,292,292,135,135,135,248,248,248,292,292,292,248,292,292,248,248,248,248,270,315,270,68,248,248,158,202,202,248,248,292,248,292,292,292,292,315,315,45,45,68,315];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -245,7 +245,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["N","NW","NNW","NW","NW","NW","ENE","WNW","WNW","SE","SE","SE","WSW","WSW","WSW","WNW","WNW","WNW","WSW","WNW","WNW","WSW","WSW","WSW","WSW","W","NW","W","ENE","WSW","WSW","SSE","SSW","SSW","WSW","WSW","WNW","WSW","WNW","WNW","WNW","WNW","NW","NW","NE","NE","ENE","NNW"];
+                const xDirection = ["N","NW","NNW","NW","NW","NW","ENE","WNW","WNW","SE","SE","SE","WSW","WSW","WSW","WNW","WNW","WNW","WSW","WNW","WNW","WSW","WSW","WSW","WSW","W","NW","W","ENE","WSW","WSW","SSE","SSW","SSW","WSW","WSW","WNW","WSW","WNW","WNW","WNW","WNW","NW","NW","NE","NE","ENE","NW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,2,12,13,1,2,4,3,1,3,3,13,7,15,14,7],
+      data: [0,2,15,15,0,2,3,2,1,2,2,10,5,12,19,8],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -990,7 +990,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>63 Days, 0 Hours</td>
+<td>63 Days, 1 Hour</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -998,11 +998,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:53. Level:-57. Noise:-256</td>
+<td>Link:56. Level:-54. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+37.6°C</td>
+<td>+38.1°C</td>
 </tr>
 </table>
 </body>
