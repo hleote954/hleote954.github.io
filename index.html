@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-03-22 11:17:49</p>
+<p>Generated at: 2024-03-22 11:33:01</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF43;"><span style="">20.5 C</span></td>
+<td style="background-color: #00FF2F;"><span style="">21.1 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>66 %</td>
+<td>64 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>ENE</td>
+<td>NE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>6.48 km/h</td>
+<td>3.6 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>7.56 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
+<td>3.6 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NE" title="NE" style="width:20px;height:20px;transform:rotate(135deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-03-22 11:17:48</td>
+<td>2024-03-22 11:33:00</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
-<td>20.5 C</td>
+<td>21.1 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed  (last 24hrs)</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [19.0,18.8,17.6,16.6,16.0,15.6,14.9,14.5,14.4,14.6,14.5,13.4,13.1,13.3,12.8,12.5,12.0,11.6,11.5,12.6,14.2,15.3,15.8,16.1,14.3,13.9,16.1,17.5,17.9,18.1,17.3,17.0,16.7,17.0,17.1,17.0,16.5,16.5,16.1,15.7,15.8,16.0,15.2,16.4,17.4,17.9,18.8,19.9],
+      data: [19.0,18.8,17.6,16.6,16.0,15.6,14.9,14.5,14.4,14.6,14.5,13.4,13.1,13.3,12.8,12.5,12.0,11.6,11.5,12.6,14.2,15.3,15.8,16.1,14.3,13.9,16.1,17.5,17.9,18.1,17.3,17.0,16.7,17.0,17.1,17.0,16.5,16.5,16.1,15.7,15.8,16.0,15.2,16.4,17.4,17.9,18.8,20.1],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -131,12 +131,12 @@ new Chart("hourlyTempChart",
             return;
           }
           minValue = 11.5;
-          maxValue = 19.9;
+          maxValue = 20.1;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [69,72,78,75,79,81,83,81,81,83,86,85,85,84,86,86,86,88,87,82,77,76,77,80,90,93,87,82,81,81,85,85,86,83,84,86,87,85,87,88,87,85,88,84,80,77,73,69],
+      data: [69,72,78,75,79,81,83,81,81,83,86,85,85,84,86,86,86,88,87,82,77,76,77,80,90,93,87,82,81,81,85,85,86,83,84,86,87,85,87,88,87,85,88,84,80,77,73,68],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,14 +191,14 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [8.4,9.4,9.8,7.8,4.9,3.5,5.1,6.3,4.6,2.6,0.9,0.0,0.7,4.3,2.4,2.8,1.1,0.7,1.2,2.2,6.6,5.1,4.0,6.3,2.0,4.7,4.4,3.2,2.5,3.8,6.9,6.3,6.1,6.4,4.7,6.1,5.4,3.3,3.5,1.0,2.4,1.4,0.4,1.9,2.8,3.0,2.6,2.5],
+      data: [8.4,9.4,9.8,7.8,4.9,3.5,5.1,6.3,4.6,2.6,0.9,0.0,0.7,4.3,2.4,2.8,1.1,0.7,1.2,2.2,6.6,5.1,4.0,6.3,2.0,4.7,4.4,3.2,2.5,3.8,6.9,6.3,6.1,6.4,4.7,6.1,5.4,3.3,3.5,1.0,2.4,1.4,0.4,1.9,2.8,3.0,2.6,3.2],
       borderColor: "green",
       label: "Average",
       tension: 0.4,
       fill: false
     },
     {
-      data: [15.8,17.3,25.2,28.4,15.1,9.7,13.7,15.1,15.8,8.6,5.8,0.0,8.6,11.5,10.4,9.7,5.8,6.5,6.8,9.0,13.7,11.5,11.2,13.7,8.6,11.5,11.2,10.4,11.2,11.2,19.8,16.6,16.6,20.2,15.8,12.2,10.8,8.6,8.6,7.6,8.6,7.9,4.3,9.7,9.0,9.7,9.4,9.0],
+      data: [15.8,17.3,25.2,28.4,15.1,9.7,13.7,15.1,15.8,8.6,5.8,0.0,8.6,11.5,10.4,9.7,5.8,6.5,6.8,9.0,13.7,11.5,11.2,13.7,8.6,11.5,11.2,10.4,11.2,11.2,19.8,16.6,16.6,20.2,15.8,12.2,10.8,8.6,8.6,7.6,8.6,7.9,4.3,9.7,9.0,9.7,9.4,9.4],
       borderColor: "magenta",
       label: "Gusts",
       tension: 0.4,
@@ -272,7 +272,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [4,3,16,44,9,2,0,0,0,0,0,0,0,2,10,7],
+      data: [4,3,16,45,9,3,0,0,0,0,0,0,0,2,10,7],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -998,7 +998,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:52. Level:-58. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
