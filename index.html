@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-05-05 07:27:25</p>
+<p>Generated at: 2024-05-05 07:42:37</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FFA6;"><span style="">17.6 C</span></td>
+<td style="background-color: #00FF9F;"><span style="">17.8 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>88 %</td>
+<td>87 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>W</td>
+<td>WSW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.88 km/h</td>
+<td>4.68 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.88 km/h  <img src="images/Symbol_wind_speed_01.png" alt="W" title="W" style="width:20px;height:20px;transform:rotate(360deg);"/></td>
+<td>5.4 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-05-05 07:27:24</td>
+<td>2024-05-05 07:42:36</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
-<td>17.6 C</td>
+<td>17.8 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed  (last 24hrs)</td>
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [6.5,8.6,8.6,14.4,16.6,18.0,18.0,19.1,20.2,24.8,23.8,19.4,17.3,11.2,11.5,8.6,7.6,4.3,5.4,5.4,3.2,0.0,2.5,4.7,5.4,6.5,9.4,12.6,23.8,18.7,22.3,22.3,18.4,22.3,25.2,18.7,20.2,18.0,15.8,12.2,9.0,8.6,8.6,7.6,8.6,6.5,8.6,5.4],
+      data: [6.5,8.6,8.6,14.4,16.6,18.0,18.0,19.1,20.2,24.8,23.8,19.4,17.3,11.2,11.5,8.6,7.6,4.3,5.4,5.4,3.2,0.0,2.5,4.7,5.4,6.5,9.4,12.6,23.8,18.7,22.3,22.3,18.4,22.3,25.2,18.7,20.2,18.0,15.8,12.2,9.0,8.6,8.6,7.6,8.6,6.5,8.6,6.5],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [292,68,112,135,158,202,202,202,202,270,248,248,248,248,248,292,292,292,292,292,292,292,292,292,270,270,292,292,292,248,248,248,248,248,248,248,292,292,292,292,292,248,248,248,270,270,270,292];
+          const xPointRotation = [292,68,112,135,158,202,202,202,202,270,248,248,248,248,248,292,292,292,292,292,292,292,292,292,270,270,292,292,292,248,248,248,248,248,248,248,292,292,292,292,292,248,248,248,270,270,270,270];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WNW","ENE","ESE","SE","SSE","SSW","SSW","SSW","SSW","W","WSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","W","WNW","WNW","WNW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WSW","WSW","WSW","W","W","W","WNW"];
+                const xDirection = ["WNW","ENE","ESE","SE","SSE","SSW","SSW","SSW","SSW","W","WSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","W","WNW","WNW","WNW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WSW","WSW","WSW","W","W","W","W"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,0,1,1,0,2,2,37,40,15,1,0],
+      data: [0,0,0,0,0,0,0,1,0,1,1,38,43,13,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1040,7 +1040,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>8 Days, 16 Hours</td>
+<td>8 Days, 17 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1048,7 +1048,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:61. Level:-49. Noise:-256</td>
+<td>Link:62. Level:-48. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
