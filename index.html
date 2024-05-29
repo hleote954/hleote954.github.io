@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-05-29 19:38:18</p>
+<p>Generated at: 2024-05-29 19:53:54</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #FFBA00;"><span style="">32.0 C</span></td>
+<td style="background-color: #FFE700;"><span style="">30.7 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>32 %</td>
+<td>35 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>W</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>5.4 km/h</td>
+<td>3.96 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>5.76 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>3.96 km/h  <img src="images/Symbol_wind_speed_01.png" alt="W" title="W" style="width:20px;height:20px;transform:rotate(360deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-05-29 19:37:40</td>
+<td>2024-05-29 19:53:16</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [21.9,21.0,20.3,19.7,18.8,17.7,16.9,17.1,15.8,15.5,14.8,18.3,22.7,23.7,25.5,23.9,22.3,22.1,22.9,23.9,24.3,24.5,24.7,25.1,22.1,20.6,20.7,19.9,18.5,17.8,17.6,17.5,17.1,17.2,17.9,20.8,23.9,26.2,25.5,25.1,26.1,26.4,26.5,27.1,28.0,31.4,32.3,32.8],
+      data: [21.9,21.0,20.3,19.7,18.8,17.7,16.9,17.1,15.8,15.5,14.8,18.3,22.7,23.7,25.5,23.9,22.3,22.1,22.9,23.9,24.3,24.5,24.7,25.1,22.1,20.6,20.7,19.9,18.5,17.8,17.6,17.5,17.1,17.2,17.9,20.8,23.9,26.2,25.5,25.1,26.1,26.4,26.5,27.1,28.0,31.4,32.3,32.6],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -131,7 +131,7 @@ new Chart("hourlyTempChart",
             return;
           }
           minValue = 14.8;
-          maxValue = 32.8;
+          maxValue = 32.6;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [9.4,6.6,6.2,2.5,1.3,1.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,6.4,9.7,9.9,8.1,8.0,7.4,6.7,7.9,5.8,2.7,0.4,0.4,0.0,1.0,2.0,0.6,0.0,1.3,0.7,0.3,0.6,0.5,1.9,2.5,6.1,8.1,8.1,8.1,10.8,9.9,7.8,6.1,8.0,3.2],
+      data: [9.4,6.6,6.2,2.5,1.3,1.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,6.4,9.7,9.9,8.1,8.0,7.4,6.7,7.9,5.8,2.7,0.4,0.4,0.0,1.0,2.0,0.6,0.0,1.3,0.6,0.3,0.6,0.5,1.9,2.5,6.1,8.1,8.1,8.1,10.8,9.9,7.8,6.1,8.0,3.6],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,1,11,14,5,15,21,19,14,1,0,0],
+      data: [0,0,0,0,0,1,11,14,4,15,21,19,14,1,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1040,7 +1040,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>4 Days, 8 Hours</td>
+<td>4 Days, 9 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1048,7 +1048,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:49. Level:-61. Noise:-256</td>
+<td>Link:59. Level:-51. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
