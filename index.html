@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-06-02 11:15:12</p>
+<p>Generated at: 2024-06-02 11:30:16</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #3DFF00;"><span style="">24.3 C</span></td>
+<td style="background-color: #32FF00;"><span style="">24.0 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -39,15 +39,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.88 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.88 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ESE" title="ESE" style="width:20px;height:20px;transform:rotate(202deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ESE" title="ESE" style="width:20px;height:20px;transform:rotate(202deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-06-02 11:14:03</td>
+<td>2024-06-02 11:30:03</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [6.2,7.8,8.5,8.7,9.8,9.5,9.3,4.2,1.0,3.4,3.7,3.2,3.2,4.7,4.9,2.6,1.7,1.2,0.9,1.0,3.1,8.7,11.4,8.2,9.3,8.8,10.7,10.6,9.7,7.9,4.8,2.8,0.6,0.2,0.0,0.0,0.0,0.0,0.1,0.1,0.5,1.5,2.4,3.0,5.3,7.4,7.9,9.1],
+      data: [6.2,7.8,8.5,8.7,9.8,9.5,9.3,4.2,1.0,3.4,3.7,3.2,3.2,4.7,4.9,2.6,1.7,1.2,0.9,1.0,3.1,8.7,11.4,8.2,9.3,8.8,10.7,10.6,9.7,7.9,4.8,2.8,0.6,0.2,0.0,0.0,0.0,0.0,0.1,0.1,0.8,1.5,2.4,3.0,5.3,7.4,7.9,9.7],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [13.0,15.8,16.6,16.6,19.4,18.0,18.7,13.7,7.6,9.4,9.7,8.6,8.6,15.1,12.2,9.0,8.6,9.4,6.5,5.4,10.4,29.9,30.2,30.2,23.0,22.0,24.5,24.8,18.4,15.8,14.4,9.4,4.0,5.8,0.0,0.0,0.0,0.0,3.2,3.6,6.5,5.4,8.3,8.6,13.0,18.0,20.9,18.0],
+      data: [13.0,15.8,16.6,16.6,19.4,18.0,18.7,13.7,7.6,9.4,9.7,8.6,8.6,15.1,12.2,9.0,8.6,9.4,6.5,5.4,10.4,29.9,30.2,30.2,23.0,22.0,24.5,24.8,18.4,15.8,14.4,9.4,4.0,5.8,0.0,0.0,0.0,0.0,3.2,3.6,6.5,5.4,8.3,8.6,13.0,18.0,20.9,18.7],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,158,158,248,248,248,248,158,135,112,112,112,112,112,112,112,112,112,112,112,112,90,112,112,135,112,135,135,135,135,135,158,158,158,158,158,158,135,135,112,112,68,68,90,68,112,135,135];
+          const xPointRotation = [248,158,158,248,248,248,248,158,135,112,112,112,112,112,112,112,112,112,112,112,112,90,112,112,135,112,135,135,135,135,135,158,158,158,158,158,158,135,135,112,90,68,68,90,68,112,135,135];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","SSE","SSE","WSW","WSW","WSW","WSW","SSE","SE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","E","ESE","ESE","SE","ESE","SE","SE","SE","SE","SE","SSE","SSE","SSE","SSE","SSE","SSE","SE","SE","ESE","ESE","ENE","ENE","E","ENE","ESE","SE","SE"];
+                const xDirection = ["WSW","SSE","SSE","WSW","WSW","WSW","WSW","SSE","SE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","ESE","E","ESE","ESE","SE","ESE","SE","SE","SE","SE","SE","SSE","SSE","SSE","SSE","SSE","SSE","SE","SE","ESE","E","ENE","ENE","E","ENE","ESE","SE","SE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,1,7,9,27,16,13,2,3,4,14,4,0,0,0],
+      data: [0,0,1,25,21,22,16,8,1,1,1,2,1,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1062,7 +1062,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+51.0°C</td>
+<td>+46.7°C</td>
 </tr>
 </table>
 </body>
