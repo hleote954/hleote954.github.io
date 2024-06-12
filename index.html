@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-06-12 08:25:50</p>
+<p>Generated at: 2024-06-12 08:41:15</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF6C;"><span style="">19.3 C</span></td>
+<td style="background-color: #00FF3D;"><span style="">20.7 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>73 %</td>
+<td>67 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,15 +39,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>0.0 km/h</td>
+<td>2.52 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
+<td>2.52 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-06-12 08:25:50</td>
+<td>2024-06-12 08:39:26</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
-<td>19.3 C</td>
+<td>20.7 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed  (last 24hrs)</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [18.8,18.9,20.3,20.6,21.2,22.4,23.6,24.0,23.1,22.6,21.8,19.9,18.6,17.9,17.5,17.3,17.1,16.5,16.2,15.6,15.2,15.2,17.3,22.0,23.5,25.5,25.9,26.6,26.6,26.6,26.6,25.9,25.5,24.2,22.5,19.9,18.3,17.7,17.4,16.9,16.7,16.3,15.9,15.5,15.3,15.3,16.6,18.3],
+      data: [18.8,18.9,20.3,20.6,21.2,22.4,23.6,24.0,23.1,22.6,21.8,19.9,18.6,17.9,17.5,17.3,17.1,16.5,16.2,15.6,15.2,15.2,17.3,22.0,23.5,25.5,25.9,26.6,26.6,26.6,26.6,25.9,25.5,24.2,22.5,19.9,18.3,17.7,17.4,16.9,16.7,16.3,15.9,15.5,15.3,15.3,16.6,18.7],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -136,7 +136,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [80,78,70,68,64,58,54,54,55,57,63,74,80,84,86,85,85,86,87,88,88,89,81,65,61,58,59,56,55,52,51,51,52,56,61,71,77,78,80,82,83,85,86,86,87,87,82,76],
+      data: [80,78,70,68,64,58,54,54,55,57,63,74,80,84,86,85,85,86,87,88,88,89,81,65,61,58,59,56,55,52,51,51,52,56,61,71,77,78,80,82,83,85,86,86,87,87,82,75],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [5.4,5.9,6.3,6.6,6.9,5.6,6.6,10.2,9.8,9.8,8.1,7.5,8.0,5.6,6.3,4.1,2.3,0.2,2.6,0.3,0.0,0.0,0.0,0.4,1.0,4.0,6.0,9.1,11.5,11.8,11.9,11.4,9.9,10.2,8.9,8.1,9.1,7.7,3.5,2.7,4.2,2.0,4.4,2.8,1.3,1.4,3.3,2.3],
+      data: [5.4,5.9,6.3,6.6,6.9,5.6,6.6,10.2,9.8,9.8,8.1,7.5,8.0,5.6,6.3,4.1,2.3,0.2,2.6,0.3,0.0,0.0,0.0,0.4,1.0,4.0,6.0,9.1,11.5,11.8,11.9,11.4,9.9,10.2,8.9,8.1,9.1,7.7,3.5,2.7,4.2,2.0,4.4,2.8,1.3,1.4,3.3,2.1],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [12.2,15.1,15.1,17.3,19.4,25.2,17.3,20.2,22.0,22.0,18.0,17.6,20.5,12.2,10.8,12.2,9.0,3.6,8.6,6.5,0.0,0.0,0.0,4.7,6.8,11.2,12.2,21.6,24.5,24.8,23.8,24.1,22.0,21.2,25.9,25.9,17.6,22.0,15.8,9.0,12.2,8.6,9.7,8.6,8.6,7.9,10.8,6.8],
+      data: [12.2,15.1,15.1,17.3,19.4,25.2,17.3,20.2,22.0,22.0,18.0,17.6,20.5,12.2,10.8,12.2,9.0,3.6,8.6,6.5,0.0,0.0,0.0,4.7,6.8,11.2,12.2,21.6,24.5,24.8,23.8,24.1,22.0,21.2,25.9,25.9,17.6,22.0,15.8,9.0,12.2,8.6,9.7,8.6,8.6,7.9,10.8,8.6],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,0,0,0,0,0,2,44,23,20,9,1],
+      data: [0,0,0,0,0,0,0,0,0,0,2,44,24,20,9,1],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1050,7 +1050,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>7 Days, 19 Hours</td>
+<td>7 Days, 20 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1058,7 +1058,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:57. Level:-53. Noise:-256</td>
+<td>Link:56. Level:-54. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
