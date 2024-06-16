@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-06-16 06:28:35</p>
+<p>Generated at: 2024-06-16 06:43:47</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00F8FF;"><span style="">14.8 C</span></td>
+<td style="background-color: #00FFF4;"><span style="">15.3 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-06-16 06:28:34</td>
+<td>2024-06-16 06:43:46</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [17.8,21.4,25.4,27.5,28.6,27.4,29.5,30.0,29.5,28.6,27.9,26.4,25.1,22.9,21.1,20.0,19.9,19.5,19.3,19.1,18.3,17.7,16.8,16.7,18.4,20.3,21.2,22.6,24.0,24.4,24.3,23.8,23.8,23.7,23.1,22.2,20.9,19.1,17.7,17.2,16.9,16.6,16.4,16.2,15.9,15.6,15.4,15.1],
+      data: [17.8,21.4,25.4,27.5,28.6,27.4,29.5,30.0,29.5,28.6,27.9,26.4,25.1,22.9,21.1,20.0,19.9,19.5,19.3,19.1,18.3,17.7,16.8,16.7,18.4,20.3,21.2,22.6,24.0,24.4,24.3,23.8,23.8,23.7,23.1,22.2,20.9,19.1,17.7,17.2,16.9,16.6,16.4,16.2,15.9,15.6,15.4,15.0],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -130,7 +130,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 15.1;
+          minValue = 15.0;
           maxValue = 30.0;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,0,0,0,0,0,1,7,57,24,8,1],
+      data: [0,0,0,0,0,0,0,0,0,0,1,6,62,23,7,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1058,7 +1058,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:41. Level:-69. Noise:-256</td>
+<td>Link:40. Level:-70. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
