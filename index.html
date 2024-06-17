@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-06-17 22:31:56</p>
+<p>Generated at: 2024-06-17 22:47:08</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF65;"><span style="">19.5 C</span></td>
+<td style="background-color: #00FF62;"><span style="">19.6 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WNW</td>
+<td>W</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>7.92 km/h</td>
+<td>7.56 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
+<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="W" title="W" style="width:20px;height:20px;transform:rotate(360deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-06-17 22:31:53</td>
+<td>2024-06-17 22:47:05</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [292,270,270,270,292,270,270,270,270,270,135,135,135,135,292,248,292,292,292,292,292,292,292,292,292,292,292,292,270,270,270,270,270,270,270,270,135,248,248,248,248,248,248,248,248,248,248,270];
+          const xPointRotation = [292,270,270,270,292,270,270,270,270,270,135,135,135,135,292,248,292,292,292,292,292,292,292,292,292,292,292,292,270,270,270,270,270,270,270,270,135,248,248,248,248,248,248,248,248,248,248,248];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WNW","W","W","W","WNW","W","W","W","W","W","SE","SE","SE","SE","WNW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","W","W","W","W","W","W","W","SE","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","W"];
+                const xDirection = ["WNW","W","W","W","WNW","W","W","W","W","W","SE","SE","SE","SE","WNW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","W","W","W","W","W","W","W","SE","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
