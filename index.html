@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-07-01 00:01:13</p>
+<p>Generated at: 2024-07-01 00:16:37</p>
 <p/>
 <p/>
 <p/>
@@ -39,15 +39,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>3.6 km/h</td>
+<td>4.32 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>3.6 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
+<td>5.4 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-07-01 00:01:10</td>
+<td>2024-07-01 00:15:58</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [6.1,7.0,3.9,5.9,6.4,4.8,5.1,6.4,7.2,8.5,9.1,8.9,8.7,10.0,10.5,9.8,9.0,10.9,10.1,5.4,3.9,4.2,3.8,4.3,4.4,3.6,2.0,1.1,0.6,2.9,4.1,5.0,5.6,5.1,6.1,6.8,8.7,10.0,10.8,11.8,9.4,9.3,8.9,8.1,9.9,9.7,7.7,3.8],
+      data: [6.1,7.0,3.9,5.9,6.4,4.8,5.1,6.4,7.2,8.5,9.1,8.9,8.7,10.0,10.5,9.8,9.0,10.9,10.1,5.4,3.9,4.2,3.8,4.3,4.4,3.6,2.0,1.1,0.6,2.9,4.1,5.0,5.6,5.1,6.1,6.8,8.7,10.0,10.8,11.8,9.4,9.3,8.9,8.1,9.9,9.7,7.6,6.5],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [15.1,14.4,11.2,17.3,20.2,14.4,13.0,19.8,18.4,18.4,22.3,22.0,20.9,24.5,21.6,24.5,20.9,24.8,24.1,15.1,10.8,12.2,11.5,9.0,11.2,8.6,8.6,5.4,7.6,13.0,12.2,14.4,15.1,13.7,14.4,15.8,17.3,24.5,25.9,23.4,21.2,24.1,18.4,19.8,23.8,20.9,17.3,6.5],
+      data: [15.1,14.4,11.2,17.3,20.2,14.4,13.0,19.8,18.4,18.4,22.3,22.0,20.9,24.5,21.6,24.5,20.9,24.8,24.1,15.1,10.8,12.2,11.5,9.0,11.2,8.6,8.6,5.4,7.6,13.0,12.2,14.4,15.1,13.7,14.4,15.8,17.3,24.5,25.9,23.4,21.2,24.1,18.4,19.8,23.8,20.9,17.3,13.7],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2,4,2,1,0,0,0,0,0,1,4,21,15,29,17,5],
+      data: [2,4,2,1,0,0,0,0,0,1,4,22,15,29,17,5],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -343,6 +343,17 @@ new Chart("windPrevalenceChart",
 <th>Prevailing Wind direction</th>
 <th>Precipitation mm</th>
 <th>Accum. Precipitation mm</th>
+</tr>
+<tr>
+<td>2024-06-30</td>
+<td style="background-color: #00FFCF;"><span style="">16.4</span></td>
+<td>20.9</td>
+<td style="background-color: #73FF00;"><span style="">25.9</span></td>
+<td>6.9</td>
+<td>25.9 <img src="images/Symbol_wind_speed_03.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
+<td>WNW</td>
+<td style=""><span style="">0.0 mm</span></td>
+<td>766.8 mm</td>
 </tr>
 <tr>
 <td>2024-06-29</td>
@@ -680,7 +691,7 @@ new Chart("windPrevalenceChart",
 <canvas id="dailyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["2024-05-31","2024-06-01","2024-06-02","2024-06-03","2024-06-04","2024-06-05","2024-06-06","2024-06-07","2024-06-08","2024-06-09","2024-06-10","2024-06-11","2024-06-12","2024-06-13","2024-06-14","2024-06-15","2024-06-16","2024-06-17","2024-06-18","2024-06-19","2024-06-20","2024-06-21","2024-06-22","2024-06-23","2024-06-24","2024-06-25","2024-06-26","2024-06-27","2024-06-28","2024-06-29"];
+var xLabels = ["2024-05-31","2024-06-01","2024-06-02","2024-06-03","2024-06-04","2024-06-05","2024-06-06","2024-06-07","2024-06-08","2024-06-09","2024-06-10","2024-06-11","2024-06-12","2024-06-13","2024-06-14","2024-06-15","2024-06-16","2024-06-17","2024-06-18","2024-06-19","2024-06-20","2024-06-21","2024-06-22","2024-06-23","2024-06-24","2024-06-25","2024-06-26","2024-06-27","2024-06-28","2024-06-29","2024-06-30"];
 new Chart("dailyTempChart",
 {
   type: "line",
@@ -688,14 +699,14 @@ new Chart("dailyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [17.2,19.4,18.1,18.4,17.2,16.9,18.3,18.9,18,17.1,16.4,17.2,15.1,14.4,15.4,16.3,14.8,15.2,17,15.5,15.8,15,19.6,22.5,18.5,17.3,16.2,16.9,17.7,17],
+      data: [17.2,19.4,18.1,18.4,17.2,16.9,18.3,18.9,18,17.1,16.4,17.2,15.1,14.4,15.4,16.3,14.8,15.2,17,15.5,15.8,15,19.6,22.5,18.5,17.3,16.2,16.9,17.7,17,16.4],
       borderColor: "blue",
       label: "Lows",
       tension: 0.4,
       fill: false
     },
     {
-      data: [35,25.6,25.3,24.9,25.1,27.5,30.5,22.5,22.9,24.9,24.8,27.3,26.8,28.6,30.5,24.7,27.4,27.7,24,22.7,23.1,31.7,36.9,36.3,31.2,29.6,25.2,24.3,24,23],
+      data: [35,25.6,25.3,24.9,25.1,27.5,30.5,22.5,22.9,24.9,24.8,27.3,26.8,28.6,30.5,24.7,27.4,27.7,24,22.7,23.1,31.7,36.9,36.3,31.2,29.6,25.2,24.3,24,23,25.9],
       borderColor: "red",
       label: "Highs",
       tension: 0.4,
@@ -731,6 +742,16 @@ new Chart("dailyTempChart",
 <th>Max. Temperature C</th>
 <th>Max. Wind speed km/h</th>
 <th>Precip. mm</th>
+</tr>
+<tr>
+<td>2024-06</td>
+<td style="background-color: #00EAFF;"><span style="">14.4</span></td>
+<td>17.1</td>
+<td>21.8</td>
+<td>26.9</td>
+<td style="background-color: #FF1400;"><span style="">36.9</span></td>
+<td>33.5</td>
+<td style="background-color: #FEFEFF;"><span style="">0.8</span></td>
 </tr>
 <tr>
 <td>2024-05</td>
@@ -828,7 +849,7 @@ new Chart("dailyTempChart",
 <canvas id="monthlyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May"];
+var xLabels = ["Sep","Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun"];
 new Chart("monthlyTempChart",
 {
   type: "line",
@@ -836,14 +857,14 @@ new Chart("monthlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [15.5,11.1,7.3,6.2,5.1,7.8,6.7,9.1,8.6],
+      data: [15.5,11.1,7.3,6.2,5.1,7.8,6.7,9.1,8.6,14.4],
       borderColor: "blue",
       label: "Lows",
       tension: 0.4,
       fill: false
     },
     {
-      data: [33.2,32,26.5,21.6,23.3,24.6,25.8,31.6,35.4],
+      data: [33.2,32,26.5,21.6,23.3,24.6,25.8,31.6,35.4,36.9],
       borderColor: "red",
       label: "Highs",
       tension: 0.4,
@@ -892,7 +913,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #70FF00;"><span style="">25.8</span></td>
 <td style="background-color: #FFC800;"><span style="">31.6</span></td>
 <td style="background-color: #FF4700;"><span style="">35.4</span></td>
-<td></td>
+<td style="background-color: #FF1400;"><span style="">36.9</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #FF9200;"><span style="">33.2</span></td>
@@ -907,7 +928,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #00FF72;"><span style="">19.1</span></td>
 <td style="background-color: #13FF00;"><span style="">23.1</span></td>
 <td style="background-color: #56FF00;"><span style="">25.0</span></td>
-<td></td>
+<td style="background-color: #94FF00;"><span style="">26.9</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #8CFF00;"><span style="">26.6</span></td>
@@ -922,7 +943,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #00FBFF;"><span style="">14.9</span></td>
 <td style="background-color: #00FF94;"><span style="">18.1</span></td>
 <td style="background-color: #00FF64;"><span style="">19.5</span></td>
-<td></td>
+<td style="background-color: #00FF18;"><span style="">21.8</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #00FF0A;"><span style="">22.2</span></td>
@@ -937,7 +958,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #006BFF;"><span style="color: #ffffff;">10.7</span></td>
 <td style="background-color: #00B6FF;"><span style="color: #ffffff;">12.9</span></td>
 <td style="background-color: #00D1FF;"><span style="">13.7</span></td>
-<td></td>
+<td style="background-color: #00FFB7;"><span style="">17.1</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #00FF8F;"><span style="">18.3</span></td>
@@ -952,7 +973,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #0000E3;"><span style="color: #ffffff;">6.7</span></td>
 <td style="background-color: #0036FF;"><span style="color: #ffffff;">9.1</span></td>
 <td style="background-color: #0025FF;"><span style="color: #ffffff;">8.6</span></td>
-<td></td>
+<td style="background-color: #00EAFF;"><span style="">14.4</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #00FFED;"><span style="">15.5</span></td>
@@ -967,7 +988,7 @@ new Chart("monthlyTempChart",
 <td style="background-color: #5353FF;"><span style="color: #ffffff;">134.8</span></td>
 <td style="background-color: #F3F3FF;"><span style="">9.6</span></td>
 <td style="background-color: #FFFFFF;"><span style="">0.4</span></td>
-<td></td>
+<td style="background-color: #FEFEFF;"><span style="">0.8</span></td>
 <td></td>
 <td></td>
 <td style="background-color: #E6E6FF;"><span style="">20.0</span></td>
@@ -1047,11 +1068,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:51. Level:-59. Noise:-256</td>
+<td>Link:50. Level:-60. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+46.7°C</td>
+<td>+46.2°C</td>
 </tr>
 </table>
 </body>
