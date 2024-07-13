@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-07-13 11:29:28</p>
+<p>Generated at: 2024-07-13 11:45:04</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #9CFF00;"><span style="">27.1 C</span></td>
+<td style="background-color: #ADFF00;"><span style="">27.6 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>41 %</td>
+<td>42 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,15 +39,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.88 km/h</td>
+<td>1.8 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.88 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSW" title="SSW" style="width:20px;height:20px;transform:rotate(292deg);"/></td>
+<td>1.8 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSW" title="SSW" style="width:20px;height:20px;transform:rotate(292deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-07-13 11:29:27</td>
+<td>2024-07-13 11:45:03</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,11 +59,11 @@
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
-<td>27.1 C</td>
+<td>27.6 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed  (last 24hrs)</td>
-<td>11.2 km/h</td>
+<td>12.2 km/h</td>
 </tr>
 <tr>
 <td>Precipitation (last 24hrs)</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [33.7,32.8,34.3,34.4,34.0,33.3,32.0,29.8,26.4,24.4,23.5,22.7,22.4,22.1,21.6,21.1,20.5,19.7,19.5,20.8,24.7,26.0,27.5,28.6,30.0,31.3,31.3,30.9,29.5,28.4,27.7,26.2,23.9,22.3,21.6,20.4,19.3,19.1,18.4,18.0,17.3,17.2,16.8,17.3,19.5,23.4,25.8,26.3],
+      data: [33.7,32.8,34.3,34.4,34.0,33.3,32.0,29.8,26.4,24.4,23.5,22.7,22.4,22.1,21.6,21.1,20.5,19.7,19.5,20.8,24.7,26.0,27.5,28.6,30.0,31.3,31.3,30.9,29.5,28.4,27.7,26.2,23.9,22.3,21.6,20.4,19.3,19.1,18.4,18.0,17.3,17.2,16.8,17.3,19.5,23.4,25.8,26.5],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -136,7 +136,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [42,44,42,40,42,43,49,56,69,75,78,82,82,82,82,80,81,83,82,78,63,57,53,48,45,44,43,44,48,48,52,56,63,66,66,74,78,76,76,74,78,76,81,76,67,49,43,43],
+      data: [42,44,42,40,42,43,49,56,69,75,78,82,82,82,82,80,81,83,82,78,63,57,53,48,45,44,43,44,48,48,52,56,63,66,66,74,78,76,76,74,78,76,81,76,67,49,43,42],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [5.5,6.1,10.0,10.5,10.9,9.7,9.2,9.0,8.7,8.4,6.2,8.1,5.3,3.7,1.6,1.5,0.7,0.0,1.4,1.0,1.0,1.8,3.1,4.8,6.2,7.3,11.0,10.8,12.7,11.7,10.6,9.7,7.4,4.7,6.6,5.4,6.4,5.5,3.3,3.3,5.5,4.0,0.4,3.2,2.9,2.3,3.6,5.4],
+      data: [5.5,6.1,10.0,10.5,10.9,9.7,9.2,9.0,8.7,8.4,6.2,8.1,5.3,3.7,1.6,1.5,0.7,0.0,1.4,1.0,1.0,1.8,3.1,4.8,6.2,7.3,11.0,10.8,12.7,11.7,10.6,9.7,7.4,4.7,6.6,5.4,6.4,5.6,3.3,3.3,5.5,4.0,0.4,3.2,2.9,2.3,3.6,5.1],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [17.3,17.3,19.8,20.2,23.8,19.4,19.1,21.2,20.9,17.6,16.6,18.0,12.2,9.4,8.6,7.6,5.8,2.2,8.6,8.6,5.8,8.6,9.4,12.2,13.7,17.6,23.8,24.1,27.7,25.9,23.0,25.9,19.1,15.1,13.0,13.7,11.5,8.6,8.6,10.4,12.2,9.0,4.3,8.6,8.6,8.6,11.2,10.8],
+      data: [17.3,17.3,19.8,20.2,23.8,19.4,19.1,21.2,20.9,17.6,16.6,18.0,12.2,9.4,8.6,7.6,5.8,2.2,8.6,8.6,5.8,8.6,9.4,12.2,13.7,17.6,23.8,24.1,27.7,25.9,23.0,25.9,19.1,15.1,13.0,13.7,11.5,8.6,8.6,10.4,12.2,9.0,4.3,8.6,8.6,8.6,11.2,12.2],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,2,1,1,1,0,2,4,1,5,2,34,31,9,5,2],
+      data: [1,2,1,1,1,0,2,5,1,5,2,34,31,8,5,2],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1068,7 +1068,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:30. Level:-80. Noise:-256</td>
+<td>Link:31. Level:-79. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
