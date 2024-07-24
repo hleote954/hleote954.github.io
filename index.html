@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-07-24 19:09:58</p>
+<p>Generated at: 2024-07-24 19:25:22</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #FF5B00;"><span style="">34.8 C</span></td>
+<td style="background-color: #FF7A00;"><span style="">33.9 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>25 %</td>
+<td>26 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>WNW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>8.64 km/h</td>
+<td>13.68 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>15.12 km/h  <img src="images/Symbol_wind_speed_02.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-07-24 19:09:56</td>
+<td>2024-07-24 19:24:20</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0.2,0.0,0.3,1.0,2.4,0.6,0.4,0.8,1.2,0.9,0.5,0.7,1.6,2.4,3.4,8.6,7.7,8.7,8.2,8.0,6.8,6.3,3.8,4.0,7.7,7.8,4.3,2.1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.3,3.9,5.5,6.5,8.7,10.4,7.5,9.3,10.8,11.0,7.6],
+      data: [0.2,0.0,0.3,1.0,2.4,0.6,0.4,0.8,1.2,0.9,0.5,0.7,1.6,2.4,3.4,8.6,7.7,8.7,8.2,8.0,6.8,6.3,3.8,4.0,7.7,7.8,4.3,2.1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.3,3.9,5.5,6.5,8.7,10.4,7.5,9.3,10.8,10.9,8.7],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [4.0,0.0,4.7,4.3,5.8,3.6,2.9,4.3,4.3,5.8,5.4,7.9,8.6,9.0,10.4,17.3,15.8,17.3,17.6,15.8,14.4,13.0,9.0,9.7,13.0,11.2,10.4,9.0,5.4,0.0,0.0,0.0,0.0,0.0,0.0,2.9,5.4,3.2,10.4,11.5,12.6,15.8,16.6,15.1,18.0,19.1,22.3,11.2],
+      data: [4.0,0.0,4.7,4.3,5.8,3.6,2.9,4.3,4.3,5.8,5.4,7.9,8.6,9.0,10.4,17.3,15.8,17.3,17.6,15.8,14.4,13.0,9.0,9.7,13.0,11.2,10.4,9.0,5.4,0.0,0.0,0.0,0.0,0.0,0.0,2.9,5.4,3.2,10.4,11.5,12.6,15.8,16.6,15.1,18.0,19.1,22.3,19.8],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [202,202,292,292,315,315,315,22,45,45,45,45,22,158,158,135,135,135,158,202,135,135,202,202,248,248,248,248,292,315,0,0,0,0,0,45,45,68,158,135,180,202,202,202,248,248,248,248];
+          const xPointRotation = [202,202,292,292,315,315,315,22,45,45,45,45,22,158,158,135,135,135,158,202,135,135,202,202,248,248,248,248,292,315,0,0,0,0,0,45,45,68,158,135,180,202,202,202,248,248,248,270];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["SSW","SSW","WNW","WNW","NW","NW","NW","NNE","NE","NE","NE","NE","NNE","SSE","SSE","SE","SE","SE","SSE","SSW","SE","SE","SSW","SSW","WSW","WSW","WSW","WSW","WNW","NW","N","N","N","N","N","NE","NE","ENE","SSE","SE","S","SSW","SSW","SSW","WSW","WSW","WSW","WSW"];
+                const xDirection = ["SSW","SSW","WNW","WNW","NW","NW","NW","NNE","NE","NE","NE","NE","NNE","SSE","SSE","SE","SE","SE","SSE","SSW","SE","SE","SSW","SSW","WSW","WSW","WSW","WSW","WNW","NW","N","N","N","N","N","NE","NE","ENE","SSE","SE","S","SSW","SSW","SSW","WSW","WSW","WSW","W"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,1,1,0,2,7,8,14,19,8,20,10,7,4,1],
+      data: [0,1,1,1,0,2,7,7,13,19,8,20,10,7,4,1],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
