@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-07-25 21:11:50</p>
+<p>Generated at: 2024-07-25 21:27:02</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF55;"><span style="">20.0 C</span></td>
+<td style="background-color: #00FF5B;"><span style="">19.8 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>80 %</td>
+<td>81 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,19 +35,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NW</td>
+<td>N</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>10.08 km/h</td>
+<td>15.12 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>10.44 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
+<td>16.56 km/h  <img src="images/Symbol_wind_speed_02.png" alt="N" title="N" style="width:20px;height:20px;transform:rotate(90deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-07-25 21:11:36</td>
+<td>2024-07-25 21:26:48</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [27.9,27.4,26.8,25.9,25.2,24.4,23.9,23.6,22.8,25.4,30.0,35.7,35.0,33.7,35.0,34.7,34.5,36.1,38.6,36.9,35.6,33.7,30.0,25.6,24.5,24.8,23.7,20.6,20.8,19.8,19.5,19.2,18.6,19.2,22.0,24.9,27.3,29.3,30.7,31.2,30.6,30.2,29.5,28.5,27.1,24.6,21.5,20.2],
+      data: [27.9,27.4,26.8,25.9,25.2,24.4,23.9,23.6,22.8,25.4,30.0,35.7,35.0,33.7,35.0,34.7,34.5,36.1,38.6,36.9,35.6,33.7,30.0,25.6,24.5,24.8,23.7,20.6,20.8,19.8,19.5,19.2,18.6,19.2,22.0,24.9,27.3,29.3,30.7,31.2,30.6,30.2,29.5,28.5,27.1,24.6,21.4,20.1],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [4.3,2.1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.3,3.9,5.5,6.5,8.7,10.4,7.5,9.3,10.8,10.9,8.7,9.1,10.5,10.0,4.7,4.1,4.4,3.0,4.2,4.1,1.8,5.6,4.5,4.7,4.4,8.5,9.1,10.9,11.8,10.5,11.6,11.6,12.3,13.4,11.4,10.4,10.1],
+      data: [4.3,2.1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.5,0.3,3.9,5.5,6.5,8.7,10.4,7.5,9.3,10.8,10.9,8.7,9.1,10.5,10.0,4.7,4.1,4.4,3.0,4.2,4.1,1.8,5.6,4.5,4.7,4.4,8.5,9.1,10.9,11.8,10.5,11.6,11.6,12.3,13.4,11.4,10.4,9.3],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,248,292,315,0,0,0,0,0,45,45,68,158,135,180,202,202,202,248,248,248,292,248,248,248,248,270,248,248,248,248,292,248,248,248,292,248,248,248,248,248,248,248,248,248,248,248,270];
+          const xPointRotation = [248,248,292,315,0,0,0,0,0,45,45,68,158,135,180,202,202,202,248,248,248,292,248,248,248,248,270,248,248,248,248,292,248,248,248,292,248,248,248,248,248,248,248,248,248,248,248,248];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WSW","WNW","NW","N","N","N","N","N","NE","NE","ENE","SSE","SE","S","SSW","SSW","SSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WSW","W","WSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","W"];
+                const xDirection = ["WSW","WSW","WNW","NW","N","N","N","N","N","NE","NE","ENE","SSE","SE","S","SSW","SSW","SSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WSW","W","WSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1068,7 +1068,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:54. Level:-56. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
