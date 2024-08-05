@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-08-05 01:15:03</p>
+<p>Generated at: 2024-08-05 01:30:23</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #6CFF00;"><span style="">25.7 C</span></td>
+<td style="background-color: #58FF00;"><span style="">25.1 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>46 %</td>
+<td>51 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-08-05 01:14:57</td>
+<td>2024-08-05 01:29:21</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -55,7 +55,7 @@
 </tr>
 <tr>
 <td>Min. Temperature (last 24hrs)</td>
-<td>25.2 C</td>
+<td>25.1 C</td>
 </tr>
 <tr>
 <td>Max. Temperature  (last 24hrs)</td>
@@ -221,7 +221,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,292,248,270,248,248,202,90,292,180,202,180,180,248,248,248,292,248,292,248,248,248,292,292,292,292,292,292,292,292,112,112,202,135,158,135,158,158,202,202,158,248,248,248,292,292,270,270];
+          const xPointRotation = [248,292,248,270,248,248,202,90,292,180,202,180,180,248,248,248,292,248,292,248,248,248,292,292,292,292,292,292,292,292,112,112,202,135,158,135,135,158,202,202,158,248,248,248,292,292,270,270];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -257,7 +257,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WNW","WSW","W","WSW","WSW","SSW","E","WNW","S","SSW","S","S","WSW","WSW","WSW","WNW","WSW","WNW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","ESE","ESE","SSW","SE","SSE","SE","SSE","SSE","SSW","SSW","SSE","WSW","WSW","WSW","WNW","WNW","W","W"];
+                const xDirection = ["WSW","WNW","WSW","W","WSW","WSW","SSW","E","WNW","S","SSW","S","S","WSW","WSW","WSW","WNW","WSW","WNW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","ESE","ESE","SSW","SE","SSE","SE","SE","SSE","SSW","SSW","SSE","WSW","WSW","WSW","WNW","WNW","W","W"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,1,1,4,6,9,10,12,4,23,11,15,3,1],
+      data: [0,1,1,1,0,8,13,16,12,14,3,12,7,12,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1070,7 +1070,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>61 Days, 12 Hours</td>
+<td>61 Days, 13 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1082,7 +1082,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+54.2°C</td>
+<td>+49.4°C</td>
 </tr>
 </table>
 </body>
