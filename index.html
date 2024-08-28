@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-08-28 09:39:08</p>
+<p>Generated at: 2024-08-28 09:54:33</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #A3FF00;"><span style="">27.3 C</span></td>
+<td style="background-color: #92FF00;"><span style="">26.8 C</span></td>
 </tr>
 <tr>
 <td>Humidity</td>
-<td>43 %</td>
+<td>47 %</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -35,7 +35,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNW</td>
+<td>SSE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -43,11 +43,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNW" title="NNW" style="width:20px;height:20px;transform:rotate(428deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-08-28 09:39:07</td>
+<td>2024-08-28 09:53:56</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,11 +59,11 @@
 </tr>
 <tr>
 <td>Max. Temperature today</td>
-<td>27.3 C</td>
+<td>27.6 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed today</td>
-<td>9.7 km/h</td>
+<td>10.8 km/h</td>
 </tr>
 <tr>
 <td>Precipitation today</td>
@@ -117,7 +117,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [29.5,30.0,29.1,27.6,27.8,27.6,28.1,28.0,27.5,27.5,25.9,24.6,23.7,23.3,21.4,20.5,19.7,19.4,19.9,20.3,20.4,20.9,26.4,29.5,29.7,28.6,28.3,27.6,26.8,28.0,28.8,30.5,31.2,28.5,26.4,25.8,25.4,25.2,24.2,23.5,22.7,21.8,21.1,21.0,21.4,20.6,23.7,24.9],
+      data: [29.5,30.0,29.1,27.6,27.8,27.6,28.1,28.0,27.5,27.5,25.9,24.6,23.7,23.3,21.4,20.5,19.7,19.4,19.9,20.3,20.4,20.9,26.4,29.5,29.7,28.6,28.3,27.6,26.8,28.0,28.8,30.5,31.2,28.5,26.4,25.8,25.4,25.2,24.2,23.5,22.7,21.8,21.1,21.0,21.4,20.6,23.7,25.4],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -136,7 +136,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [37,43,51,62,64,69,66,64,64,52,48,51,53,55,62,67,72,71,69,66,67,65,52,54,57,63,68,70,73,71,69,62,59,52,57,59,61,63,63,57,51,58,63,65,61,64,53,50],
+      data: [37,43,51,62,64,69,66,64,64,52,48,51,53,55,62,67,72,71,69,66,67,65,52,54,57,63,68,70,73,71,69,62,59,52,57,59,61,63,63,57,51,58,63,65,61,64,53,49],
       borderColor: "cyan",
       label: "Humidity (%)",
       yAxisID: 'y2',
@@ -191,7 +191,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1.9,5.8,7.0,9.5,8.6,8.5,7.2,6.3,4.3,3.5,4.6,4.4,1.8,1.7,4.8,3.7,4.3,3.1,0.9,1.4,2.1,0.3,0.2,1.0,4.2,7.5,7.9,8.1,7.5,6.5,4.7,2.8,3.6,5.8,7.1,5.4,0.6,0.1,0.1,0.3,0.2,2.0,1.5,2.6,0.8,2.1,1.4,1.4],
+      data: [1.9,5.8,7.0,9.5,8.6,8.5,7.2,6.3,4.3,3.5,4.6,4.4,1.8,1.7,4.8,3.7,4.3,3.1,0.9,1.4,2.1,0.3,0.2,1.0,4.2,7.5,7.9,8.1,7.5,6.5,4.7,2.8,3.6,5.8,7.1,5.4,0.6,0.1,0.1,0.3,0.2,2.0,1.5,2.6,0.8,2.1,1.4,1.6],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -199,7 +199,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [8.6,12.6,16.2,17.3,15.8,26.6,15.1,12.2,10.8,9.7,9.4,9.4,7.9,8.6,9.0,8.6,9.7,8.6,4.3,5.4,6.8,3.2,2.9,8.6,16.6,15.8,16.6,15.8,15.8,15.1,10.8,8.6,9.0,16.6,17.3,12.2,4.3,2.9,2.9,4.3,4.7,8.6,4.3,9.7,8.6,8.6,7.6,4.3],
+      data: [8.6,12.6,16.2,17.3,15.8,26.6,15.1,12.2,10.8,9.7,9.4,9.4,7.9,8.6,9.0,8.6,9.7,8.6,4.3,5.4,6.8,3.2,2.9,8.6,16.6,15.8,16.6,15.8,15.8,15.1,10.8,8.6,9.0,16.6,17.3,12.2,4.3,2.9,2.9,4.3,4.7,8.6,4.3,9.7,8.6,8.6,7.6,10.8],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -302,7 +302,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,10,7,5,8,0,1,1,1,1,0,3,15,37,5,4],
+      data: [1,10,7,5,8,0,1,1,1,2,0,2,15,37,5,4],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1078,7 +1078,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:47. Level:-63. Noise:-256</td>
+<td>Link:44. Level:-66. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
