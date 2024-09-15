@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-09-15 21:35:18</p>
+<p>Generated at: 2024-09-15 21:49:40</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #1EFF00;"><span style="">23.4 C</span></td>
+<td style="background-color: #17FF00;"><span style="">23.2 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>14.6 C</td>
+<td>14.5 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>NW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.16 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.16 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-09-15 21:35:15</td>
+<td>2024-09-15 21:49:15</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Min. Temperature today</td>
-<td>23.4 C</td>
+<td>23.2 C</td>
 </tr>
 <tr>
 <td>Max. Temperature today</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [25.7,24.4,23.7],
+      data: [25.7,24.4,23.5],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -134,13 +134,13 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 23.7;
+          minValue = 23.5;
           maxValue = 25.7;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [11.4,10.3,10.0],
+      data: [11.4,10.3,10.2],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -176,7 +176,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [41,41,42],
+      data: [41,41,43],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.81,9.12,8.99],
+      data: [9.81,9.12,9.11],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7.5,10.1,8.1],
+      data: [7.5,10.1,5.7],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -1105,7 +1105,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>1 Hour, 46 Minutes</td>
+<td>2 Hours, 1 Minute</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1113,11 +1113,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:54. Level:-56. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+47.8°C</td>
+<td>+49.4°C</td>
 </tr>
 </table>
 </body>
