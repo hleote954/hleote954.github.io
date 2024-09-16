@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-09-16 11:21:09</p>
+<p>Generated at: 2024-09-16 11:36:33</p>
 <p/>
 <p/>
 <p/>
@@ -23,15 +23,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #9CFF00;"><span style="">27.1 C</span></td>
+<td style="background-color: #92FF00;"><span style="">26.8 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>46 %</td>
+<td>48 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>16.5 C</td>
+<td>16.8 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SSE</td>
+<td>E</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>3.96 km/h</td>
+<td>9.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>3.96 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
+<td>9.72 km/h  <img src="images/Symbol_wind_speed_01.png" alt="E" title="E" style="width:20px;height:20px;transform:rotate(180deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-09-16 11:20:55</td>
+<td>2024-09-16 11:36:31</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
 <td>Max. Wind speed today</td>
-<td>17.3 km/h</td>
+<td>18.7 km/h</td>
 </tr>
 <tr>
 <td>Precipitation today</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [25.7,24.4,23.5,23.0,23.3,23.0,22.9,22.1,21.9,22.1,21.7,20.9,20.7,23.0,26.0,26.2,25.7],
+      data: [25.7,24.4,23.5,23.0,23.3,23.0,22.9,22.1,21.9,22.1,21.7,20.9,20.7,23.0,26.0,26.2,26.2],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -140,7 +140,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [11.4,10.3,10.2,10.4,11.0,11.7,11.9,12.6,12.1,11.2,11.1,11.8,12.1,12.9,14.1,15.3,14.5],
+      data: [11.4,10.3,10.2,10.4,11.0,11.7,11.9,12.6,12.1,11.2,11.1,11.8,12.1,12.9,14.1,15.3,14.6],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -176,7 +176,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [41,41,43,45,46,49,50,55,54,50,51,56,58,53,48,51,50],
+      data: [41,41,43,45,46,49,50,55,54,50,51,56,58,53,48,51,49],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.23,10.73,10.39,9.76,9.73,10.22,10.42,10.88,11.69,12.58,11.99],
+      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.22,10.73,10.39,9.76,9.73,10.22,10.42,10.88,11.69,12.57,12.04],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7.5,10.1,4.8,1.9,1.5,2.7,0.0,1.5,1.7,2.4,1.6,4.0,3.1,4.8,3.8,7.2,6.1],
+      data: [7.5,10.1,4.8,1.9,1.5,2.7,0.0,1.5,1.7,2.4,1.6,4.0,3.1,4.8,3.8,7.2,6.6],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [12.6,15.8,11.2,8.6,8.6,8.6,0.0,7.9,7.2,7.9,5.4,8.6,9.0,12.6,12.6,19.4,15.8],
+      data: [12.6,15.8,11.2,8.6,8.6,8.6,0.0,7.9,7.2,7.9,5.4,8.6,9.0,12.6,12.6,19.4,19.8],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,2,15,35,13,7,9,11,6,0,0,0,0,1,0,0],
+      data: [0,2,15,34,13,7,10,11,6,1,0,0,0,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1105,7 +1105,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>15 Hours, 32 Minutes</td>
+<td>15 Hours, 48 Minutes</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1113,11 +1113,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:55. Level:-55. Noise:-256</td>
+<td>Link:56. Level:-54. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+46.2°C</td>
+<td>+45.6°C</td>
 </tr>
 </table>
 </body>
