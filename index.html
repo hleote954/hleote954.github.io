@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-09-16 01:35:33</p>
+<p>Generated at: 2024-09-16 01:50:03</p>
 <p/>
 <p/>
 <p/>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-09-16 01:34:52</td>
+<td>2024-09-16 01:49:16</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.06],
+      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.08],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,248,248,315,292,292,292];
+          const xPointRotation = [248,248,248,315,315,292,292];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WSW","WSW","NW","WNW","WNW","WNW"];
+                const xDirection = ["WSW","WSW","WSW","NW","NW","WNW","WNW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,0,0,0,0,0,1,50,12,27,11,0],
+      data: [0,0,0,0,0,0,0,0,0,0,1,48,15,25,11,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1105,7 +1105,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>5 Hours, 47 Minutes</td>
+<td>6 Hours, 1 Minute</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1113,11 +1113,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:53. Level:-57. Noise:-256</td>
+<td>Link:54. Level:-56. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+48.3°C</td>
+<td>+48.9°C</td>
 </tr>
 </table>
 </body>
