@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-09-16 03:50:13</p>
+<p>Generated at: 2024-09-16 04:05:18</p>
 <p/>
 <p/>
 <p/>
@@ -23,11 +23,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF00;"><span style="">22.5 C</span></td>
+<td style="background-color: #00FF06;"><span style="">22.3 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>49 %</td>
+<td>50 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
@@ -43,15 +43,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.88 km/h</td>
+<td>5.4 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.88 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
+<td>6.48 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-09-16 03:48:53</td>
+<td>2024-09-16 04:05:17</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -113,7 +113,7 @@ for (i = 0; i < 21; i++)
 <canvas id="hourlyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00"];
+var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00"];
 new Chart("hourlyTempChart",
 {
   type: "line",
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [25.7,24.4,23.5,23.0,23.3,23.0,23,22.1,21.8],
+      data: [25.7,24.4,23.5,23.0,23.3,23.0,22.9,22.1,21.8,22.3],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -140,7 +140,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [11.4,10.3,10.2,10.4,11.0,11.7,11.7,12.6,12.3],
+      data: [11.4,10.3,10.2,10.4,11.0,11.7,11.9,12.6,12.1,11.4],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -168,7 +168,7 @@ new Chart("hourlyTempChart",
 <canvas id="hourlyHumidityChart"></canvas>
 </div>
 <script>
-var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00"];
+var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00"];
 new Chart("hourlyHumidityChart",
 {
   type: "line",
@@ -176,7 +176,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [41,41,43,45,46,49,49,55,55],
+      data: [41,41,43,45,46,49,50,55,54,50],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.07,10.73,10.52],
+      data: [9.81,9.12,9.07,9.24,9.61,10.05,10.23,10.73,10.37,9.88],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -193,7 +193,7 @@ new Chart("hourlyHumidityChart",
     },
     {
       type: "bar",
-      data: [0.8,0,0,0,0,0,0,0,0],
+      data: [0.8,0,0,0,0,0,0,0,0,0],
       borderColor: "blue",
       backgroundColor: "lightblue",
       label: "Rainfall (mm)",
@@ -251,7 +251,7 @@ new Chart("hourlyHumidityChart",
 <canvas id="hourlyWindChart"></canvas>
 </div>
 <script>
-var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00"];
+var xLabels = ["18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00"];
 new Chart("hourlyWindChart",
 {
   type: "line",
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7.5,10.1,4.8,1.9,1.5,2.7,0.0,1.5,1.7],
+      data: [7.5,10.1,4.8,1.9,1.5,2.7,0.0,1.5,1.7,2.7],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [12.6,15.8,11.2,8.6,8.6,8.6,0.0,7.9,7.2],
+      data: [12.6,15.8,11.2,8.6,8.6,8.6,0.0,7.9,7.2,7.6],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,248,248,315,315,292,292,180,68];
+          const xPointRotation = [248,248,248,315,315,292,292,180,68,90];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WSW","WSW","NW","NW","WNW","WNW","S","ENE"];
+                const xDirection = ["WSW","WSW","WSW","NW","NW","WNW","WNW","S","ENE","E"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,1,0,4,3,0,0,3,5,0,1,41,13,21,10,0],
+      data: [0,3,0,25,15,0,0,14,27,2,0,4,4,5,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1105,7 +1105,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>8 Hours, 1 Minute</td>
+<td>8 Hours, 16 Minutes</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1113,11 +1113,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:52. Level:-58. Noise:-256</td>
+<td>Link:56. Level:-54. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+47.8°C</td>
+<td>+45.6°C</td>
 </tr>
 </table>
 </body>
