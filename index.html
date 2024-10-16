@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-10-16 03:01:39</p>
+<p>Generated at: 2024-10-16 03:16:47</p>
 <p/>
 <p/>
 <p/>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SW</td>
+<td>S</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.16 km/h</td>
+<td>9.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.16 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SW" title="SW" style="width:20px;height:20px;transform:rotate(315deg);"/></td>
+<td>9.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="S" title="S" style="width:20px;height:20px;transform:rotate(270deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-10-16 03:01:35</td>
+<td>2024-10-16 03:16:47</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2.4,0.7,0.0,0.1,0.1,1.3,2.0,5.7,7.6,6.6,8.3,6.7,6.6,5.1,5.3,3.8,1.7,1.1,2.0,1.0,3.3,5.4,5.7,6.0,5.7,4.5,6.3,7.2,8.1,5.7,6.3,6.6,8.2,9.6,11.2,10.6,9.9,7.7,10.6,11.2,10.6,9.0,7.5,6.6,6.6,7.6,6.1,5.4],
+      data: [2.4,0.7,0.0,0.1,0.1,1.3,2.0,5.7,7.6,6.6,8.3,6.7,6.6,5.1,5.3,3.8,1.7,1.1,2.0,1.0,3.3,5.4,5.7,6.0,5.7,4.5,6.3,7.2,8.1,5.7,6.3,6.6,8.2,9.6,11.2,10.6,9.9,7.7,10.6,11.2,10.6,9.0,7.5,6.6,6.6,7.6,6.1,5.9],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [7.9,5.8,0.0,4.0,3.6,4.3,8.6,13.7,15.8,14.4,15.1,15.1,15.8,12.2,10.4,9.4,6.5,7.6,7.6,8.6,11.5,12.2,11.5,12.2,15.1,11.2,12.2,15.8,23.8,16.6,14.4,15.1,17.3,19.1,23.4,21.2,21.2,17.3,20.2,23.8,20.2,18.0,15.8,18.7,14.4,14.4,15.1,9.4],
+      data: [7.9,5.8,0.0,4.0,3.6,4.3,8.6,13.7,15.8,14.4,15.1,15.1,15.8,12.2,10.4,9.4,6.5,7.6,7.6,8.6,11.5,12.2,11.5,12.2,15.1,11.2,12.2,15.8,23.8,16.6,14.4,15.1,17.3,19.1,23.4,21.2,21.2,17.3,20.2,23.8,20.2,18.0,15.8,18.7,14.4,14.4,15.1,11.5],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,248,248,90,68,68,158,135,158,135,135,158,135,135,135,135,135,158,135,135,135,135,135,158,158,135,135,135,158,202,158,135,135,158,202,180,202,180,202,202,202,202,248,202,248,248,292];
+          const xPointRotation = [68,68,248,248,90,68,68,158,135,158,135,135,158,135,135,135,135,135,158,135,135,135,135,135,158,158,135,135,135,158,202,158,135,135,158,202,180,202,180,202,202,202,202,248,202,248,248,248];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","WSW","WSW","E","ENE","ENE","SSE","SE","SSE","SE","SE","SSE","SE","SE","SE","SE","SE","SSE","SE","SE","SE","SE","SE","SSE","SSE","SE","SE","SE","SSE","SSW","SSE","SE","SE","SSE","SSW","S","SSW","S","SSW","SSW","SSW","SSW","WSW","SSW","WSW","WSW","WNW"];
+                const xDirection = ["ENE","ENE","WSW","WSW","E","ENE","ENE","SSE","SE","SSE","SE","SE","SSE","SE","SE","SE","SE","SE","SSE","SE","SE","SE","SE","SE","SSE","SSE","SE","SE","SE","SSE","SSW","SSE","SE","SE","SSE","SSW","S","SSW","S","SSW","SSW","SSW","SSW","WSW","SSW","WSW","WSW","WSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,1,3,2,7,24,20,13,17,5,5,1,1,0,0],
+      data: [0,0,0,1,1,3,12,10,7,16,11,22,6,10,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1145,11 +1145,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:39. Level:-71. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+43.5°C</td>
+<td>+41.9°C</td>
 </tr>
 </table>
 </body>
