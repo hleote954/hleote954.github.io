@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-10-26 00:32:09</p>
+<p>Generated at: 2024-10-26 00:47:36</p>
 <p/>
 <p/>
 <p/>
@@ -23,15 +23,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00CFFF;"><span style="">13.6 C</span></td>
+<td style="background-color: #00CCFF;"><span style="">13.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>73 %</td>
+<td>74 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>11.9 C</td>
+<td>11.8 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-10-26 00:31:58</td>
+<td>2024-10-26 00:47:34</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [13.97,13.91,13.94,14.13,14.56,14.80,14.95,15.80,16.50,16.90,17.11,17.53,17.61,17.66,17.30,16.76,16.10,15.81,15.83,15.85,15.51,15.36,15.38,15.10,14.77,14.46,14.22,13.84,13.36,11.70,11.14,10.37,9.95,9.59,9.01,8.10,7.91,8.61,8.52,8.01,8.25,8.59,8.74,8.61,8.51,8.44,8.50],
+      data: [13.97,13.91,13.94,14.13,14.56,14.80,14.95,15.80,16.50,16.90,17.11,17.53,17.61,17.66,17.30,16.76,16.10,15.81,15.83,15.85,15.51,15.36,15.38,15.10,14.76,14.46,14.22,13.84,13.36,11.70,11.14,10.37,9.95,9.59,9.01,8.10,7.91,8.61,8.52,8.01,8.25,8.59,8.74,8.61,8.51,8.44,8.50],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [16.6,8.6,9.7,12.6,14.4,19.8,14.4,18.4,16.6,22.0,22.3,18.0,16.6,18.4,15.1,8.6,8.6,4.3,3.6,8.6,5.8,6.5,8.6,8.6,8.6,8.6,9.7,15.1,16.6,18.0,15.8,15.8,16.6,23.4,19.1,23.0,23.8,28.8,25.2,28.1,24.1,15.8,13.0,10.8,8.6,8.6,4.3],
+      data: [16.6,8.6,9.7,12.6,14.4,19.8,14.4,18.4,16.6,22.0,22.3,18.0,16.6,18.4,15.1,8.6,8.6,4.3,3.6,8.6,5.8,6.5,8.6,8.6,8.6,8.6,9.7,15.1,16.6,18.0,15.8,15.8,16.6,23.4,19.1,23.0,23.8,28.8,25.2,28.1,24.1,15.8,13.0,10.8,8.6,8.6,5.8],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,68,68,68,68,112,112,112,135,135,135,135,135,180,202,180,180,180,270,248,292,270,292,45,292,292,292,315,22,22,22,45,22,22,292,292,292,292,292,292,292,292,292,45,45,292];
+          const xPointRotation = [68,68,68,68,68,68,112,112,112,135,135,135,135,135,180,202,180,180,180,270,248,292,270,292,45,292,292,292,315,22,22,22,45,22,22,292,292,292,292,292,292,292,292,292,45,45,315];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","ENE","ENE","ENE","ENE","ESE","ESE","ESE","SE","SE","SE","SE","SE","S","SSW","S","S","S","W","WSW","WNW","W","WNW","NE","WNW","WNW","WNW","NW","NNE","NNE","NNE","NE","NNE","NNE","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","NE","NE","WNW"];
+                const xDirection = ["ENE","ENE","ENE","ENE","ENE","ENE","ESE","ESE","ESE","SE","SE","SE","SE","SE","S","SSW","S","S","S","W","WSW","WNW","W","WNW","NE","WNW","WNW","WNW","NW","NNE","NNE","NNE","NE","NNE","NNE","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","NE","NE","NW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [5,8,8,9,5,7,8,4,3,2,0,3,7,15,10,5],
+      data: [8,12,9,4,1,0,0,0,0,0,0,4,10,25,18,9],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1145,11 +1145,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:16. Level:-94. Noise:-256</td>
+<td>Link:17. Level:-93. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+45.1°C</td>
+<td>+43.5°C</td>
 </tr>
 </table>
 </body>
