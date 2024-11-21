@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-11-21 01:38:37</p>
+<p>Generated at: 2024-11-21 01:53:49</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #009CFF;"><span style="color: #ffffff;">12.1 C</span></td>
+<td style="background-color: #00A3FF;"><span style="color: #ffffff;">12.3 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>11.7 C</td>
+<td>11.9 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,7 +39,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNW</td>
+<td>NW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -47,11 +47,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNW" title="NNW" style="width:20px;height:20px;transform:rotate(428deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-11-21 01:38:01</td>
+<td>2024-11-21 01:53:37</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [16.7,16.5,16.4,16.1,15.9,15.7,17.3,18.3,21.4,21.3,22.0,22.3,21.6,21.1,21.0,19.3,18.2,17.6,16.8,16.3,15.9,15.4,15.0,14.7,14.8,14.3,13.3,13.0,12.7,12.6,14.9,17.3,18.6,20.0,20.7,20.3,19.9,20.4,19.5,17.3,16.4,15.6,14.5,14.0,14.2,13.6,12.6,11.9],
+      data: [16.7,16.5,16.4,16.1,15.9,15.7,17.3,18.3,21.4,21.3,22.0,22.3,21.6,21.1,21.0,19.3,18.2,17.6,16.8,16.3,15.9,15.4,15.0,14.7,14.8,14.3,13.3,13.0,12.7,12.6,14.9,17.3,18.6,20.0,20.7,20.3,19.9,20.4,19.5,17.3,16.4,15.6,14.5,14.0,14.2,13.6,12.6,12.0],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -134,13 +134,13 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 11.9;
+          minValue = 12.0;
           maxValue = 22.3;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
     {
-      data: [16.1,15.6,15.3,14.9,14.8,14.4,15.1,15.7,16.5,16.9,15.8,15.9,16.3,17.1,16.6,16.5,16.2,15.6,14.7,14.1,13.7,13.4,13.3,13.2,13.1,12.5,12.1,11.9,11.8,11.7,13.2,12.9,12.8,13.4,13.4,13.7,12.7,12.6,12.3,12.4,11.9,12.0,12.1,11.9,12.2,12.0,11.4,10.8],
+      data: [16.1,15.6,15.3,14.9,14.8,14.4,15.1,15.7,16.5,16.9,15.8,15.9,16.3,17.1,16.6,16.5,16.2,15.6,14.7,14.1,13.7,13.4,13.3,13.2,13.1,12.5,12.1,11.9,11.8,11.7,13.2,12.9,12.8,13.4,13.4,13.7,12.7,12.6,12.3,12.4,11.9,12.0,12.1,11.9,12.2,12.0,11.4,10.9],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [13.66,13.23,12.97,12.71,12.59,12.31,12.83,13.27,13.85,14.16,13.22,13.24,13.62,14.40,13.94,13.93,13.68,13.18,12.47,12.04,11.74,11.55,11.50,11.42,11.37,10.94,10.65,10.52,10.48,10.39,11.44,11.07,10.95,11.40,11.34,11.58,10.83,10.78,10.58,10.74,10.44,10.53,10.59,10.52,10.71,10.57,10.18,9.86],
+      data: [13.66,13.23,12.97,12.71,12.59,12.31,12.83,13.27,13.85,14.16,13.22,13.24,13.62,14.40,13.94,13.93,13.68,13.18,12.47,12.04,11.74,11.55,11.50,11.42,11.37,10.94,10.65,10.52,10.48,10.39,11.44,11.07,10.95,11.40,11.34,11.58,10.83,10.78,10.58,10.74,10.44,10.53,10.59,10.52,10.71,10.57,10.18,9.91],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [5.8,5.8,4.7,4.3,2.5,1.8,4.3,4.3,4.3,8.6,9.0,10.8,13.0,13.0,10.4,0.0,9.4,10.8,8.6,7.9,1.8,5.0,4.3,3.2,9.7,8.6,7.6,0.0,0.0,0.0,0.0,8.6,9.0,10.4,15.1,9.7,16.6,18.4,17.3,12.2,10.4,8.3,6.5,8.6,4.0,5.4,4.3,0.0],
+      data: [5.8,5.8,4.7,4.3,2.5,1.8,4.3,4.3,4.3,8.6,9.0,10.8,13.0,13.0,10.4,0.0,9.4,10.8,8.6,7.9,1.8,5.0,4.3,3.2,9.7,8.6,7.6,0.0,0.0,0.0,0.0,8.6,9.0,10.4,15.1,9.7,16.6,18.4,17.3,12.2,10.4,8.3,6.5,8.6,4.0,5.4,4.3,2.5],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [112,292,315,315,315,315,315,68,135,158,202,180,225,202,202,248,248,292,292,45,292,292,292,337,45,45,292,248,248,248,248,68,68,248,248,225,292,248,292,292,292,248,248,248,270,270,337,337];
+          const xPointRotation = [112,292,315,315,315,315,315,68,135,158,202,180,225,202,202,248,248,292,292,45,292,292,292,337,45,45,292,248,248,248,248,68,68,248,248,225,292,248,292,292,292,248,248,248,270,270,337,315];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ESE","WNW","NW","NW","NW","NW","NW","ENE","SE","SSE","SSW","S","SW","SSW","SSW","WSW","WSW","WNW","WNW","NE","WNW","WNW","WNW","NNW","NE","NE","WNW","WSW","WSW","WSW","WSW","ENE","ENE","WSW","WSW","SW","WNW","WSW","WNW","WNW","WNW","WSW","WSW","WSW","W","W","NNW","NNW"];
+                const xDirection = ["ESE","WNW","NW","NW","NW","NW","NW","ENE","SE","SSE","SSW","S","SW","SSW","SSW","WSW","WSW","WNW","WNW","NE","WNW","WNW","WNW","NNW","NE","NE","WNW","WSW","WSW","WSW","WSW","ENE","ENE","WSW","WSW","SW","WNW","WSW","WNW","WNW","WNW","WSW","WSW","WSW","W","W","NNW","NW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,2,4,5,1,1,2,5,7,9,6,13,8,21,12,3],
+      data: [1,2,4,5,1,1,2,4,7,9,6,13,8,20,14,3],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1137,7 +1137,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>66 Days, 6 Hours</td>
+<td>66 Days, 7 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
