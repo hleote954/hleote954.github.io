@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-11-28 21:27:05</p>
+<p>Generated at: 2024-11-28 21:42:17</p>
 <p/>
 <p/>
 <p/>
@@ -27,11 +27,11 @@
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>90 %</td>
+<td>91 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>17.9 C</td>
+<td>18.0 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>E</td>
+<td>NE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>4.32 km/h</td>
+<td>7.56 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>5.04 km/h  <img src="images/Symbol_wind_speed_01.png" alt="E" title="E" style="width:20px;height:20px;transform:rotate(180deg);"/></td>
+<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NE" title="NE" style="width:20px;height:20px;transform:rotate(135deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-11-28 21:27:03</td>
+<td>2024-11-28 21:42:15</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [0,0,0,22,22,22,22,0,22,22,45,68,45,90,135,135,158,135,135,90,90,45,45,68,68,45,68,68,68,68,68,68,68,68,68,68,68,45,68,68,68,112,112,112,90,68,90,68];
+          const xPointRotation = [0,0,0,22,22,22,22,0,22,22,45,68,45,90,135,135,158,135,135,90,90,45,45,68,68,45,68,68,68,68,68,68,68,68,68,68,68,45,68,68,68,112,112,112,90,68,90,90];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["N","N","N","NNE","NNE","NNE","NNE","N","NNE","NNE","NE","ENE","NE","E","SE","SE","SSE","SE","SE","E","E","NE","NE","ENE","ENE","NE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","NE","ENE","ENE","ENE","ESE","ESE","ESE","E","ENE","E","ENE"];
+                const xDirection = ["N","N","N","NNE","NNE","NNE","NNE","N","NNE","NNE","NE","ENE","NE","E","SE","SE","SSE","SE","SE","E","E","NE","NE","ENE","ENE","NE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","NE","ENE","ENE","ENE","ESE","ESE","ESE","E","ENE","E","E"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1145,11 +1145,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:23. Level:-87. Noise:-256</td>
+<td>Link:24. Level:-86. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+39.7°C</td>
+<td>+40.8°C</td>
 </tr>
 </table>
 </body>
