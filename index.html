@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-12-05 06:31:22</p>
+<p>Generated at: 2024-12-05 06:46:34</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #006CFF;"><span style="color: #ffffff;">10.7 C</span></td>
+<td style="background-color: #0066FF;"><span style="color: #ffffff;">10.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>10.5 C</td>
+<td>10.3 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-12-05 06:30:46</td>
+<td>2024-12-05 06:45:58</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -140,7 +140,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [11.2,11.7,12.3,12.3,12.5,11.0,10.6,10.1,10.3,9.7,10.1,10.4,10.7,10.4,9.8,9.9,9.8,10.0,10.1,10.0,11.1,11.4,12.2,12.8,12.9,14.1,15.2,16.1,16.0,14.8,14.3,13.7,13.9,14.1,13.6,13.4,13.0,13.0,13.0,12.5,11.8,11.6,10.7,10.7,10.4,10.4,9.9,9.9],
+      data: [11.2,11.7,12.3,12.3,12.5,11.0,10.6,10.1,10.3,9.7,10.1,10.4,10.7,10.4,9.8,9.9,9.8,10.0,10.1,10.0,11.1,11.4,12.2,12.8,12.9,14.1,15.2,16.1,16.0,14.8,14.3,13.7,13.9,14.1,13.6,13.4,13.0,13.0,13.0,12.5,11.8,11.6,10.7,10.7,10.4,10.4,9.9,10.0],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [10.04,10.34,10.71,10.63,10.71,9.72,9.48,9.19,9.28,9.01,9.26,9.49,9.70,9.52,9.17,9.22,9.17,9.30,9.34,9.31,9.95,10.15,10.68,11.10,11.22,12.09,12.85,13.65,13.48,12.46,12.05,11.59,11.72,11.92,11.58,11.49,11.24,11.27,11.29,10.95,10.48,10.35,9.79,9.79,9.59,9.62,9.31,9.34],
+      data: [10.04,10.34,10.71,10.63,10.71,9.72,9.48,9.19,9.28,9.01,9.26,9.49,9.70,9.52,9.17,9.22,9.17,9.30,9.34,9.31,9.95,10.15,10.68,11.10,11.22,12.09,12.85,13.65,13.48,12.46,12.05,11.59,11.72,11.92,11.58,11.49,11.24,11.27,11.29,10.95,10.48,10.35,9.79,9.79,9.59,9.62,9.31,9.35],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [45,22,158,248,180,292,292,292,292,292,292,270,22,337,337,22,225,225,292,292,248,248,22,45,45,248,248,292,292,292,315,248,248,292,292,292,270,270,270,315,22,315,22,45,45,45,68,90];
+          const xPointRotation = [45,22,158,248,180,292,292,292,292,292,292,270,22,337,337,22,225,225,292,292,248,248,22,45,45,248,248,292,292,292,315,248,248,292,292,292,270,270,270,315,22,315,22,45,45,45,68,45];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["NE","NNE","SSE","WSW","S","WNW","WNW","WNW","WNW","WNW","WNW","W","NNE","NNW","NNW","NNE","SW","SW","WNW","WNW","WSW","WSW","NNE","NE","NE","WSW","WSW","WNW","WNW","WNW","NW","WSW","WSW","WNW","WNW","WNW","W","W","W","NW","NNE","NW","NNE","NE","NE","NE","ENE","E"];
+                const xDirection = ["NE","NNE","SSE","WSW","S","WNW","WNW","WNW","WNW","WNW","WNW","W","NNE","NNW","NNW","NNE","SW","SW","WNW","WNW","WSW","WSW","NNE","NE","NE","WSW","WSW","WNW","WNW","WNW","NW","WSW","WSW","WNW","WNW","WNW","W","W","W","NW","NNE","NW","NNE","NE","NE","NE","ENE","NE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2,7,11,15,8,1,0,0,1,1,2,9,9,20,11,3],
+      data: [2,7,15,18,10,1,0,0,0,1,1,8,8,17,9,2],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1145,11 +1145,11 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:18. Level:-92. Noise:-256</td>
+<td>Link:19. Level:-91. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+39.2°C</td>
+<td>+38.6°C</td>
 </tr>
 </table>
 </body>
