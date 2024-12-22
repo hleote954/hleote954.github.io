@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2024-12-22 15:36:24</p>
+<p>Generated at: 2024-12-22 15:51:48</p>
 <p/>
 <p/>
 <p/>
@@ -23,15 +23,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF47;"><span style="">20.4 C</span></td>
+<td style="background-color: #00FF43;"><span style="">20.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>32 %</td>
+<td>35 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>11.6 C</td>
+<td>12.1 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNW</td>
+<td>NNE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>4.32 km/h</td>
+<td>3.6 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>5.4 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNW" title="NNW" style="width:20px;height:20px;transform:rotate(428deg);"/></td>
+<td>3.6 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNE" title="NNE" style="width:20px;height:20px;transform:rotate(112deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2024-12-22 15:34:11</td>
+<td>2024-12-22 15:51:47</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -63,7 +63,7 @@
 </tr>
 <tr>
 <td>Max. Temperature today</td>
-<td>20.4 C</td>
+<td>20.5 C</td>
 </tr>
 <tr>
 <td>Max. Wind speed today</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [16.2,14.6,13.3,12.1,11.7,12.2,11.9,11.8,11.3,10.5,10.1,9.7,9.6,9.1,8.7,8.4,9.5,10.9,12.3,14.2,15.7,16.8,17.0,17.2,16.5,14.6,13.4,13.3,12.9,11.8,11.0,10.9,9.7,9.4,9.4,8.9,9.0,8.6,9.6,9.1,10.5,12.8,15.4,17.5,18.9,19.6,19.7,20.2],
+      data: [16.2,14.6,13.3,12.1,11.7,12.2,11.9,11.8,11.3,10.5,10.1,9.7,9.6,9.1,8.7,8.4,9.5,10.9,12.3,14.2,15.7,16.8,17.0,17.2,16.5,14.6,13.4,13.3,12.9,11.8,11.0,10.9,9.7,9.4,9.4,8.9,9.0,8.6,9.6,9.1,10.5,12.8,15.4,17.5,18.9,19.6,19.7,20.3],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -135,7 +135,7 @@ new Chart("hourlyTempChart",
             return;
           }
           minValue = 8.4;
-          maxValue = 20.2;
+          maxValue = 20.3;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
     },
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [6.90,6.88,6.83,7.28,7.65,7.85,7.40,7.13,7.23,7.19,6.91,6.74,6.66,6.57,6.47,6.29,6.37,6.24,6.08,5.97,5.76,5.84,5.93,5.85,6.04,6.12,6.14,6.10,5.85,6.01,6.19,6.36,6.36,6.33,6.15,5.86,5.64,5.43,5.48,5.68,5.70,5.81,6.02,5.66,5.36,5.56,5.95,5.60],
+      data: [6.90,6.88,6.83,7.28,7.65,7.85,7.40,7.13,7.23,7.19,6.91,6.74,6.66,6.57,6.47,6.29,6.37,6.24,6.08,5.97,5.76,5.84,5.93,5.85,6.04,6.12,6.14,6.10,5.85,6.01,6.19,6.36,6.36,6.33,6.15,5.86,5.64,5.43,5.48,5.68,5.70,5.81,6.02,5.66,5.36,5.56,5.95,5.61],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [5.1,2.8,1.6,1.8,2.4,3.1,5.9,6.2,5.3,3.7,3.0,2.7,4.0,4.0,3.5,3.2,2.7,5.7,6.9,9.0,7.6,7.3,7.6,6.6,5.3,2.8,2.3,5.4,3.4,3.6,5.4,5.6,0.6,1.4,2.4,1.9,1.4,0.8,3.7,1.6,1.5,1.6,2.3,2.2,4.0,3.7,5.1,6.5],
+      data: [5.1,2.8,1.6,1.8,2.4,3.1,5.9,6.2,5.3,3.7,3.0,2.7,4.0,4.0,3.5,3.2,2.7,5.7,6.9,9.0,7.6,7.3,7.6,6.6,5.3,2.8,2.3,5.4,3.4,3.6,5.4,5.6,0.6,1.4,2.4,1.9,1.4,0.8,3.7,1.6,1.5,1.6,2.3,2.2,4.0,3.7,5.1,6.2],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7,23,25,24,9,2,1,0,0,0,0,0,0,2,3,3],
+      data: [7,23,24,23,9,2,1,0,0,0,0,0,0,2,3,3],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1145,7 +1145,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:27. Level:-83. Noise:-256</td>
+<td>Link:26. Level:-84. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
