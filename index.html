@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-01-03 06:40:53</p>
+<p>Generated at: 2025-01-03 06:56:04</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #0000DC;"><span style="color: #ffffff;">6.5 C</span></td>
+<td style="background-color: #0000D9;"><span style="color: #ffffff;">6.4 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>6.4 C</td>
+<td>6.3 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-01-03 06:40:39</td>
+<td>2025-01-03 06:55:27</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td>Min. Temperature today</td>
-<td>6.5 C</td>
+<td>6.4 C</td>
 </tr>
 <tr>
 <td>Max. Temperature today</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [6.44,6.57,7.11,7.92,8.31,8.26,8.26,8.09,8.44,8.40,8.06,8.07,8.05,7.83,7.54,7.36,7.16,6.99,6.83,6.78,6.75,6.76,6.64,6.61,6.52,6.54,7.14,8.33,9.68,9.83,10.04,10.26,10.35,10.36,10.31,9.84,9.46,9.08,8.71,8.51,8.03,7.94,7.76,7.48,7.38,7.42,7.27,7.31],
+      data: [6.44,6.57,7.11,7.92,8.31,8.26,8.26,8.09,8.44,8.40,8.06,8.07,8.05,7.83,7.54,7.36,7.16,6.99,6.83,6.78,6.75,6.76,6.64,6.61,6.52,6.54,7.14,8.33,9.68,9.83,10.04,10.26,10.35,10.36,10.31,9.84,9.46,9.08,8.71,8.51,8.03,7.94,7.76,7.48,7.36,7.42,7.27,7.30],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2.3,2.1,4.4,4.6,5.0,6.4,7.4,8.2,7.5,4.3,0.2,0.8,0.3,0.5,0.4,0.4,0.5,2.1,0.2,1.3,1.0,2.3,2.1,2.2,1.6,2.9,4.0,4.9,6.1,6.0,6.6,5.7,5.7,4.1,2.3,2.8,2.8,1.2,0.3,1.3,0.5,0.2,0.4,0.6,1.2,2.0,1.0,0.4],
+      data: [2.3,2.1,4.4,4.6,5.0,6.4,7.4,8.2,7.5,4.3,0.2,0.8,0.3,0.5,0.4,0.4,0.5,2.1,0.2,1.3,1.0,2.3,2.1,2.2,1.6,2.9,4.0,4.9,6.1,6.0,6.6,5.7,5.7,4.1,2.3,2.8,2.8,1.2,0.3,1.3,0.5,0.2,0.4,0.6,0.5,2.0,1.0,0.5],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,68,68,112,135,135,135,135,135,112,68,68,68,68,45,45,45,68,68,68,45,45,45,45,45,68,68,112,135,135,112,135,135,68,68,68,45,45,45,45,45,45,68,45,45,45,45];
+          const xPointRotation = [68,68,68,68,112,135,135,135,135,135,112,68,68,68,68,45,45,45,68,68,68,45,45,45,45,45,68,68,112,135,135,112,135,135,68,68,68,45,45,45,45,45,45,68,68,45,45,45];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","ENE","ENE","ESE","SE","SE","SE","SE","SE","ESE","ENE","ENE","ENE","ENE","NE","NE","NE","ENE","ENE","ENE","NE","NE","NE","NE","NE","ENE","ENE","ESE","SE","SE","ESE","SE","SE","ENE","ENE","ENE","NE","NE","NE","NE","NE","NE","ENE","NE","NE","NE","NE"];
+                const xDirection = ["ENE","ENE","ENE","ENE","ESE","SE","SE","SE","SE","SE","ESE","ENE","ENE","ENE","ENE","NE","NE","NE","ENE","ENE","ENE","NE","NE","NE","NE","NE","ENE","ENE","ESE","SE","SE","ESE","SE","SE","ENE","ENE","ENE","NE","NE","NE","NE","NE","NE","ENE","ENE","NE","NE","NE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,5,22,25,9,12,17,6,1,1,0,0,0,0,0,0],
+      data: [2,3,52,24,4,5,6,2,1,0,0,0,0,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1153,7 +1153,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>8 Days, 8 Hours</td>
+<td>8 Days, 9 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1165,7 +1165,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+37.6°C</td>
+<td>+35.9°C</td>
 </tr>
 </table>
 </body>
