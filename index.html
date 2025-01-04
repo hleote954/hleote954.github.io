@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-01-04 03:29:02</p>
+<p>Generated at: 2025-01-04 03:42:48</p>
 <p/>
 <p/>
 <p/>
@@ -27,11 +27,11 @@
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>93 %</td>
+<td>94 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>9.5 C</td>
+<td>9.6 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>ESE</td>
+<td>ENE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>3.96 km/h</td>
+<td>4.32 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>3.96 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ESE" title="ESE" style="width:20px;height:20px;transform:rotate(202deg);"/></td>
+<td>5.04 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-01-04 03:28:23</td>
+<td>2025-01-04 03:42:23</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [6.76,6.64,6.61,6.52,6.54,7.14,8.33,9.68,9.83,10.04,10.26,10.35,10.36,10.31,9.84,9.46,9.08,8.71,8.51,8.03,7.94,7.76,7.48,7.36,7.42,7.27,7.29,7.19,7.32,7.99,8.96,9.92,10.80,11.10,11.16,11.17,11.19,10.83,10.35,9.99,9.41,9.04,8.87,8.63,8.59,8.68,8.54,8.61],
+      data: [6.76,6.64,6.61,6.52,6.54,7.14,8.33,9.68,9.83,10.04,10.26,10.35,10.36,10.31,9.84,9.46,9.08,8.71,8.51,8.03,7.94,7.76,7.48,7.38,7.42,7.27,7.29,7.19,7.32,7.99,8.96,9.92,10.80,11.10,11.16,11.17,11.19,10.83,10.35,9.99,9.41,9.04,8.87,8.63,8.59,8.68,8.54,8.62],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2.3,2.1,2.2,1.6,2.9,4.0,4.9,6.1,6.0,6.6,5.7,5.7,4.1,2.3,2.8,2.8,1.2,0.3,1.3,0.5,0.2,0.4,0.6,0.4,2.0,1.0,0.6,0.7,0.6,0.5,1.8,2.3,6.0,7.4,7.6,5.7,3.0,1.7,1.4,2.4,2.8,1.3,1.3,2.1,2.8,2.5,2.2,3.0],
+      data: [2.3,2.1,2.2,1.6,2.9,4.0,4.9,6.1,6.0,6.6,5.7,5.7,4.1,2.3,2.8,2.8,1.2,0.3,1.3,0.5,0.2,0.4,0.6,1.2,2.0,1.0,0.6,0.7,0.6,0.5,1.8,2.3,6.0,7.4,7.6,5.7,3.0,1.7,1.4,2.4,2.8,1.3,1.3,2.1,2.8,2.5,2.2,3.3],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [45,45,45,45,45,68,68,112,135,135,112,135,135,68,68,68,45,45,45,45,45,45,68,68,45,45,45,68,68,68,68,45,158,135,135,135,112,68,68,68,68,68,68,68,68,68,68,68];
+          const xPointRotation = [45,45,45,45,45,68,68,112,135,135,112,135,135,68,68,68,45,45,45,45,45,45,68,45,45,45,45,68,68,68,68,45,158,135,135,135,135,68,68,68,68,68,68,68,68,68,68,68];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["NE","NE","NE","NE","NE","ENE","ENE","ESE","SE","SE","ESE","SE","SE","ENE","ENE","ENE","NE","NE","NE","NE","NE","NE","ENE","ENE","NE","NE","NE","ENE","ENE","ENE","ENE","NE","SSE","SE","SE","SE","ESE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE"];
+                const xDirection = ["NE","NE","NE","NE","NE","ENE","ENE","ESE","SE","SE","ESE","SE","SE","ENE","ENE","ENE","NE","NE","NE","NE","NE","NE","ENE","NE","NE","NE","NE","ENE","ENE","ENE","ENE","NE","SSE","SE","SE","SE","SE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,4,16,30,6,9,19,13,2,1,0,0,0,0,0,0],
+      data: [0,5,23,27,9,10,15,9,2,1,0,0,0,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1165,7 +1165,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+38.1°C</td>
+<td>+38.6°C</td>
 </tr>
 </table>
 </body>
