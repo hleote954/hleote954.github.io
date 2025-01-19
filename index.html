@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-01-19 07:05:26</p>
+<p>Generated at: 2025-01-19 07:20:50</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #0000CF;"><span style="color: #ffffff;">6.1 C</span></td>
+<td style="background-color: #0000D2;"><span style="color: #ffffff;">6.2 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>6.0 C</td>
+<td>6.1 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>ENE</td>
+<td>E</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>2.88 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>2.88 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="E" title="E" style="width:20px;height:20px;transform:rotate(180deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-01-19 07:04:02</td>
+<td>2025-01-19 07:20:50</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2.2,3.2,6.6,4.2,6.0,7.7,6.4,7.6,5.5,1.4,1.1,2.4,1.9,2.0,1.4,0.8,0.5,2.2,2.3,3.0,2.4,3.1,1.6,1.4,1.5,2.0,2.9,1.2,3.8,6.6,5.7,4.5,5.5,0.4,0.1,0.1,0.0,0.3,0.0,0.3,2.2,1.6,1.7,2.2,0.7,1.1,1.7,0.6],
+      data: [2.2,3.2,6.6,4.2,6.0,7.7,6.4,7.6,5.5,1.4,1.1,2.4,1.9,2.0,1.4,0.8,0.5,2.2,2.3,3.0,2.4,3.1,1.6,1.4,1.5,2.0,2.9,1.2,3.8,6.6,5.7,4.5,5.5,0.4,0.1,0.1,0.0,0.3,0.0,0.3,2.2,1.6,1.7,2.2,0.7,1.1,1.7,1.9],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [8.6,8.6,13.7,11.2,13.7,16.9,16.6,18.4,13.0,9.7,7.2,8.6,5.4,7.6,6.8,6.8,4.3,7.6,8.6,7.9,6.8,9.0,6.8,7.9,5.4,6.8,11.2,5.8,12.2,13.0,11.2,9.0,10.8,4.3,2.9,2.9,0.0,2.9,0.0,3.6,6.8,7.9,6.1,9.0,4.0,8.6,7.2,3.6],
+      data: [8.6,8.6,13.7,11.2,13.7,16.9,16.6,18.4,13.0,9.7,7.2,8.6,5.4,7.6,6.8,6.8,4.3,7.6,8.6,7.9,6.8,9.0,6.8,7.9,5.4,6.8,11.2,5.8,12.2,13.0,11.2,9.0,10.8,4.3,2.9,2.9,0.0,2.9,0.0,3.6,6.8,7.9,6.1,9.0,4.0,8.6,7.2,7.6],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [45,68,68,68,112,112,112,135,135,112,68,45,68,45,45,45,45,45,45,45,45,45,45,68,45,68,68,90,158,135,158,202,202,202,202,202,202,248,248,248,45,68,68,68,90,68,68,68];
+          const xPointRotation = [45,68,68,68,112,112,112,135,135,112,68,45,68,45,45,45,45,45,45,45,45,45,45,68,45,68,68,90,158,135,158,202,202,202,202,202,202,248,248,248,45,68,68,68,90,68,68,45];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["NE","ENE","ENE","ENE","ESE","ESE","ESE","SE","SE","ESE","ENE","NE","ENE","NE","NE","NE","NE","NE","NE","NE","NE","NE","NE","ENE","NE","ENE","ENE","E","SSE","SE","SSE","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","NE","ENE","ENE","ENE","E","ENE","ENE","ENE"];
+                const xDirection = ["NE","ENE","ENE","ENE","ESE","ESE","ESE","SE","SE","ESE","ENE","NE","ENE","NE","NE","NE","NE","NE","NE","NE","NE","NE","NE","ENE","NE","ENE","ENE","E","SSE","SE","SSE","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","NE","ENE","ENE","ENE","E","ENE","ENE","NE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2,4,16,36,21,10,4,3,2,3,0,0,0,0,0,0],
+      data: [2,3,16,38,24,9,2,2,1,2,0,0,0,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
