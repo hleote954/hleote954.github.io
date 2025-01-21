@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-01-21 05:24:46</p>
+<p>Generated at: 2025-01-21 05:39:58</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00F4FF;"><span style="">14.7 C</span></td>
+<td style="background-color: #00F8FF;"><span style="">14.8 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,11 +31,11 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>14.4 C</td>
+<td>14.5 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
-<td>174.0 mm</td>
+<td>174.4 mm</td>
 </tr>
 <tr>
 <td>Wind dir.</td>
@@ -43,15 +43,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>8.64 km/h</td>
+<td>6.48 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>9.72 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
+<td>6.84 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-01-21 05:24:10</td>
+<td>2025-01-21 05:39:46</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -193,7 +193,7 @@ new Chart("hourlyHumidityChart",
     },
     {
       type: "bar",
-      data: [0,0,0,0,0,0,0,0,0,0,0.8,2,0,1.2,0.8,0,0,0,3.6,3.6,2,0.4,0.8,0.4,4,2.4,7.2,2,0.8,1.2,5.2,0.4,0.4,0,0.4,2,0,1.6,0,0,0,0,0.8,0.4,0,3.2,4.8,0],
+      data: [0,0,0,0,0,0,0,0,0,0,0.8,2,0,1.2,0.8,0,0,0,3.6,3.6,2,0.4,0.8,0.4,4,2.4,7.2,2,0.8,1.2,5.2,0.4,0.4,0,0.4,2,0,1.6,0,0,0,0,0.8,0.4,0,3.2,4.8,0.4],
       borderColor: "blue",
       backgroundColor: "lightblue",
       label: "Rainfall (mm)",
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1.6,1.5,2.6,3.0,1.7,4.0,5.5,6.2,6.3,5.3,3.6,3.8,1.5,1.8,5.7,6.1,8.0,10.0,9.4,9.5,9.6,9.3,9.6,9.1,9.5,5.3,2.7,7.2,8.1,7.5,8.2,4.7,6.0,4.2,6.9,5.4,1.2,3.9,5.3,6.6,7.8,9.2,8.9,11.1,10.9,12.2,7.0,4.9],
+      data: [1.6,1.5,2.6,3.0,1.7,4.0,5.5,6.2,6.3,5.3,3.6,3.8,1.5,1.8,5.7,6.1,8.0,10.0,9.4,9.5,9.6,9.3,9.6,9.1,9.5,5.3,2.7,7.2,8.1,7.5,8.2,4.7,6.0,4.2,6.9,5.4,1.2,3.9,5.3,6.6,7.8,9.2,8.9,11.1,10.9,12.2,7.0,5.4],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [7.2,7.6,8.6,7.9,6.8,13.0,13.7,14.4,12.6,17.3,9.7,9.7,9.0,10.4,15.1,15.1,15.1,19.4,19.1,19.1,19.4,25.2,25.2,19.8,17.6,15.1,15.8,22.3,17.3,16.6,18.0,15.8,14.4,11.2,15.1,20.2,9.0,14.4,12.2,14.4,17.3,22.3,23.0,22.3,21.2,31.0,21.2,10.8],
+      data: [7.2,7.6,8.6,7.9,6.8,13.0,13.7,14.4,12.6,17.3,9.7,9.7,9.0,10.4,15.1,15.1,15.1,19.4,19.1,19.1,19.4,25.2,25.2,19.8,17.6,15.1,15.8,22.3,17.3,16.6,18.0,15.8,14.4,11.2,15.1,20.2,9.0,14.4,12.2,14.4,17.3,22.3,23.0,22.3,21.2,31.0,21.2,15.1],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,1,0,1,6,14,17,40,10,9,0,0,0,0],
+      data: [0,0,0,1,0,1,7,15,18,40,10,8,0,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
