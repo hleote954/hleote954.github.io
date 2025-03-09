@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-03-09 06:24:37</p>
+<p>Generated at: 2025-03-09 06:40:13</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #002CFF;"><span style="color: #ffffff;">8.8 C</span></td>
+<td style="background-color: #0039FF;"><span style="color: #ffffff;">9.2 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,27 +31,27 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>8.6 C</td>
+<td>9.0 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
-<td>354.4 mm</td>
+<td>354.8 mm</td>
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WNW</td>
+<td>NW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>0.0 km/h</td>
+<td>1.8 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
+<td>1.8 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-03-09 06:24:37</td>
+<td>2025-03-09 06:40:13</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [15.3,15.7,16.1,17.0,18.1,17.7,17.1,15.6,13.6,14.9,15.7,15.2,14.6,14.8,14.8,14.1,13.5,14.6,15.1,14.9,13.8,11.9,13.1,12.6,12.4,12.5,14.0,13.9,13.4,13.3,13.7,13.9,13.7,14.3,14.1,11.6,10.2,10.4,9.4,10.0,10.1,10.7,11.1,10.6,9.8,10.0,9.1,8.8],
+      data: [15.3,15.7,16.1,17.0,18.1,17.7,17.1,15.6,13.6,14.9,15.7,15.2,14.6,14.8,14.8,14.1,13.5,14.6,15.1,14.9,13.8,11.9,13.1,12.6,12.4,12.5,14.0,13.9,13.4,13.3,13.7,13.9,13.7,14.3,14.1,11.6,10.2,10.4,9.4,10.0,10.1,10.7,11.1,10.6,9.8,10.0,9.1,8.9],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -134,7 +134,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 8.8;
+          minValue = 8.9;
           maxValue = 18.1;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -193,7 +193,7 @@ new Chart("hourlyHumidityChart",
     },
     {
       type: "bar",
-      data: [0,0,0,0,0,0,0.8,7.2,6,0,0,0,0,0,0,3.2,0,0,0,2.4,6.8,1.2,0,0.4,0.4,0.4,0,0,0.4,0.8,0,0,0,0,0,0.8,0,3.2,2.8,1.2,0.4,0,0,0.8,0,0.4,0.8,0],
+      data: [0,0,0,0,0,0,0.8,7.2,6,0,0,0,0,0,0,3.2,0,0,0,2.4,6.8,1.2,0,0.4,0.4,0.4,0,0,0.4,0.8,0,0,0,0,0,0.8,0,3.2,2.8,1.2,0.4,0,0,0.8,0,0.4,0.8,0.4],
       borderColor: "blue",
       backgroundColor: "lightblue",
       label: "Rainfall (mm)",
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [7.5,9.1,10.4,11.0,12.3,12.2,12.8,14.4,9.5,8.2,10.0,7.6,5.3,7.5,8.2,5.0,6.1,7.5,12.5,14.1,13.8,6.3,10.2,10.7,11.5,12.4,14.7,15.5,12.0,9.3,12.8,11.5,11.0,11.4,11.8,11.3,4.0,7.4,7.0,9.1,10.1,8.0,6.9,7.9,3.2,6.0,0.1,0.1],
+      data: [7.5,9.1,10.4,11.0,12.3,12.2,12.8,14.4,9.5,8.2,10.0,7.6,5.3,7.5,8.2,5.0,6.1,7.5,12.5,14.1,13.8,6.3,10.2,10.7,11.5,12.4,14.7,15.5,12.0,9.3,12.8,11.5,11.0,11.4,11.8,11.3,4.0,7.4,7.0,9.1,10.1,8.0,6.9,7.9,3.2,6.0,0.1,0.3],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [15.1,21.6,24.8,23.4,26.6,24.5,28.4,30.2,30.6,19.4,21.2,17.3,15.1,19.1,19.4,16.6,15.8,19.8,29.5,31.7,28.8,15.8,22.0,23.4,28.4,28.8,31.3,29.5,27.4,27.4,28.4,27.7,23.0,25.2,25.2,30.2,9.7,25.9,18.0,25.9,22.0,17.3,17.3,19.4,20.9,20.2,16.6,3.6],
+      data: [15.1,21.6,24.8,23.4,26.6,24.5,28.4,30.2,30.6,19.4,21.2,17.3,15.1,19.1,19.4,16.6,15.8,19.8,29.5,31.7,28.8,15.8,22.0,23.4,28.4,28.8,31.3,29.5,27.4,27.4,28.4,27.7,23.0,25.2,25.2,30.2,9.7,25.9,18.0,25.9,22.0,17.3,17.3,19.4,20.9,20.2,16.6,8.6],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,2,4,8,10,25,17,20,7,4,2,0],
+      data: [0,0,0,0,0,2,3,8,9,24,16,19,7,5,5,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
