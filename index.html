@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-04-01 05:30:29</p>
+<p>Generated at: 2025-04-01 05:45:41</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00CFFF;"><span style="">13.6 C</span></td>
+<td style="background-color: #00CCFF;"><span style="">13.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>13.3 C</td>
+<td>13.2 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,7 +39,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>NNE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -47,11 +47,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNE" title="NNE" style="width:20px;height:20px;transform:rotate(112deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-04-01 05:30:29</td>
+<td>2025-04-01 05:45:41</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [8.54,8.15,8.43,7.82,7.41,6.08,7.77,8.69,7.70,8.15,8.84,7.37,7.58,7.90,9.79,9.76,8.69,7.86,7.16,7.79,8.87,9.39,9.36,8.86,8.45,7.60,7.13,7.62,8.69,8.98,9.32,9.49,9.71,10.06,10.63,11.15,11.57,11.81,11.73,11.72,11.71,11.28,11.21,11.42,11.77,11.55,10.97,11.20],
+      data: [8.54,8.15,8.43,7.82,7.41,6.08,7.77,8.69,7.70,8.15,8.84,7.37,7.58,7.90,9.79,9.76,8.69,7.86,7.16,7.79,8.87,9.39,9.36,8.86,8.45,7.60,7.13,7.62,8.69,8.98,9.32,9.49,9.71,10.06,10.63,11.15,11.57,11.81,11.73,11.72,11.71,11.28,11.21,11.42,11.77,11.55,10.96,11.20],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [7.6,4.3,8.6,13.0,18.4,24.8,23.8,20.2,21.6,23.0,20.2,18.4,18.4,10.8,5.8,4.0,9.0,9.4,9.7,12.2,13.7,13.0,15.8,14.4,9.0,11.5,14.4,24.8,27.7,27.4,28.8,28.1,26.6,30.6,24.5,20.9,14.4,9.7,7.9,3.6,2.2,0.0,0.0,4.3,0.0,0.0,0.0,0.0],
+      data: [7.6,4.3,8.6,13.0,18.4,24.8,23.8,20.2,21.6,23.0,20.2,18.4,18.4,10.8,5.8,4.0,9.0,9.4,9.7,12.2,13.7,13.0,15.8,14.4,9.0,11.5,14.4,24.8,27.7,27.4,28.8,28.1,26.6,30.6,24.5,20.9,14.4,9.7,7.9,3.6,2.2,0.0,0.0,4.3,0.0,0.0,0.0,2.5],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [22,22,22,45,45,68,112,135,158,158,135,90,90,90,248,248,68,68,68,68,68,68,68,68,68,68,68,90,90,68,68,112,112,135,135,135,158,90,112,112,112,112,112,248,248,248,248,248];
+          const xPointRotation = [22,22,22,45,45,68,112,135,158,158,135,90,90,90,248,248,68,68,68,68,68,68,68,68,68,68,68,90,90,68,68,112,112,135,135,135,158,90,112,112,112,112,112,248,248,248,248,22];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["NNE","NNE","NNE","NE","NE","ENE","ESE","SE","SSE","SSE","SE","E","E","E","WSW","WSW","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","E","E","ENE","ENE","ESE","ESE","SE","SE","SE","SSE","E","ESE","ESE","ESE","ESE","ESE","WSW","WSW","WSW","WSW","WSW"];
+                const xDirection = ["NNE","NNE","NNE","NE","NE","ENE","ESE","SE","SSE","SSE","SE","E","E","E","WSW","WSW","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","E","E","ENE","ENE","ESE","ESE","SE","SE","SE","SSE","E","ESE","ESE","ESE","ESE","ESE","WSW","WSW","WSW","WSW","NNE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1153,7 +1153,7 @@ new Chart("monthlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>12 Days, 0 Hours</td>
+<td>12 Days, 1 Hour</td>
 </tr>
 <tr>
 <td>Free disk space</td>
