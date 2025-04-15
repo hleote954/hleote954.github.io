@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-04-15 01:23:02</p>
+<p>Generated at: 2025-04-15 01:38:26</p>
 <p/>
 <p/>
 <p/>
@@ -27,7 +27,7 @@
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>90 %</td>
+<td>91 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>WNW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>4.32 km/h</td>
+<td>0.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>4.68 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-04-15 01:22:48</td>
+<td>2025-04-15 01:38:24</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -121,7 +121,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [13.1,12.8,12.8,12.8,15.9,19.7,20.5,20.6,20.4,20.4,19.8,22.1,22.7,21.9,20.3,18.5,16.8,15.8,15.4,15.3,14.6,13.9,13.7,13.7,13.5,13.6,13.1,13.2,14.8,16.4,17.1,18.0,18.3,16.2,17.5,17.2,15.9,13.9,13.7,14.5,14.0,13.3,12.9,12.6,12.3,12.3],
+      data: [13.1,12.8,12.8,12.8,15.9,19.7,20.5,20.6,20.4,20.4,19.8,22.1,22.7,21.9,20.3,18.5,16.8,15.8,15.4,15.3,14.6,13.9,13.7,13.7,13.5,13.6,13.1,13.2,14.8,16.4,17.1,18.0,18.3,16.2,17.5,17.2,15.9,13.9,13.7,14.5,14.0,13.3,12.9,12.6,12.3,12.2],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -134,7 +134,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 12.3;
+          minValue = 12.2;
           maxValue = 22.7;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [10.95,10.75,10.77,10.65,11.79,13.05,13.01,13.07,13.27,13.78,13.80,13.65,12.12,11.75,11.94,11.68,11.60,11.56,11.56,10.99,10.86,10.80,10.63,10.68,10.52,10.48,10.15,9.96,10.25,10.48,10.62,11.18,11.28,12.00,11.95,12.28,12.16,11.41,11.13,11.66,11.12,10.27,9.93,9.83,9.76,9.76],
+      data: [10.95,10.75,10.77,10.65,11.79,13.05,13.01,13.07,13.27,13.78,13.80,13.65,12.12,11.75,11.94,11.68,11.60,11.56,11.56,10.99,10.86,10.80,10.63,10.68,10.52,10.48,10.15,9.96,10.25,10.48,10.62,11.18,11.28,12.00,11.95,12.28,12.16,11.41,11.13,11.66,11.12,10.27,9.93,9.83,9.76,9.73],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
