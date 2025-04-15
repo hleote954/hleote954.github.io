@@ -40,3 +40,6 @@ table[id="tab_climate"] td,th {
     background-color: #D6EEEE;
   }
 
+table[id="tab_top5_days"] td {
+    text-align: right;
+}
