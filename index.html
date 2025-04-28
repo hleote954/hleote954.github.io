@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-04-28 01:22:51</p>
+<p>Generated at: 2025-04-28 01:38:03</p>
 <p/>
 <p/>
 <p/>
@@ -27,11 +27,11 @@
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>85 %</td>
+<td>88 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>15.4 C</td>
+<td>15.7 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNW</td>
+<td>E</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>0.0 km/h</td>
+<td>3.6 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNW" title="NNW" style="width:20px;height:20px;transform:rotate(428deg);"/></td>
+<td>3.6 km/h  <img src="images/Symbol_wind_speed_01.png" alt="E" title="E" style="width:20px;height:20px;transform:rotate(180deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-04-28 01:22:13</td>
+<td>2025-04-28 01:37:49</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
 <td>Max. Wind speed today</td>
-<td>0.0 km/h</td>
+<td>4.3 km/h</td>
 </tr>
 <tr>
 <td>Precipitation today</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.04,8.79,8.90,9.37,9.28,9.31,9.38,9.72,10.02,9.87,9.82,10.77,11.02,10.81,10.84,10.69,10.44,10.21,10.03,9.96,9.93,9.94,9.94,9.88,9.83,9.70,9.53,9.87,9.83,9.54,9.86,10.79,11.56,12.08,12.41,12.52,12.64,12.33,13.13,12.64,12.37,12.61,12.49,11.97,11.92],
+      data: [9.04,8.79,8.90,9.37,9.28,9.31,9.38,9.72,10.02,9.87,9.82,10.77,11.02,10.81,10.84,10.69,10.44,10.21,10.03,9.96,9.93,9.94,9.94,9.88,9.83,9.70,9.53,9.87,9.83,9.54,9.86,10.79,11.56,12.08,12.41,12.52,12.64,12.33,13.13,12.64,12.37,12.61,12.49,11.97,11.90],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -267,7 +267,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [15.8,8.6,8.6,9.0,13.0,11.2,10.4,11.2,13.0,15.1,16.6,19.4,17.6,21.2,19.1,14.4,12.2,10.8,9.7,6.5,10.8,7.9,7.9,6.5,7.9,8.6,9.0,11.2,12.2,15.1,18.0,19.8,21.2,22.3,17.3,15.1,9.0,7.9,9.0,8.6,9.0,6.1,7.9,4.0,0.0],
+      data: [15.8,8.6,8.6,9.0,13.0,11.2,10.4,11.2,13.0,15.1,16.6,19.4,17.6,21.2,19.1,14.4,12.2,10.8,9.7,6.5,10.8,7.9,7.9,6.5,7.9,8.6,9.0,11.2,12.2,15.1,18.0,19.8,21.2,22.3,17.3,15.1,9.0,7.9,9.0,8.6,9.0,6.1,7.9,4.0,4.3],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [292,292,315,180,158,158,158,180,180,180,248,292,292,292,292,292,292,248,292,337,45,315,45,68,45,45,68,68,68,90,158,158,135,135,135,158,202,180,180,270,248,22,292,337,337];
+          const xPointRotation = [292,292,315,180,158,158,158,180,180,180,248,292,292,292,292,292,292,248,292,337,45,315,45,68,45,45,68,68,68,90,158,158,135,135,135,158,202,180,180,270,248,22,292,337,90];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WNW","WNW","NW","S","SSE","SSE","SSE","S","S","S","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","WNW","NNW","NE","NW","NE","ENE","NE","NE","ENE","ENE","ENE","E","SSE","SSE","SE","SE","SE","SSE","SSW","S","S","W","WSW","NNE","WNW","NNW","NNW"];
+                const xDirection = ["WNW","WNW","NW","S","SSE","SSE","SSE","S","S","S","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","WNW","NNW","NE","NW","NE","ENE","NE","NE","ENE","ENE","ENE","E","SSE","SSE","SE","SE","SE","SSE","SSW","S","S","W","WSW","NNE","WNW","NNW","E"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,2,5,12,8,8,19,16,8,7,3,6,2,2,1,0],
+      data: [0,2,5,12,8,8,20,16,8,7,3,6,2,2,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
