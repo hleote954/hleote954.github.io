@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-05-10 01:40:02</p>
+<p>Generated at: 2025-05-10 01:58:42</p>
 <p/>
 <p/>
 <p/>
@@ -51,7 +51,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-05-10 01:39:24</td>
+<td>2025-05-10 01:58:36</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,68,270,68,202,158,158,135,202,180,180,202,202,202,202,248,292,292,315,315,315,315,315,315,315,315,158,180,180,202,202,202,202,225,270,248,248,248,315,248,248,248,248,248];
+          const xPointRotation = [68,68,68,270,68,202,158,158,135,202,180,180,202,202,202,202,248,292,292,315,315,315,315,315,315,315,315,158,180,180,202,202,202,202,225,270,248,248,248,315,248,248,248,248,292];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","ENE","W","ENE","SSW","SSE","SSE","SE","SSW","S","S","SSW","SSW","SSW","SSW","WSW","WNW","WNW","NW","NW","NW","NW","NW","NW","NW","NW","SSE","S","S","SSW","SSW","SSW","SSW","SW","W","WSW","WSW","WSW","NW","WSW","WSW","WSW","WSW","WSW"];
+                const xDirection = ["ENE","ENE","ENE","W","ENE","SSW","SSE","SSE","SE","SSW","S","S","SSW","SSW","SSW","SSW","WSW","WNW","WNW","NW","NW","NW","NW","NW","NW","NW","NW","SSE","S","S","SSW","SSW","SSW","SSW","SW","W","WSW","WSW","WSW","NW","WSW","WSW","WSW","WSW","WNW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1313,11 +1313,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:24. Level:-86. Noise:-256</td>
+<td>Link:25. Level:-85. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+42.9°C</td>
+<td>+43.5°C</td>
 </tr>
 </table>
 </body>
