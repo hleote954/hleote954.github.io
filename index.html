@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-09-19 21:30:06</p>
+<p>Generated at: 2025-09-19 21:45:34</p>
 <p/>
 <p/>
 <p/>
@@ -23,7 +23,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #40FF00;"><span style="">24.4 C</span></td>
+<td style="background-color: #39FF00;"><span style="">24.2 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>21.2 C</td>
+<td>21.0 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -43,15 +43,15 @@
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>3.96 km/h</td>
+<td>3.24 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>3.96 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
+<td>3.24 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-09-19 21:29:32</td>
+<td>2025-09-19 21:45:32</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [13.43,14.01,14.33,14.43,14.13,14.05,14.27,13.83,13.74,13.47,13.46,16.27,18.30,17.33,17.52,17.60,17.86,18.47,19.03,19.47,19.36,18.69,18.20,17.70,17.64,17.90,17.58,17.39,17.03,16.63,17.05,17.44,17.35,17.44,17.50,17.62,17.92,18.12,18.36,18.47,18.68,19.15,18.93,18.57,18.43,18.17,18.01,17.93],
+      data: [13.43,14.01,14.33,14.43,14.13,14.05,14.27,13.83,13.74,13.47,13.46,16.27,18.30,17.33,17.52,17.60,17.86,18.47,19.03,19.47,19.36,18.69,18.20,17.70,17.64,17.90,17.58,17.39,17.03,16.63,17.05,17.44,17.35,17.44,17.50,17.62,17.92,18.12,18.36,18.47,18.68,19.15,18.93,18.57,18.43,18.17,18.01,17.87],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1.2,0.1,0.4,1.2,0.8,1.7,1.9,2.1,0.5,1.4,2.5,10.0,12.6,13.5,11.3,11.0,9.0,9.6,7.7,5.0,3.6,1.2,1.5,0.5,0.1,1.0,1.8,3.3,3.6,2.4,5.5,1.5,0.2,0.3,2.0,4.6,7.7,9.0,8.8,12.4,9.9,8.3,7.6,7.5,5.8,4.0,3.6,2.4],
+      data: [1.2,0.1,0.4,1.2,0.8,1.7,1.9,2.1,0.5,1.4,2.5,10.0,12.6,13.5,11.3,11.0,9.0,9.6,7.7,5.0,3.6,1.2,1.5,0.5,0.1,1.0,1.2,3.3,3.6,2.4,5.5,1.5,0.2,0.3,2.0,4.6,7.7,9.0,8.8,12.4,9.9,8.3,7.6,7.5,5.8,4.0,3.6,2.1],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [292,292,292,68,68,68,68,68,292,292,68,90,112,90,135,135,112,135,135,135,135,180,180,158,180,180,292,68,68,68,68,45,0,0,68,68,90,68,90,90,68,112,68,135,135,90,68,68];
+          const xPointRotation = [292,292,292,68,68,68,68,68,292,292,68,90,112,90,135,135,112,135,135,135,135,180,180,158,180,180,292,68,68,68,68,45,0,0,68,68,90,68,90,90,90,112,68,135,90,90,68,68];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WNW","WNW","WNW","ENE","ENE","ENE","ENE","ENE","WNW","WNW","ENE","E","ESE","E","SE","SE","ESE","SE","SE","SE","SE","S","S","SSE","S","S","WNW","ENE","ENE","ENE","ENE","NE","N","N","ENE","ENE","E","ENE","E","E","ENE","ESE","ENE","SE","SE","E","ENE","ENE"];
+                const xDirection = ["WNW","WNW","WNW","ENE","ENE","ENE","ENE","ENE","WNW","WNW","ENE","E","ESE","E","SE","SE","ESE","SE","SE","SE","SE","S","S","SSE","S","S","WNW","ENE","ENE","ENE","ENE","NE","N","N","ENE","ENE","E","ENE","E","E","E","ESE","ENE","SE","E","E","ENE","ENE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,2,5,26,19,15,15,7,4,2,0,0,0,3,1,0],
+      data: [2,1,6,34,27,15,9,2,1,0,0,0,0,1,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1345,7 +1345,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>143 Days, 21 Hours</td>
+<td>143 Days, 22 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1357,7 +1357,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+49.4°C</td>
+<td>+47.8°C</td>
 </tr>
 </table>
 </body>
