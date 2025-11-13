@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2025-11-13 08:22:55</p>
+<p>Generated at: 2025-11-13 08:38:06</p>
 <p/>
 <p/>
 <p/>
@@ -39,19 +39,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>ESE</td>
+<td>SSE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>6.48 km/h</td>
+<td>11.88 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>6.84 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ESE" title="ESE" style="width:20px;height:20px;transform:rotate(202deg);"/></td>
+<td>12.6 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2025-11-13 08:22:17</td>
+<td>2025-11-13 08:37:29</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -184,7 +184,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [13.32,14.61,14.78,14.81,14.55,14.30,13.84,13.70,13.18,12.68,12.07,11.66,11.56,12.85,13.77,14.28,14.36,14.41,14.54,14.48,14.26,14.69,14.40,14.79,14.87,14.61,14.87,15.53,15.55,15.32,15.12,15.01,13.97,13.84,13.85,14.29,14.41,14.92,15.57,15.74,15.99,15.97,15.83,15.87,15.81,15.64,15.51,15.22],
+      data: [13.32,14.61,14.78,14.81,14.55,14.30,13.84,13.70,13.18,12.68,12.07,11.66,11.56,12.85,13.77,14.28,14.36,14.41,14.54,14.48,14.26,14.69,14.40,14.79,14.87,14.61,14.87,15.53,15.55,15.32,15.12,15.01,13.97,13.84,13.85,14.29,14.41,14.92,15.57,15.74,15.99,15.97,15.83,15.87,15.81,15.64,15.51,15.24],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -259,7 +259,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0.9,6.6,7.7,7.0,7.4,7.1,7.0,6.5,5.4,3.8,3.5,2.5,2.9,5.2,5.3,7.9,7.2,7.9,8.3,7.3,7.5,9.4,11.1,11.8,12.1,12.3,11.6,11.4,10.4,10.7,11.2,9.5,5.0,0.6,1.1,2.2,4.9,7.0,8.7,12.3,9.9,12.6,13.9,13.6,11.5,12.2,12.4,10.7],
+      data: [0.9,6.6,7.7,7.0,7.4,7.1,7.0,6.5,5.4,3.8,3.5,2.5,2.9,5.2,5.3,7.9,7.2,7.9,8.3,7.3,7.5,9.4,11.1,11.8,12.1,12.3,11.6,11.4,10.4,10.7,11.2,9.5,5.0,0.6,1.1,2.2,4.9,7.0,8.7,12.3,9.9,12.6,13.9,13.6,11.9,12.2,12.4,10.6],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -289,7 +289,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [90,135,135,135,112,68,135,90,112,90,90,68,68,180,202,202,202,202,180,180,180,158,202,202,202,202,202,202,180,202,180,202,270,270,68,68,68,112,135,135,158,135,135,135,135,135,135,202];
+          const xPointRotation = [90,135,135,135,112,68,135,90,112,90,90,68,68,180,202,202,202,202,180,180,180,158,202,202,202,202,202,202,180,202,180,202,270,270,68,68,68,112,135,135,158,135,135,135,158,158,135,180];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -315,7 +315,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["E","SE","SE","SE","ESE","ENE","SE","E","ESE","E","E","ENE","ENE","S","SSW","SSW","SSW","SSW","S","S","S","SSE","SSW","SSW","SSW","SSW","SSW","SSW","S","SSW","S","SSW","W","W","ENE","ENE","ENE","ESE","SE","SE","SSE","SE","SE","SE","SE","SE","SE","SSW"];
+                const xDirection = ["E","SE","SE","SE","ESE","ENE","SE","E","ESE","E","E","ENE","ENE","S","SSW","SSW","SSW","SSW","S","S","S","SSE","SSW","SSW","SSW","SSW","SSW","SSW","S","SSW","S","SSW","W","W","ENE","ENE","ENE","ESE","SE","SE","SSE","SE","SE","SE","SSE","SSE","SE","S"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -349,7 +349,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,1,1,6,7,12,17,17,16,17,3,2,1,1,0,0],
+      data: [0,0,0,3,3,16,24,23,16,13,2,0,1,0,0,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1355,7 +1355,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>198 Days, 9 Hours</td>
+<td>198 Days, 10 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1367,7 +1367,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+41.3°C</td>
+<td>+39.7°C</td>
 </tr>
 </table>
 </body>
