@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2026-01-04 13:40:19</p>
+<p>Generated at: 2026-01-04 13:55:33</p>
 <p/>
 <p/>
 <p/>
@@ -25,15 +25,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF88;"><span style="">18.5 C</span></td>
+<td style="background-color: #00FF76;"><span style="">19.0 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>66 %</td>
+<td>64 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>14.9 C</td>
+<td>15.0 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -41,19 +41,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>N</td>
+<td>NNW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>7.56 km/h</td>
+<td>7.92 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="N" title="N" style="width:20px;height:20px;transform:rotate(90deg);"/></td>
+<td>8.64 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNW" title="NNW" style="width:20px;height:20px;transform:rotate(428deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-01-04 13:39:07</td>
+<td>2026-01-04 13:55:31</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -65,7 +65,7 @@
 </tr>
 <tr>
 <td>Max. Temperature today</td>
-<td>18.8 C</td>
+<td>19.0 C</td>
 </tr>
 <tr>
 <td>Max. Wind Speed today</td>
@@ -92,7 +92,7 @@
 </tr>
 <tr>
 <td>Max. Temperature</td>
-<td style="background-color: #00FF7D;"><span style="">18.8 C</span></td>
+<td style="background-color: #00FF76;"><span style="">19.0 C</span></td>
 </tr>
 <tr>
 <td>Max. Wind Speed</td>
@@ -218,7 +218,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [12.88,12.55,11.94,11.72,11.66,11.77,11.49,11.76,11.56,11.99,12.20,12.50,12.34,12.49,12.44,12.51,12.47,12.37,12.37,11.73,12.62,12.50,11.24,11.50,12.29,11.87,11.65,12.08,12.25,12.15,12.16,11.87,11.59,11.32,11.21,10.95,10.96,10.73,10.78,10.74,10.52,10.37,10.27,10.35,10.55,10.83,10.89,10.56],
+      data: [12.88,12.55,11.94,11.72,11.66,11.77,11.49,11.76,11.56,11.99,12.20,12.50,12.34,12.49,12.44,12.51,12.47,12.37,12.37,11.73,12.62,12.50,11.24,11.50,12.29,11.87,11.65,12.08,12.25,12.15,12.16,11.87,11.59,11.32,11.21,10.94,10.96,10.73,10.78,10.74,10.52,10.37,10.27,10.35,10.55,10.83,10.89,10.56],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -323,7 +323,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [135,135,202,202,158,135,135,135,135,158,158,158,158,158,135,158,158,202,202,180,135,180,158,135,135,135,68,90,68,68,68,68,68,68,68,68,68,45,68,0,22,0,22,22,0,22,315,22];
+          const xPointRotation = [135,135,202,202,158,135,135,135,135,158,158,158,158,158,135,158,158,202,202,180,135,180,158,135,135,135,68,90,68,68,68,68,68,68,68,68,68,45,68,0,22,45,22,22,0,22,337,22];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -349,7 +349,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["SE","SE","SSW","SSW","SSE","SE","SE","SE","SE","SSE","SSE","SSE","SSE","SSE","SE","SSE","SSE","SSW","SSW","S","SE","S","SSE","SE","SE","SE","ENE","E","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","NE","ENE","N","NNE","N","NNE","NNE","N","NNE","NW","NNE"];
+                const xDirection = ["SE","SE","SSW","SSW","SSE","SE","SE","SE","SE","SSE","SSE","SSE","SSE","SSE","SE","SSE","SSE","SSW","SSW","S","SE","S","SSE","SE","SE","SE","ENE","E","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","NE","ENE","N","NNE","NE","NNE","NNE","N","NNE","NNW","NNE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -383,7 +383,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [3,5,6,14,8,8,16,15,8,9,2,1,0,2,2,2],
+      data: [14,17,15,18,5,2,2,2,1,1,0,0,1,6,8,9],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
