@@ -208,8 +208,7 @@ table[id="tab_top5_days"] td {
     position: relative;
     height: 450px;
     width: 100%;
-    max-width: 1000px;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     background: var(--card-bg);
     border-radius: 12px;
     padding: 1rem;
@@ -217,14 +216,12 @@ table[id="tab_top5_days"] td {
 }
 
 .section-charts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    display: block;
 }
 
 .section-charts .chart_container {
-    flex: 1;
-    min-width: 400px;
+    display: block;
+    margin-bottom: 2rem;
 }
 
 /* ========== Responsive Tables ========== */
@@ -265,16 +262,7 @@ table[id="tab_top5_days"] td {
     }
 
     .chart_container {
-        height: 300px;
-        min-width: 280px;
-    }
-
-    .section-charts {
-        flex-direction: column;
-    }
-
-    .section-charts .chart_container {
-        min-width: 100%;
+        height: 350px;
     }
 }
 
@@ -292,7 +280,7 @@ table[id="tab_top5_days"] td {
     }
 
     .chart_container {
-        height: 250px;
+        height: 280px;
         padding: 0.5rem;
     }
 }
