@@ -9,7 +9,7 @@
 <body>
 <h1>Bemposta Weather</h1>
 
-<p>Generated at: 2026-05-02 11:38:20</p>
+<p>Generated at: 2026-05-02 12:22:46</p>
 <p/>
 <p/>
 <p/>
@@ -25,15 +25,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF21;"><span style="">21.5 C</span></td>
+<td style="background-color: #00FF17;"><span style="">21.8 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>54 %</td>
+<td>52 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>15.2 C</td>
+<td>15.1 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -41,19 +41,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>SW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>7.2 km/h</td>
+<td>9.0 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>7.92 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>9.72 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SW" title="SW" style="width:20px;height:20px;transform:rotate(315deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-05-02 11:37:47</td>
+<td>2026-05-02 12:19:43</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -146,7 +146,7 @@ for (i = 0; i < 21; i++)
 <canvas id="hourlyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00"];
+var xLabels = ["12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00"];
 new Chart("hourlyTempChart",
 {
   type: "line",
@@ -154,7 +154,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [20.0,20.7,21.0,20.6,20.0,20.4,20.7,19.1,17.4,16.3,15.6,14.8,14.5,14.1,13.4,12.9,12.4,12.2,11.9,14.2,15.5,18.5,19.9,20.3,21.7,21.3,21.9,22.2,22.2,21.5,20.3,19.0,17.3,16.8,16.5,16.3,16.0,15.5,15.3,15.3,14.7,14.6,14.7,14.3,15.3,18.4,21.4,21.6],
+      data: [20.7,21.0,20.6,20.0,20.4,20.7,19.1,17.4,16.3,15.6,14.8,14.5,14.1,13.4,12.9,12.4,12.2,11.9,14.2,15.5,18.5,19.9,20.3,21.7,21.3,21.9,22.2,22.2,21.5,20.3,19.0,17.3,16.8,16.5,16.3,16.0,15.5,15.3,15.3,14.7,14.7,14.7,14.3,15.3,18.4,21.4,21.5,21.6],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -173,7 +173,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [13.9,13.4,13.2,13.3,13.2,14.1,11.9,10.9,10.6,11.6,12.1,12.5,12.5,12.2,11.1,10.4,10.1,9.9,9.6,11.1,11.3,12.7,11.1,10.1,10.8,12.1,12.5,12.7,12.4,11.5,11.0,11.3,11.8,11.9,11.2,11.1,11.6,12.1,11.5,11.1,11.3,11.2,11.3,11.3,11.7,12.1,11.9,11.3],
+      data: [13.4,13.2,13.3,13.2,14.1,11.9,10.9,10.6,11.6,12.1,12.5,12.5,12.2,11.1,10.4,10.1,9.9,9.6,11.1,11.3,12.7,11.1,10.1,10.8,12.1,12.5,12.7,12.4,11.5,11.0,11.3,11.8,11.9,11.2,11.1,11.6,12.1,11.5,11.1,11.3,11.2,11.3,11.3,11.7,12.1,11.9,11.5,11.6],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -201,7 +201,7 @@ new Chart("hourlyTempChart",
 <canvas id="hourlyHumidityChart"></canvas>
 </div>
 <script>
-var xLabels = ["11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00"];
+var xLabels = ["12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00"];
 new Chart("hourlyHumidityChart",
 {
   type: "line",
@@ -209,7 +209,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [68,63,61,63,65,67,57,59,64,74,80,86,88,88,86,85,86,86,86,82,76,69,57,52,50,56,55,55,54,53,55,61,70,73,71,71,75,80,78,76,80,80,80,82,79,67,55,52],
+      data: [63,61,63,65,67,57,59,64,74,80,86,88,88,86,85,86,86,86,82,76,69,57,52,50,56,55,55,54,53,55,61,70,73,71,71,75,80,78,76,80,80,80,82,79,67,55,53,53],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -217,7 +217,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [11.72,11.32,11.15,11.28,11.24,11.85,10.28,9.68,9.51,10.25,10.61,10.87,10.95,10.68,9.97,9.58,9.38,9.27,9.11,9.99,10.04,10.92,9.77,9.14,9.52,10.41,10.63,10.80,10.58,10.02,9.69,9.91,10.32,10.43,9.96,9.86,10.21,10.56,10.20,9.93,10.08,10.00,10.06,10.10,10.30,10.52,10.28,9.85],
+      data: [11.32,11.15,11.28,11.24,11.85,10.28,9.68,9.51,10.25,10.61,10.87,10.95,10.68,9.97,9.58,9.38,9.27,9.11,9.99,10.04,10.92,9.77,9.14,9.52,10.41,10.63,10.80,10.58,10.02,9.69,9.91,10.32,10.43,9.96,9.86,10.21,10.56,10.20,9.93,10.08,10.04,10.06,10.10,10.30,10.52,10.28,10.01,10.03],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -284,7 +284,7 @@ new Chart("hourlyHumidityChart",
 <canvas id="hourlyWindChart"></canvas>
 </div>
 <script>
-var xLabels = ["11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00"];
+var xLabels = ["12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00"];
 new Chart("hourlyWindChart",
 {
   type: "line",
@@ -292,7 +292,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [8.7,8.3,8.4,10.2,9.1,9.2,9.8,10.8,5.3,3.0,2.0,3.2,2.1,1.4,0.2,0.9,0.0,0.0,0.0,0.3,2.1,3.1,5.9,6.3,8.0,9.4,9.4,9.5,8.9,10.5,11.3,6.6,6.0,4.7,1.7,0.0,0.7,1.6,1.1,0.4,0.5,1.0,2.1,2.1,1.1,1.8,4.7,5.6],
+      data: [8.3,8.4,10.2,9.1,9.2,9.8,10.8,5.3,3.0,2.0,3.2,2.1,1.4,0.2,0.9,0.0,0.0,0.0,0.3,2.1,3.1,5.9,6.3,8.0,9.4,9.4,9.5,8.9,10.5,11.3,6.6,6.0,4.7,1.7,0.0,0.7,1.6,1.1,0.4,0.5,0.8,2.1,2.1,1.1,1.8,4.7,6.5,7.3],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -300,7 +300,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [16.6,15.1,15.8,19.1,18.4,19.1,23.0,21.2,10.4,9.7,8.6,9.0,6.8,8.6,4.0,4.0,0.0,0.0,0.0,4.3,8.6,9.0,10.4,12.2,15.8,17.3,16.6,18.4,18.4,20.2,20.9,14.4,11.2,13.7,7.9,0.0,7.9,8.6,5.8,3.6,4.3,4.3,6.8,8.6,6.5,6.8,14.0,13.7],
+      data: [15.1,15.8,19.1,18.4,19.1,23.0,21.2,10.4,9.7,8.6,9.0,6.8,8.6,4.0,4.0,0.0,0.0,0.0,4.3,8.6,9.0,10.4,12.2,15.8,17.3,16.6,18.4,18.4,20.2,20.9,14.4,11.2,13.7,7.9,0.0,7.9,8.6,5.8,3.6,4.3,4.3,6.8,8.6,6.5,6.8,14.0,13.7,11.5],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -322,7 +322,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [158,202,202,202,202,202,248,248,248,292,270,248,248,315,315,315,315,315,315,315,292,292,180,180,202,202,202,202,248,248,248,292,292,292,292,292,292,292,292,292,292,292,292,248,248,315,202,202];
+          const xPointRotation = [202,202,202,202,202,248,248,248,292,270,248,248,315,315,315,315,315,315,315,292,292,180,180,202,202,202,202,248,248,248,292,292,292,292,292,292,292,292,292,292,292,292,248,248,315,202,202,202];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -348,7 +348,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["SSE","SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","WNW","W","WSW","WSW","NW","NW","NW","NW","NW","NW","NW","WNW","WNW","S","S","SSW","SSW","SSW","SSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","WSW","NW","SSW","SSW"];
+                const xDirection = ["SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","WNW","W","WSW","WSW","NW","NW","NW","NW","NW","NW","NW","WNW","WNW","S","S","SSW","SSW","SSW","SSW","WSW","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","WSW","NW","SSW","SSW","SSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -382,7 +382,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,2,0,5,12,14,5,21,9,12,17,2],
+      data: [0,0,0,0,0,1,1,4,12,18,11,23,10,14,5,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -591,9 +591,9 @@ new Chart("windPrevalenceChart",
 <tr>
 <td>2026-04-16</td>
 <td style="background-color: #00C8FF;"><span style="">13.4</span></td>
-<td>20.2</td>
+<td>21.6</td>
 <td style="background-color: #CFFF00;"><span style="">28.6</span></td>
-<td>4.3</td>
+<td>4.4</td>
 <td>159.8 <img src="images/Symbol_wind_speed_17.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
 <td>ENE</td>
 <td style=""><span style="">0.0 mm</span></td>
@@ -792,7 +792,7 @@ new Chart("dailyTempChart",
       fill: false
     },
     {
-      data: [19.8,19.05,19.84,19.73,18.8,17.5,13.75,13.29,14.3,16.71,16.53,14.67,14.84,17.46,19.52,20.24,21.07,18.54,17.9,19.77,19.42,17.27,16.79,18.9,20.7,20.26,20.74,19.44,17.5,17.67,18.61],
+      data: [19.8,19.05,19.84,19.73,18.8,17.5,13.75,13.29,14.3,16.71,16.53,14.67,14.84,17.46,19.52,21.58,21.07,18.54,17.9,19.77,19.42,17.27,16.79,18.9,20.7,20.26,20.74,19.44,17.5,17.67,18.61],
       borderColor: "grey",
       label: "Average",
       hidden: true,
@@ -829,26 +829,6 @@ new Chart("dailyTempChart",
 <th>Max. Temperature C</th>
 <th>Max. Wind speed km/h</th>
 <th>Precip. mm</th>
-</tr>
-<tr>
-<td>Apr 2026</td>
-<td style="background-color: #0033FF;"><span style="color: #ffffff;">9.0</span></td>
-<td>12.6</td>
-<td>18.1</td>
-<td>23.2</td>
-<td style="background-color: #FFB700;"><span style="">32.1</span></td>
-<td>159.8</td>
-<td style="background-color: #F6F6FF;"><span style="">9.6</span></td>
-</tr>
-<tr>
-<td>Mar 2026</td>
-<td style="background-color: #000DFF;"><span style="color: #ffffff;">7.9</span></td>
-<td>11.4</td>
-<td>15.5</td>
-<td>19.3</td>
-<td style="background-color: #62FF00;"><span style="">25.4</span></td>
-<td>159.8</td>
-<td style="background-color: #A4A4FF;"><span style="">89.2</span></td>
 </tr>
 <tr>
 <td>Feb 2026</td>
@@ -1086,7 +1066,7 @@ new Chart("dailyTempChart",
 <canvas id="monthlyTempChart"></canvas>
 </div>
 <script>
-var xLabels = ["Apr 2024","May 2024","Jun 2024","Jul 2024","Aug 2024","Sep 2024","Oct 2024","Nov 2024","Dec 2024","Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025","Jan 2026","Feb 2026","Mar 2026","Apr 2026"];
+var xLabels = ["Apr 2024","May 2024","Jun 2024","Jul 2024","Aug 2024","Sep 2024","Oct 2024","Nov 2024","Dec 2024","Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025","Jan 2026","Feb 2026"];
 new Chart("monthlyTempChart",
 {
   type: "line",
@@ -1094,21 +1074,21 @@ new Chart("monthlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [9.1,8.6,14.4,14.5,17.3,12.3,11.3,9,5.4,3.7,5.3,6.7,8.8,11.4,15.3,16.7,17.2,14.1,14.1,7.3,5.2,4.6,6.6,7.9,9],
+      data: [9.1,8.6,14.4,14.5,17.3,12.3,11.3,9,5.4,3.7,5.3,6.7,8.8,11.4,15.3,16.7,17.2,14.1,14.1,7.3,5.2,4.6,6.6],
       borderColor: "blue",
       label: "Lows",
       tension: 0.4,
       fill: false
     },
     {
-      data: [31.6,35.4,36.9,38.8,37.4,33.2,30.4,27.5,24.1,21.2,20.7,27.7,27.2,34.8,38.2,37.1,39.8,35.7,31.2,24.4,20.3,19.1,22.8,25.4,32.1],
+      data: [31.6,35.4,36.9,38.8,37.4,33.2,30.4,27.5,24.1,21.2,20.7,27.7,27.2,34.8,38.2,37.1,39.8,35.7,31.2,24.4,20.3,19.1,22.8],
       borderColor: "red",
       label: "Highs",
       tension: 0.4,
       fill: false
     },
     {
-      data: [18.13,19.54,21.79,25.05,26.49,21.81,19.83,17.82,13.95,14.11,14.41,14.76,17.42,20.83,24.84,25,25.43,22.73,21.79,16.31,13.05,12.66,14.26,15.48,18.08],
+      data: [18.13,19.54,21.79,25.05,26.49,21.81,19.83,17.82,13.95,14.11,14.41,14.76,17.42,20.83,24.84,25,25.43,22.73,21.79,16.31,13.05,12.66,14.26],
       borderColor: "grey",
       label: "Average",
       hidden: true,
@@ -1241,8 +1221,8 @@ new Chart("yearlyTempChart",
 <td>Record high °C</td>
 <td style="background-color: #00FF2C;"><span style="">21.2</span></td>
 <td style="background-color: #06FF00;"><span style="">22.7</span></td>
-<td style="background-color: #81FF00;"><span style="">26.3</span></td>
-<td style="background-color: #FFF400;"><span style="">30.3</span></td>
+<td style="background-color: #90FF00;"><span style="">26.8</span></td>
+<td style="background-color: #EAFF00;"><span style="">29.4</span></td>
 <td style="background-color: #FF5100;"><span style="">35.1</span></td>
 <td style="background-color: #FF0101;"><span style="">37.6</span></td>
 <td style="background-color: #FF0F0F;"><span style="">38.0</span></td>
@@ -1256,8 +1236,8 @@ new Chart("yearlyTempChart",
 <td>Mean daily maximum °C</td>
 <td style="background-color: #00FFA9;"><span style="">17.5</span></td>
 <td style="background-color: #00FF83;"><span style="">18.6</span></td>
-<td style="background-color: #00FF75;"><span style="">19.0</span></td>
-<td style="background-color: #00FF01;"><span style="">22.5</span></td>
+<td style="background-color: #00FF7A;"><span style="">18.9</span></td>
+<td style="background-color: #00FF0C;"><span style="">22.1</span></td>
 <td style="background-color: #59FF00;"><span style="">25.1</span></td>
 <td style="background-color: #C9FF00;"><span style="">28.4</span></td>
 <td style="background-color: #FFD700;"><span style="">31.2</span></td>
@@ -1271,8 +1251,8 @@ new Chart("yearlyTempChart",
 <td>Daily mean °C</td>
 <td style="background-color: #00D5FF;"><span style="">13.8</span></td>
 <td style="background-color: #00F4FF;"><span style="">14.7</span></td>
-<td style="background-color: #00FFFC;"><span style="">15.1</span></td>
-<td style="background-color: #00FF9D;"><span style="">17.9</span></td>
+<td style="background-color: #00FAFF;"><span style="">14.9</span></td>
+<td style="background-color: #00FFA0;"><span style="">17.8</span></td>
 <td style="background-color: #00FF4E;"><span style="">20.2</span></td>
 <td style="background-color: #1BFF00;"><span style="">23.3</span></td>
 <td style="background-color: #55FF00;"><span style="">25.0</span></td>
@@ -1286,8 +1266,8 @@ new Chart("yearlyTempChart",
 <td>Mean daily minimum °C</td>
 <td style="background-color: #0057FF;"><span style="color: #ffffff;">10.1</span></td>
 <td style="background-color: #0068FF;"><span style="color: #ffffff;">10.6</span></td>
-<td style="background-color: #0072FF;"><span style="color: #ffffff;">10.9</span></td>
-<td style="background-color: #00B6FF;"><span style="color: #ffffff;">12.9</span></td>
+<td style="background-color: #0069FF;"><span style="color: #ffffff;">10.6</span></td>
+<td style="background-color: #00BBFF;"><span style="">13.0</span></td>
 <td style="background-color: #00DFFF;"><span style="">14.1</span></td>
 <td style="background-color: #00FF9A;"><span style="">18.0</span></td>
 <td style="background-color: #00FF68;"><span style="">19.4</span></td>
@@ -1301,7 +1281,7 @@ new Chart("yearlyTempChart",
 <td>Record low °C</td>
 <td style="background-color: #000097;"><span style="color: #ffffff;">4.5</span></td>
 <td style="background-color: #0000DF;"><span style="color: #ffffff;">6.6</span></td>
-<td style="background-color: #0000F1;"><span style="color: #ffffff;">7.1</span></td>
+<td style="background-color: #0000E3;"><span style="color: #ffffff;">6.7</span></td>
 <td style="background-color: #0031FF;"><span style="color: #ffffff;">9.0</span></td>
 <td style="background-color: #0055FF;"><span style="color: #ffffff;">10.0</span></td>
 <td style="background-color: #00F9FF;"><span style="">14.9</span></td>
@@ -1316,8 +1296,8 @@ new Chart("yearlyTempChart",
 <td>Average rainfall mm</td>
 <td style="background-color: #5A5AFF;"><span style="color: #ffffff;">129.1</span></td>
 <td style="background-color: #7272FF;"><span style="color: #ffffff;">110.5</span></td>
-<td style="background-color: #4141FF;"><span style="color: #ffffff;">149.2</span></td>
-<td style="background-color: #EBEBFF;"><span style="">16.4</span></td>
+<td style="background-color: #1A1AFF;"><span style="color: #ffffff;">179.2</span></td>
+<td style="background-color: #E6E6FF;"><span style="">19.8</span></td>
 <td style="background-color: #FAFAFF;"><span style="">4.2</span></td>
 <td style="background-color: #FFFFFF;"><span style="">0.4</span></td>
 <td style="background-color: #FFFFFF;"><span style="">0.2</span></td>
@@ -1347,7 +1327,7 @@ new Chart("yearlyTempChart",
 <td>1</td>
 <td>39.8 C <sup>2025-08-12</sup></td>
 <td>3.7 C <sup>2025-01-16</sup></td>
-<td>159.8 km/h (WNW) <sup>2026-04-11</sup></td>
+<td>159.8 km/h (ENE) <sup>2026-03-23</sup></td>
 <td>39.6 mm <sup>2026-03-19</sup></td>
 <td>223.6 mm <sup>Mar 2025</sup></td>
 </tr>
@@ -1355,7 +1335,7 @@ new Chart("yearlyTempChart",
 <td>2</td>
 <td>38.8 C <sup>2024-07-24</sup></td>
 <td>4.6 C <sup>2025-01-15</sup></td>
-<td>159.8 km/h (ENE) <sup>2026-04-16</sup></td>
+<td>159.8 km/h (WSW) <sup>2026-04-07</sup></td>
 <td>38.4 mm <sup>2025-01-20</sup></td>
 <td>192.8 mm <sup>Feb 2026</sup></td>
 </tr>
@@ -1363,7 +1343,7 @@ new Chart("yearlyTempChart",
 <td>3</td>
 <td>38.3 C <sup>2025-08-17</sup></td>
 <td>4.6 C <sup>2026-01-19</sup></td>
-<td>159.8 km/h (WSW) <sup>2026-04-07</sup></td>
+<td>159.8 km/h (WNW) <sup>2026-04-11</sup></td>
 <td>38.0 mm <sup>2023-10-22</sup></td>
 <td>186.8 mm <sup>Jan 2026</sup></td>
 </tr>
@@ -1371,7 +1351,7 @@ new Chart("yearlyTempChart",
 <td>4</td>
 <td>38.2 C <sup>2025-06-29</sup></td>
 <td>5.0 C <sup>2026-01-08</sup></td>
-<td>159.8 km/h (ENE) <sup>2026-03-23</sup></td>
+<td>159.8 km/h (ENE) <sup>2026-04-16</sup></td>
 <td>37.6 mm <sup>2025-12-12</sup></td>
 <td>158.8 mm <sup>Dec 2025</sup></td>
 </tr>
@@ -1397,7 +1377,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>78 Days, 18 Hours</td>
+<td>1 Minute, 8 Seconds</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1405,11 +1385,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:15. Level:-95. Noise:-256</td>
+<td>Link:42. Level:-68. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+41.9°C</td>
+<td>+39.7°C</td>
 </tr>
 </table>
 </body>
