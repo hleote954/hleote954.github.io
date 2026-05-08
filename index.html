@@ -15,7 +15,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-05-08 13:30:03</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-05-08 13:45:15</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -33,15 +33,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF65;"><span style="">19.5 C</span></td>
+<td style="background-color: #00FF5B;"><span style="">19.8 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>68 %</td>
+<td>70 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>15.8 C</td>
+<td>16.2 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -49,19 +49,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SE</td>
+<td>SSE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>10.08 km/h</td>
+<td>9.36 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>10.44 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SE" title="SE" style="width:20px;height:20px;transform:rotate(225deg);"/></td>
+<td>9.36 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSE" title="SSE" style="width:20px;height:20px;transform:rotate(248deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-05-08 13:29:26</td>
+<td>2026-05-08 13:44:14</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td>Max. Temperature today</td>
-<td>19.7 C</td>
+<td>19.8 C</td>
 </tr>
 <tr>
 <td>Max. Wind Speed today</td>
@@ -181,7 +181,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [11.3,11.1,10.9,9.9,9.9,10.3,11.2,11.3,11.4,11.6,11.4,11.4,11.2,11.1,10.0,9.3,9.0,9.8,10.2,9.5,9.5,10.8,11.4,7.0,6.7,7.5,8.7,8.4,9.6,9.4,10.2,10.4,10.5,10.3,10.2,10.3,10.4,10.4,10.6,10.8,10.6,10.7,11.8,11.5,12.1,12.7,12.5,12.8],
+      data: [11.3,11.1,10.9,9.9,9.9,10.3,11.2,11.3,11.4,11.6,11.4,11.4,11.2,11.1,10.0,9.3,9.0,9.8,10.2,9.5,9.5,10.8,11.4,7.0,6.7,7.5,8.7,8.4,9.6,9.4,10.2,10.4,10.5,10.3,10.2,10.3,10.4,10.4,10.6,10.8,10.6,10.7,11.8,11.5,12.1,12.7,12.5,13.0],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -217,7 +217,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [53,53,52,51,54,60,72,76,78,80,81,83,84,86,82,80,82,76,64,58,51,54,57,39,38,40,48,51,59,61,68,71,73,74,76,76,78,80,81,84,87,81,75,68,69,69,66,65],
+      data: [53,53,52,51,54,60,72,76,78,80,81,83,84,86,82,80,82,76,64,58,51,54,57,39,38,40,48,51,59,61,68,71,73,74,76,76,78,80,81,84,87,81,75,68,69,69,66,66],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -225,7 +225,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [9.87,9.74,9.62,9.03,9.04,9.32,9.98,10.04,10.15,10.27,10.17,10.19,10.05,9.96,9.30,8.87,8.72,9.16,9.29,8.86,8.79,9.54,9.99,7.37,7.22,7.65,8.29,8.21,8.93,8.81,9.33,9.47,9.54,9.43,9.39,9.42,9.51,9.52,9.64,9.81,9.69,9.72,10.38,10.12,10.53,10.94,10.76,10.96],
+      data: [9.87,9.74,9.62,9.03,9.04,9.32,9.98,10.04,10.15,10.27,10.17,10.19,10.05,9.96,9.30,8.87,8.72,9.16,9.29,8.86,8.79,9.54,9.99,7.37,7.22,7.65,8.29,8.21,8.93,8.81,9.33,9.47,9.54,9.43,9.39,9.42,9.51,9.52,9.64,9.81,9.69,9.72,10.38,10.12,10.53,10.94,10.76,11.11],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -390,7 +390,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,1,0,5,16,9,25,19,2,4,0,11,3,3,1,0],
+      data: [0,1,0,6,17,10,26,20,2,4,0,10,3,2,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1405,7 +1405,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>6 Days, 0 Hours</td>
+<td>6 Days, 1 Hour</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1413,7 +1413,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:22. Level:-88. Noise:-256</td>
+<td>Link:21. Level:-89. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
