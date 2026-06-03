@@ -15,7 +15,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-06-03 06:15:09</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-06-03 06:30:21</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -49,19 +49,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>S</td>
+<td>SSW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>5.04 km/h</td>
+<td>4.68 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>5.76 km/h  <img src="images/Symbol_wind_speed_01.png" alt="S" title="S" style="width:20px;height:20px;transform:rotate(270deg);"/></td>
+<td>4.68 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSW" title="SSW" style="width:20px;height:20px;transform:rotate(292deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-06-03 06:15:08</td>
+<td>2026-06-03 06:30:20</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -330,7 +330,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,248,202,202,202,270,248,248,292,292,292,292,292,292,292,292,292,292,248,270,248,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,248,202,225,315];
+          const xPointRotation = [248,248,202,202,202,270,248,248,292,292,292,292,292,292,292,292,292,292,248,270,248,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,292,248,202,225,180];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -356,7 +356,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WSW","SSW","SSW","SSW","W","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","W","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","SSW","SW","NW"];
+                const xDirection = ["WSW","WSW","SSW","SSW","SSW","W","WSW","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","W","WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","WSW","SSW","SW","S"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -390,7 +390,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,4,6,1,0,0,0,0,2,12,13,17,6,26,11,2],
+      data: [0,4,7,1,0,0,0,0,3,12,14,16,5,25,10,2],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
