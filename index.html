@@ -15,7 +15,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-06-24 23:36:39</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-06-24 23:51:51</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -33,11 +33,11 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF4A;"><span style="">20.3 C</span></td>
+<td style="background-color: #00FF4E;"><span style="">20.2 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>87 %</td>
+<td>88 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>W</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -57,11 +57,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="W" title="W" style="width:20px;height:20px;transform:rotate(360deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-06-24 23:36:37</td>
+<td>2026-06-24 23:51:49</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -330,7 +330,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [180,248,248,270,68,90,248,68,90,270,248,180,202,180,202,158,202,248,248,248,248,248,248,248,270,248,248,248,292,292,22,270,270,202,202,202,202,202,202,202,202,225,202,248,248,270,270,248];
+          const xPointRotation = [180,248,248,270,68,90,248,68,90,270,248,180,202,180,202,158,202,248,248,248,248,248,248,248,270,248,248,248,292,292,22,270,270,202,202,202,202,202,202,202,202,225,202,248,248,270,270,270];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -356,7 +356,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["S","WSW","WSW","W","ENE","E","WSW","ENE","E","W","WSW","S","SSW","S","SSW","SSE","SSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","W","WSW","WSW","WSW","WNW","WNW","NNE","W","W","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SW","SSW","WSW","WSW","W","W","WSW"];
+                const xDirection = ["S","WSW","WSW","W","ENE","E","WSW","ENE","E","W","WSW","S","SSW","S","SSW","SSE","SSW","WSW","WSW","WSW","WSW","WSW","WSW","WSW","W","WSW","WSW","WSW","WNW","WNW","NNE","W","W","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SW","SSW","WSW","WSW","W","W","W"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1405,7 +1405,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>53 Days, 10 Hours</td>
+<td>53 Days, 11 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1413,7 +1413,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:46. Level:-64. Noise:-256</td>
+<td>Link:57. Level:-53. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
