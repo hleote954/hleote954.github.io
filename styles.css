@@ -224,6 +224,27 @@ table[id="tab_top5_days"] td {
     margin-bottom: 2rem;
 }
 
+/* ========== Wind Chart Container Styles ========== */
+#table_container_wind,
+.table_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table_container_column {
+    flex: 1 1 320px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_container_column .chart_container {
+    width: 100%;
+}
+
 /* ========== Responsive Tables ========== */
 @media (max-width: 768px) {
     .cards-grid {
@@ -264,6 +285,17 @@ table[id="tab_top5_days"] td {
     .chart_container {
         height: 350px;
     }
+
+    #table_container_wind,
+    .table_container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .table_container_column {
+        width: 100% !important;
+        min-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -282,6 +314,21 @@ table[id="tab_top5_days"] td {
     .chart_container {
         height: 280px;
         padding: 0.5rem;
+    }
+
+    #table_container_wind,
+    .table_container {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .table_container_column {
+        width: 100% !important;
+        min-width: 100%;
+    }
+
+    .table_container_column .chart_container {
+        height: 300px;
     }
 }
 
