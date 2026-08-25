@@ -15,7 +15,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-08-25 18:35:54</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-08-25 18:51:18</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -33,15 +33,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #4AFF00;"><span style="">24.7 C</span></td>
+<td style="background-color: #3DFF00;"><span style="">24.3 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>64 %</td>
+<td>67 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>18.5 C</td>
+<td>18.8 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -49,19 +49,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>WSW</td>
+<td>WNW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>14.4 km/h</td>
+<td>11.52 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>20.16 km/h  <img src="images/Symbol_wind_speed_02.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
+<td>12.24 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-08-25 18:35:17</td>
+<td>2026-08-25 18:51:17</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -181,7 +181,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [20.2,19.9,19.9,20.3,20.1,19.9,19.9,19.5,19.3,19.6,19.4,19.4,19.3,19.8,20.3,20.4,20.1,20.2,20.4,20.2,20.4,20.3,20.1,20.2,19.8,19.9,19.7,19.6,19.2,19.2,18.9,18.9,18.5,17.7,17.3,17.1,17.4,18.5,19.4,19.2,19.5,19.5,19.3,19.8,19.2,19.3,19.4,17.6],
+      data: [20.2,19.9,19.9,20.3,20.1,19.9,19.9,19.5,19.3,19.6,19.4,19.4,19.3,19.8,20.3,20.4,20.1,20.2,20.4,20.2,20.4,20.3,20.1,20.2,19.8,19.9,19.7,19.6,19.2,19.2,18.9,18.9,18.5,17.7,17.3,17.1,17.4,18.5,19.4,19.2,19.5,19.5,19.3,19.8,19.2,19.3,19.4,17.7],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -225,7 +225,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [17.39,17.13,17.16,17.53,17.29,17.08,17.10,16.76,16.54,16.81,16.62,16.63,16.56,17.00,17.50,17.51,17.17,17.25,17.40,17.22,17.38,17.30,17.13,17.28,16.80,17.03,16.87,16.83,16.40,16.37,16.15,16.11,15.74,15.05,14.69,14.55,14.74,15.72,16.41,16.22,16.51,16.56,16.31,16.85,16.20,16.29,16.46,14.68],
+      data: [17.39,17.13,17.16,17.53,17.29,17.08,17.10,16.76,16.54,16.81,16.62,16.63,16.56,17.00,17.50,17.51,17.17,17.25,17.40,17.22,17.38,17.30,17.13,17.28,16.80,17.03,16.87,16.83,16.40,16.37,16.15,16.11,15.74,15.04,14.69,14.55,14.74,15.72,16.41,16.22,16.51,16.56,16.31,16.85,16.20,16.29,16.46,14.72],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -300,7 +300,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [4.0,3.9,4.8,5.9,8.0,7.5,7.9,5.8,4.3,4.8,2.6,3.0,2.2,5.3,4.7,8.0,8.6,10.1,10.3,10.5,10.7,10.8,10.1,6.0,7.9,6.2,0.9,0.4,0.2,2.0,1.0,0.7,0.3,0.2,0.0,0.6,0.1,0.6,2.6,4.9,8.1,9.7,9.9,10.3,9.7,10.9,9.7,11.6],
+      data: [4.0,3.9,4.8,5.9,8.0,7.5,7.9,5.8,4.3,4.8,2.6,3.0,2.2,5.3,4.7,8.0,8.6,10.1,10.3,10.5,10.7,10.8,10.1,6.0,7.9,6.2,0.9,0.4,0.2,2.0,1.0,0.7,0.3,0.2,0.0,0.6,0.1,0.6,2.6,4.9,8.1,9.7,9.9,10.3,9.7,10.9,9.7,11.3],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -308,7 +308,7 @@ new Chart("hourlyWindChart",
       fill: false
     },
     {
-      data: [11.2,10.8,15.8,12.2,18.0,15.8,16.6,10.8,9.0,10.8,8.6,13.0,11.2,13.7,15.8,18.4,18.0,22.0,18.7,21.2,19.8,23.0,27.0,18.4,17.3,15.1,6.8,8.6,4.7,8.6,8.6,7.9,6.5,4.7,0.0,7.9,3.6,7.6,9.0,12.6,15.8,16.6,17.3,21.2,25.2,25.9,27.7,29.5],
+      data: [11.2,10.8,15.8,12.2,18.0,15.8,16.6,10.8,9.0,10.8,8.6,13.0,11.2,13.7,15.8,18.4,18.0,22.0,18.7,21.2,19.8,23.0,27.0,18.4,17.3,15.1,6.8,8.6,4.7,8.6,8.6,7.9,6.5,4.7,0.0,7.9,3.6,7.6,9.0,12.6,15.8,16.6,17.3,21.2,25.2,25.9,27.7,34.2],
       borderColor: "magenta",
       label: "Gusts",
       yAxisID: 'y1',
@@ -330,7 +330,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [158,158,202,202,202,202,202,202,202,202,202,202,202,248,225,202,202,202,202,202,202,202,202,202,248,248,248,270,270,270,315,292,45,292,292,68,68,68,90,158,202,202,202,202,202,202,202,270];
+          const xPointRotation = [158,158,202,202,202,202,202,202,202,202,202,202,202,248,225,202,202,202,202,202,202,202,202,202,248,248,248,270,270,270,315,292,45,292,292,68,68,68,90,158,202,202,202,202,202,202,202,248];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -356,7 +356,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["SSE","SSE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","SW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","W","W","W","NW","WNW","NE","WNW","WNW","ENE","ENE","ENE","E","SSE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","W"];
+                const xDirection = ["SSE","SSE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","SW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","WSW","W","W","W","NW","WNW","NE","WNW","WNW","ENE","ENE","ENE","E","SSE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -390,7 +390,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,2,1,1,4,8,14,35,14,14,4,2,1,0],
+      data: [0,0,0,2,1,1,4,8,14,34,13,15,4,2,1,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1463,7 +1463,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>50 Days, 17 Hours</td>
+<td>50 Days, 18 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
