@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-09-06 17:38:23</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-09-06 17:52:15</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -32,15 +32,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #FF7D00;"><span style="">33.8 C</span></td>
+<td style="background-color: #FF8700;"><span style="">33.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>36 %</td>
+<td>35 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>16.7 C</td>
+<td>16.3 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -48,19 +48,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SW</td>
+<td>WSW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>14.76 km/h</td>
+<td>10.8 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>15.84 km/h  <img src="images/Symbol_wind_speed_02.png" alt="SW" title="SW" style="width:20px;height:20px;transform:rotate(315deg);"/></td>
+<td>11.16 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WSW" title="WSW" style="width:20px;height:20px;transform:rotate(338deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-09-06 17:36:58</td>
+<td>2026-09-06 17:52:10</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -161,7 +161,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [28.3,26.0,25.5,24.6,24.2,23.6,23.5,24.0,23.5,24.0,24.6,24.5,23.9,23.7,23.7,24.0,24.4,27.9,29.2,28.8,28.3,30.2,31.3,31.3,30.5,27.9,27.1,26.8,26.4,25.6,24.7,24.4,23.7,23.1,23.1,23.1,22.9,22.7,26.0,29.6,33.8,35.6,33.9,33.7,33.8,34.5,35.1,34.8],
+      data: [28.3,26.0,25.5,24.6,24.2,23.6,23.5,24.0,23.5,24.0,24.6,24.5,23.9,23.7,23.7,24.0,24.4,27.9,29.2,28.8,28.3,30.2,31.3,31.3,30.5,27.9,27.1,26.8,26.4,25.6,24.8,24.4,23.7,23.1,23.1,23.1,22.9,22.7,26.0,29.6,33.8,35.6,33.9,33.7,33.8,34.5,35.1,34.3],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -180,7 +180,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [22.3,21.5,21.2,21.1,21.1,21.1,21.0,20.7,20.6,19.9,19.3,18.9,19.0,18.6,18.5,18.6,18.6,18.0,19.2,20.0,21.1,20.7,19.2,19.6,20.1,20.5,20.5,20.2,19.6,18.8,18.6,18.8,18.8,18.6,18.8,18.4,18.3,18.1,17.3,18.1,16.6,17.7,17.6,16.1,16.1,16.8,16.9,16.6],
+      data: [22.3,21.5,21.2,21.1,21.1,21.1,21.0,20.7,20.6,19.9,19.3,18.9,19.0,18.6,18.5,18.6,18.6,18.0,19.2,20.0,21.1,20.7,19.2,19.6,20.1,20.5,20.5,20.2,19.6,18.8,18.7,18.8,18.8,18.6,18.8,18.4,18.3,18.1,17.3,18.1,16.6,17.7,17.6,16.1,16.1,16.8,16.8,16.1],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -224,7 +224,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [19.37,18.53,18.26,18.21,18.27,18.26,18.16,17.81,17.77,16.97,16.25,15.88,16.03,15.63,15.59,15.65,15.58,14.87,16.00,16.77,17.99,17.45,15.91,16.26,16.81,17.36,17.37,17.09,16.48,15.71,15.63,15.77,15.80,15.67,15.91,15.52,15.36,15.17,14.34,14.87,13.39,14.28,14.22,12.95,12.98,13.48,13.54,13.31],
+      data: [19.37,18.53,18.26,18.21,18.27,18.26,18.16,17.81,17.77,16.97,16.25,15.88,16.03,15.63,15.59,15.65,15.58,14.87,16.00,16.77,17.99,17.45,15.91,16.26,16.81,17.36,17.37,17.09,16.48,15.71,15.71,15.77,15.80,15.67,15.91,15.52,15.36,15.17,14.34,14.87,13.39,14.28,14.22,12.95,12.98,13.48,13.53,12.97],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -299,7 +299,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [2.7,3.3,5.9,4.4,6.8,8.5,4.3,3.2,7.9,6.3,3.8,0.6,1.0,4.0,1.3,0.7,2.2,5.0,11.5,9.6,7.7,5.8,7.1,6.3,5.2,5.0,2.8,2.8,2.0,1.2,2.2,1.3,1.6,2.3,1.2,0.2,2.0,1.7,2.0,3.2,3.7,5.3,8.9,9.4,9.5,9.6,10.1,10.0],
+      data: [2.7,3.3,5.9,4.4,6.8,8.5,4.3,3.2,7.9,6.3,3.8,0.6,1.0,4.0,1.3,0.7,2.2,5.0,11.5,9.6,7.7,5.8,7.1,6.3,5.2,5.0,2.8,2.8,2.0,1.2,1.3,1.3,1.6,2.3,1.2,0.2,2.0,1.7,2.0,3.2,3.7,5.3,8.9,9.4,9.5,9.6,10.0,11.4],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -329,7 +329,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,180,202,248,248,248,248,292,248,248,248,45,22,0,22,22,22,68,135,135,135,202,135,202,180,270,248,248,292,337,315,315,292,68,45,337,45,68,68,68,68,202,180,202,202,180,248,248];
+          const xPointRotation = [68,180,202,248,248,248,248,292,248,248,248,45,22,0,22,22,22,68,135,135,135,202,135,202,180,270,248,248,292,337,292,315,292,68,45,337,45,68,68,68,68,202,180,202,180,202,248,248];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -355,7 +355,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","S","SSW","WSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","NE","NNE","N","NNE","NNE","NNE","ENE","SE","SE","SE","SSW","SE","SSW","S","W","WSW","WSW","WNW","NNW","NW","NW","WNW","ENE","NE","NNW","NE","ENE","ENE","ENE","ENE","SSW","S","SSW","SSW","S","WSW","WSW"];
+                const xDirection = ["ENE","S","SSW","WSW","WSW","WSW","WSW","WNW","WSW","WSW","WSW","NE","NNE","N","NNE","NNE","NNE","ENE","SE","SE","SE","SSW","SE","SSW","S","W","WSW","WSW","WNW","NNW","WNW","NW","WNW","ENE","NE","NNW","NE","ENE","ENE","ENE","ENE","SSW","S","SSW","S","SSW","WSW","WSW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -389,7 +389,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,4,8,12,1,1,2,5,15,17,7,10,6,6,4,1],
+      data: [1,4,4,5,1,2,6,5,10,12,6,22,9,8,2,2],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1528,11 +1528,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:61. Level:-49. Noise:-256</td>
+<td>Link:62. Level:-48. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+47.8°C</td>
+<td>+49.4°C</td>
 </tr>
 </table>
 </section>
