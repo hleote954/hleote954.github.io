@@ -225,6 +225,7 @@ table[id="tab_top5_days"] td {
 }
 
 /* ========== Responsive Tables ========== */
+/*
 @media (max-width: 768px) {
     .cards-grid {
         grid-template-columns: 1fr;
@@ -284,6 +285,7 @@ table[id="tab_top5_days"] td {
         padding: 0.5rem;
     }
 }
+*/
 
 /* ========== Footer Styles ========== */
 .page-footer {
