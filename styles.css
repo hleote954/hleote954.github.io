@@ -204,6 +204,7 @@ table[id="tab_top5_days"] td {
 }
 
 /* ========== Chart Styles ========== */
+/*
 .chart_container {
     position: relative;
     height: 450px;
@@ -223,6 +224,7 @@ table[id="tab_top5_days"] td {
     display: block;
     margin-bottom: 2rem;
 }
+*/
 
 /* ========== Responsive Tables ========== */
 @media (max-width: 768px) {
