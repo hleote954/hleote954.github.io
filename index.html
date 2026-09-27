@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-09-28 00:43:40</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-09-28 00:59:28</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -32,7 +32,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FF1E;"><span style="">21.6 C</span></td>
+<td style="background-color: #00FF11;"><span style="">22.0 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>20.5 C</td>
+<td>20.9 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -48,7 +48,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NNE</td>
+<td>NE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -56,11 +56,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NNE" title="NNE" style="width:20px;height:20px;transform:rotate(112deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NE" title="NE" style="width:20px;height:20px;transform:rotate(135deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-09-28 00:43:26</td>
+<td>2026-09-28 00:59:26</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -224,7 +224,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [7.47,6.12,4.95,4.81,5.61,4.72,4.70,4.95,6.19,7.06,7.90,7.83,9.03,10.57,11.69,11.17,9.81,10.76,9.66,10.16,10.68,12.20,10.55,10.73,9.73,9.12,9.75,10.80,11.34,11.51,12.31,15.45,17.31,16.24,16.61,17.24,18.49,18.66,18.15,18.38,18.16,18.22,18.29,18.14,17.97,18.02,17.90,17.64],
+      data: [7.47,6.12,4.95,4.81,5.61,4.72,4.70,4.95,6.19,7.06,7.90,7.83,9.03,10.57,11.69,11.17,9.81,10.76,9.66,10.16,10.68,12.20,10.55,10.73,9.73,9.12,9.75,10.80,11.34,11.51,12.31,15.45,17.31,16.24,16.61,17.24,18.49,18.66,18.15,18.38,18.16,18.22,18.29,18.14,17.97,18.02,17.90,17.60],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -329,7 +329,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,68,68,68,90,315,315,68,112,202,202,158,158,202,202,248,202,248,270,225,248,292,292,315,68,68,68,68,68,68,158,112,90,68,68,135,135,135,202,180,202,202,180,180,180,180,22];
+          const xPointRotation = [68,68,68,68,68,90,315,315,68,112,202,202,158,158,202,202,248,202,248,270,225,248,292,292,315,68,68,68,68,68,68,158,112,90,68,68,135,135,135,202,180,202,202,180,180,180,180,45];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -355,7 +355,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","ENE","ENE","ENE","E","NW","NW","ENE","ESE","SSW","SSW","SSE","SSE","SSW","SSW","WSW","SSW","WSW","W","SW","WSW","WNW","WNW","NW","ENE","ENE","ENE","ENE","ENE","ENE","SSE","ESE","E","ENE","ENE","SE","SE","SE","SSW","S","SSW","SSW","S","S","S","S","NNE"];
+                const xDirection = ["ENE","ENE","ENE","ENE","ENE","E","NW","NW","ENE","ESE","SSW","SSW","SSE","SSE","SSW","SSW","WSW","SSW","WSW","W","SW","WSW","WNW","WNW","NW","ENE","ENE","ENE","ENE","ENE","ENE","SSE","ESE","E","ENE","ENE","SE","SE","SE","SSW","S","SSW","SSW","S","S","S","S","NE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1520,7 +1520,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>System uptime</td>
-<td>22 Days, 11 Hours</td>
+<td>22 Days, 12 Hours</td>
 </tr>
 <tr>
 <td>Free disk space</td>
@@ -1528,11 +1528,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:64. Level:-46. Noise:-256</td>
+<td>Link:65. Level:-45. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+47.2°C</td>
+<td>+46.7°C</td>
 </tr>
 </table>
 </section>
