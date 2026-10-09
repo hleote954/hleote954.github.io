@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-10-09 14:09:09</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-10-09 14:24:33</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -36,11 +36,11 @@
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>52 %</td>
+<td>51 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>16.7 C</td>
+<td>16.6 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -48,19 +48,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>SSW</td>
+<td>SW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>11.88 km/h</td>
+<td>11.52 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>12.24 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SSW" title="SSW" style="width:20px;height:20px;transform:rotate(292deg);"/></td>
+<td>12.24 km/h  <img src="images/Symbol_wind_speed_01.png" alt="SW" title="SW" style="width:20px;height:20px;transform:rotate(315deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-10-09 14:08:08</td>
+<td>2026-10-09 14:24:32</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -161,7 +161,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [25.5,25.4,24.9,23.6,21.4,20.5,20.0,19.7,19.1,19.4,19.7,19.7,19.2,18.7,18.2,17.9,17.7,20.0,22.5,24.8,27.0,27.4,26.2,26.8,27.5,28.1,27.9,27.2,24.2,23.1,22.4,23.4,23.9,23.1,22.7,22.4,21.9,21.1,20.7,20.3,19.7,21.0,22.8,24.8,26.4,26.3,25.8,25.1],
+      data: [25.5,25.4,24.9,23.6,21.4,20.5,20.0,19.7,19.1,19.4,19.7,19.7,19.2,18.7,18.2,17.9,17.7,20.0,22.5,24.8,27.0,27.4,26.2,26.8,27.5,28.1,27.9,27.2,24.2,23.1,22.4,23.4,23.9,23.1,22.7,22.4,21.9,21.1,20.7,20.3,19.7,21.0,22.8,24.8,26.4,26.3,25.7,25.1],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -180,7 +180,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [15.5,15.7,16.0,16.4,16.4,16.0,15.9,15.7,15.6,15.2,15.5,15.6,15.5,15.2,15.0,14.9,14.8,15.0,15.4,14.8,14.0,15.8,16.7,15.2,15.5,16.4,17.4,16.8,17.0,15.1,15.7,14.1,12.5,12.1,12.0,12.0,12.2,12.2,12.1,12.0,11.7,11.9,11.2,10.2,10.1,13.8,14.9,15.4],
+      data: [15.5,15.7,16.0,16.4,16.4,16.0,15.9,15.7,15.6,15.2,15.5,15.6,15.5,15.2,15.0,14.9,14.8,15.0,15.4,14.8,14.0,15.8,16.7,15.2,15.5,16.4,17.4,16.8,17.0,15.1,15.7,14.1,12.5,12.1,12.0,12.0,12.2,12.2,12.1,12.0,11.7,11.9,11.2,10.2,10.1,13.8,14.8,15.1],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -216,7 +216,7 @@ new Chart("hourlyHumidityChart",
     labels: xLabels,
     datasets: [
     {
-      data: [54,55,58,64,73,75,77,78,80,77,77,77,79,80,82,83,83,73,64,54,45,49,56,49,48,49,53,53,64,61,66,56,49,50,51,52,54,57,58,59,60,56,48,40,36,46,51,55],
+      data: [54,55,58,64,73,75,77,78,80,77,77,77,79,80,82,83,83,73,64,54,45,49,56,49,48,49,53,53,64,61,66,56,49,50,51,52,54,57,58,59,60,56,48,40,36,46,51,54],
       borderColor: "cyan",
       label: "Rel. Humidity (%)",
       yAxisID: 'y1',
@@ -224,7 +224,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [12.79,12.98,13.26,13.59,13.69,13.37,13.32,13.23,13.13,12.81,13.04,13.09,13.03,12.82,12.72,12.63,12.53,12.58,12.80,12.28,11.55,12.93,13.80,12.51,12.70,13.42,14.35,13.79,14.11,12.58,13.07,11.74,10.58,10.35,10.30,10.32,10.42,10.49,10.41,10.38,10.18,10.26,9.74,9.08,8.97,11.40,12.26,12.74],
+      data: [12.79,12.98,13.26,13.59,13.69,13.37,13.32,13.23,13.13,12.81,13.04,13.09,13.03,12.82,12.72,12.63,12.53,12.58,12.80,12.28,11.55,12.93,13.80,12.51,12.70,13.42,14.35,13.79,14.11,12.58,13.07,11.74,10.58,10.35,10.30,10.32,10.42,10.49,10.41,10.38,10.18,10.26,9.74,9.08,8.97,11.40,12.24,12.47],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -299,7 +299,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [10.9,9.6,8.9,8.7,9.4,6.4,6.7,3.1,0.0,0.2,1.0,2.2,1.0,1.1,0.5,0.6,1.1,3.0,4.4,4.8,4.2,6.1,8.3,8.8,9.6,7.2,4.0,3.7,2.6,1.2,0.0,2.4,4.1,4.0,4.3,5.2,5.3,4.3,4.4,6.0,4.8,2.6,7.0,8.3,6.8,8.5,8.5,9.4],
+      data: [10.9,9.6,8.9,8.7,9.4,6.4,6.7,3.1,0.0,0.2,1.0,2.2,1.0,1.1,0.5,0.6,1.1,3.0,4.4,4.8,4.2,6.1,8.3,8.8,9.6,7.2,4.0,3.7,2.6,1.2,0.0,2.4,4.1,4.0,4.3,5.2,5.3,4.3,4.4,6.0,4.8,2.6,7.0,8.3,6.8,8.5,8.5,9.6],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -329,7 +329,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [248,292,292,292,292,292,292,292,270,90,45,68,292,315,68,68,45,45,68,68,68,202,202,202,202,202,135,292,292,45,45,68,45,68,68,68,68,68,68,68,68,68,68,68,68,202,180,202];
+          const xPointRotation = [248,292,292,292,292,292,292,292,270,90,45,68,292,315,68,68,45,45,68,68,68,202,202,202,202,202,135,292,292,45,45,68,45,68,68,68,68,68,68,68,68,68,68,68,68,202,180,158];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -355,7 +355,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","E","NE","ENE","WNW","NW","ENE","ENE","NE","NE","ENE","ENE","ENE","SSW","SSW","SSW","SSW","SSW","SE","WNW","WNW","NE","NE","ENE","NE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","SSW","S","SSW"];
+                const xDirection = ["WSW","WNW","WNW","WNW","WNW","WNW","WNW","WNW","W","E","NE","ENE","WNW","NW","ENE","ENE","NE","NE","ENE","ENE","ENE","SSW","SSW","SSW","SSW","SSW","SE","WNW","WNW","NE","NE","ENE","NE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","ENE","SSW","S","SSE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -1532,7 +1532,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+43.5°C</td>
+<td>+44.0°C</td>
 </tr>
 </table>
 </section>
