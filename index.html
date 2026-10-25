@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-10-25 16:14:39</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-10-25 16:29:49</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -32,15 +32,15 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #32FF00;"><span style="">24.0 C</span></td>
+<td style="background-color: #2FFF00;"><span style="">23.9 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
-<td>61 %</td>
+<td>62 %</td>
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>17.6 C</td>
+<td>17.7 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -48,19 +48,19 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NW</td>
+<td>WNW</td>
 </tr>
 <tr>
 <td>Wind speed</td>
-<td>11.52 km/h</td>
+<td>5.76 km/h</td>
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>12.24 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NW" title="NW" style="width:20px;height:20px;transform:rotate(405deg);"/></td>
+<td>6.48 km/h  <img src="images/Symbol_wind_speed_01.png" alt="WNW" title="WNW" style="width:20px;height:20px;transform:rotate(382deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-10-25 16:14:36</td>
+<td>2026-10-25 16:29:48</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -161,7 +161,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [23.3,20.6,18.5,17.4,16.5,16.1,15.2,14.5,14.2,13.5,12.8,12.2,11.5,10.7,11.5,13.2,16.4,20.0,22.2,23.3,23.1,23.2,23.3,24.0,22.8,20.5,18.5,17.9,17.0,15.9,15.5,15.2,14.1,12.9,12.2,12.2,11.5,11.3,13.8,14.4,17.8,19.8,22.3,23.4,22.9,23.8,24.8,24.3],
+      data: [23.3,20.6,18.5,17.4,16.5,16.1,15.2,14.5,14.2,13.5,12.8,12.2,11.5,10.7,11.5,13.2,16.4,20.0,22.2,23.3,23.1,23.2,23.3,24.0,22.8,20.5,18.5,17.9,17.0,15.9,15.5,15.2,14.0,12.9,12.2,12.2,11.5,11.3,13.8,14.4,17.8,19.8,22.3,23.4,22.9,23.8,24.8,24.2],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -180,7 +180,7 @@ new Chart("hourlyTempChart",
       }
     },
     {
-      data: [12.0,12.3,12.9,11.8,11.0,10.8,10.1,9.9,7.9,7.5,7.3,7.1,7.1,6.8,7.1,7.2,7.8,8.9,6.4,7.0,6.8,8.1,8.6,10.3,9.2,8.2,7.9,7.6,7.1,6.9,7.0,8.9,8.7,8.2,7.9,7.7,7.2,7.2,8.6,8.4,10.4,11.3,12.5,13.6,14.2,13.9,15.7,16.1],
+      data: [12.0,12.3,12.9,11.8,11.0,10.8,10.1,9.9,7.9,7.5,7.3,7.1,7.1,6.8,7.1,7.2,7.8,8.9,6.4,7.0,6.8,8.1,8.6,10.3,9.2,8.2,7.9,7.6,7.1,6.9,7.0,8.9,8.6,8.2,7.9,7.7,7.2,7.2,8.6,8.4,10.4,11.3,12.5,13.6,14.2,13.9,15.7,15.9],
       borderColor: "cyan",
       label: "Dew Point (C)",
       hidden: true,
@@ -224,7 +224,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [10.26,10.57,11.07,10.36,9.82,9.72,9.31,9.17,8.04,7.84,7.72,7.64,7.65,7.56,7.66,7.67,7.95,8.45,7.05,7.32,7.24,7.90,8.17,9.15,8.51,8.02,7.90,7.79,7.54,7.46,7.54,8.56,8.50,8.22,8.07,7.97,7.73,7.74,8.44,8.29,9.38,9.93,10.65,11.39,11.86,11.61,13.00,13.30],
+      data: [10.26,10.57,11.07,10.36,9.82,9.72,9.31,9.17,8.04,7.84,7.72,7.64,7.65,7.56,7.66,7.67,7.95,8.45,7.05,7.32,7.24,7.90,8.17,9.15,8.51,8.02,7.90,7.79,7.54,7.46,7.54,8.56,8.45,8.22,8.07,7.97,7.73,7.74,8.44,8.29,9.38,9.93,10.65,11.39,11.86,11.61,13.00,13.19],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -299,7 +299,7 @@ new Chart("hourlyWindChart",
     labels: xLabels,
     datasets: [
     {
-      data: [9.4,9.2,7.8,2.6,2.5,2.1,0.4,0.4,1.3,0.5,0.5,0.5,0.1,0.1,1.0,2.3,2.6,2.5,3.6,7.5,8.2,8.6,7.7,7.7,11.8,9.8,5.6,5.1,2.9,4.0,3.9,5.3,1.1,0.4,0.2,0.3,0.2,0.3,0.7,3.0,3.4,5.3,7.0,6.4,7.2,7.4,7.1,9.4],
+      data: [9.4,9.2,7.8,2.6,2.5,2.1,0.4,0.4,1.3,0.5,0.5,0.5,0.1,0.1,1.0,2.3,2.6,2.5,3.6,7.5,8.2,8.6,7.7,7.7,11.8,9.8,5.6,5.1,2.9,4.0,3.9,5.3,0.9,0.4,0.2,0.3,0.2,0.3,0.7,3.0,3.4,5.3,7.0,6.4,7.2,7.4,7.1,9.1],
       borderColor: "green",
       label: "Average",
       yAxisID: 'y1',
@@ -329,7 +329,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [292,292,292,270,270,248,248,292,68,22,292,315,315,315,45,45,68,68,112,202,202,180,202,248,248,248,248,292,292,292,248,292,292,270,270,270,292,292,270,248,248,248,68,68,202,202,248,292];
+          const xPointRotation = [292,292,292,270,270,248,248,292,68,22,292,315,315,315,45,45,68,68,112,202,202,180,202,248,248,248,248,292,292,292,248,292,315,270,270,270,292,292,270,248,248,248,68,68,202,202,292,292];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -355,7 +355,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["WNW","WNW","WNW","W","W","WSW","WSW","WNW","ENE","NNE","WNW","NW","NW","NW","NE","NE","ENE","ENE","ESE","SSW","SSW","S","SSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WSW","WNW","WNW","W","W","W","WNW","WNW","W","WSW","WSW","WSW","ENE","ENE","SSW","SSW","WSW","WNW"];
+                const xDirection = ["WNW","WNW","WNW","W","W","WSW","WSW","WNW","ENE","NNE","WNW","NW","NW","NW","NE","NE","ENE","ENE","ESE","SSW","SSW","S","SSW","WSW","WSW","WSW","WSW","WNW","WNW","WNW","WSW","WNW","NW","W","W","W","WNW","WNW","W","WSW","WSW","WSW","ENE","ENE","SSW","SSW","WNW","WNW"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -389,7 +389,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,2,4,5,1,1,1,1,7,10,7,20,12,19,6,1],
+      data: [1,2,3,9,2,1,0,1,8,10,9,20,11,14,7,1],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1528,11 +1528,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:59. Level:-51. Noise:-256</td>
+<td>Link:53. Level:-57. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+39.7°C</td>
+<td>+38.6°C</td>
 </tr>
 </table>
 </section>
