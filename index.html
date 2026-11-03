@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-03 08:04:07</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-03 08:19:20</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -32,7 +32,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #009CFF;"><span style="color: #ffffff;">12.1 C</span></td>
+<td style="background-color: #00AAFF;"><span style="color: #ffffff;">12.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>11.3 C</td>
+<td>11.7 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -48,7 +48,7 @@
 </tr>
 <tr>
 <td>Wind dir.</td>
-<td>NE</td>
+<td>ENE</td>
 </tr>
 <tr>
 <td>Wind speed</td>
@@ -56,11 +56,11 @@
 </tr>
 <tr>
 <td>Wind gust</td>
-<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="NE" title="NE" style="width:20px;height:20px;transform:rotate(135deg);"/></td>
+<td>0.0 km/h  <img src="images/Symbol_wind_speed_01.png" alt="ENE" title="ENE" style="width:20px;height:20px;transform:rotate(158deg);"/></td>
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-11-03 08:03:07</td>
+<td>2026-11-03 08:19:07</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -224,7 +224,7 @@ new Chart("hourlyHumidityChart",
       fill: false
     },
     {
-      data: [12.84,14.41,14.25,14.27,13.97,14.00,14.07,13.96,13.87,13.47,13.56,13.02,12.70,12.56,12.20,12.16,12.20,12.26,11.81,11.12,10.73,11.25,11.62,11.81,11.40,11.27,12.72,13.61,14.89,15.55,15.40,15.32,14.60,14.04,12.38,12.96,13.39,12.63,12.49,11.97,11.51,11.29,11.09,10.31,9.86,9.48,9.16,9.11],
+      data: [12.84,14.41,14.25,14.27,13.97,14.00,14.07,13.96,13.87,13.47,13.56,13.02,12.70,12.56,12.20,12.16,12.20,12.26,11.81,11.12,10.73,11.25,11.62,11.81,11.40,11.27,12.72,13.61,14.89,15.55,15.40,15.32,14.60,14.04,12.38,12.96,13.39,12.63,12.49,11.97,11.51,11.29,11.09,10.31,9.86,9.48,9.16,9.13],
       borderColor: "blue",
       label: "Abs. Humidity (g/m3)",
       yAxisID: 'y2',
@@ -329,7 +329,7 @@ new Chart("hourlyWindChart",
       },
       rotation: function(context, options) {
         try {
-          const xPointRotation = [68,68,112,135,135,158,158,158,158,225,248,292,0,68,68,68,292,337,337,337,337,337,0,90,45,45,202,202,202,202,202,202,202,248,248,45,22,22,22,22,22,292,292,315,270,337,45,45];
+          const xPointRotation = [68,68,112,135,135,158,158,158,158,225,248,292,0,68,68,68,292,337,337,337,337,337,0,90,45,45,202,202,202,202,202,202,202,248,248,45,22,22,22,22,22,292,292,315,270,337,45,68];
           const index = context.dataIndex;
           return xPointRotation[index] + 90;
         } catch (e) {
@@ -355,7 +355,7 @@ new Chart("hourlyWindChart",
             afterLabel: function (context) {
               try {
                 const index = context.dataIndex;
-                const xDirection = ["ENE","ENE","ESE","SE","SE","SSE","SSE","SSE","SSE","SW","WSW","WNW","N","ENE","ENE","ENE","WNW","NNW","NNW","NNW","NNW","NNW","N","E","NE","NE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","NE","NNE","NNE","NNE","NNE","NNE","WNW","WNW","NW","W","NNW","NE","NE"];
+                const xDirection = ["ENE","ENE","ESE","SE","SE","SSE","SSE","SSE","SSE","SW","WSW","WNW","N","ENE","ENE","ENE","WNW","NNW","NNW","NNW","NNW","NNW","N","E","NE","NE","SSW","SSW","SSW","SSW","SSW","SSW","SSW","WSW","WSW","NE","NNE","NNE","NNE","NNE","NNE","WNW","WNW","NW","W","NNW","NE","ENE"];
                 return 'Direction: ' + xDirection[index];
               } catch (e) {
                 console.log(e);
@@ -389,7 +389,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [1,7,2,3,2,4,9,10,5,7,3,2,2,34,9,1],
+      data: [1,8,2,3,2,3,8,8,4,6,2,1,2,41,10,1],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1528,7 +1528,7 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:51. Level:-59. Noise:-256</td>
+<td>Link:59. Level:-51. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
