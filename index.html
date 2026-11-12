@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-12 21:25:14</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-12 21:40:26</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -32,7 +32,7 @@
 </tr>
 <tr>
 <td>Temperature</td>
-<td style="background-color: #00FFCF;"><span style="">16.4 C</span></td>
+<td style="background-color: #00FFCC;"><span style="">16.5 C</span></td>
 </tr>
 <tr>
 <td>Rel. Humidity</td>
@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td>Dew Point</td>
-<td>16.1 C</td>
+<td>16.2 C</td>
 </tr>
 <tr>
 <td>Accum. precipitation</td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-11-12 21:23:48</td>
+<td>2026-11-12 21:40:12</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -163,7 +163,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [20.1,19.9,19.9,20,20.0,19.9,19.7,19.5,18.4,17.8,19.1,18.5,18.7,18.9,19.2,19.8,19.8,19.7,19.4,18.9,18.6,18.7,18.8,18.5,18.1,17.9,17.6,18.0,17.9,17.5,17.5,17.3,17.4,17.5,18.5,20.0,20.8,21.3,19.9,20.7,20.9,21.1,20.3,19.6,18.9,18.1,16.9,16.5],
+      data: [20.1,19.9,19.9,20,20.0,19.9,19.7,19.5,18.4,17.8,19.1,18.5,18.7,18.9,19.2,19.8,19.8,19.7,19.4,18.9,18.6,18.7,18.8,18.5,18.1,17.9,17.6,18.0,17.9,17.5,17.5,17.3,17.4,17.5,18.5,20.0,20.8,21.3,19.9,20.7,20.9,21.1,20.3,19.6,18.9,18.1,16.9,16.4],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -176,7 +176,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 16.5;
+          minValue = 16.4;
           maxValue = 21.3;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -1530,11 +1530,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:47. Level:-63. Noise:-256</td>
+<td>Link:49. Level:-61. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+39.2°C</td>
+<td>+39.7°C</td>
 </tr>
 </table>
 </section>
