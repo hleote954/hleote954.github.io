@@ -14,7 +14,7 @@
       <h1 class="station-title">🌤️ Bemposta Weather Station</h1>
       <p class="station-subtitle">Real-time weather monitoring and statistics</p>
     </div>
-    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-15 00:14:30</span></div>
+    <div class="header-timestamp">Last updated: <span class="timestamp">2026-11-15 00:29:41</span></div>
   </div>
 </header>
 <main class="page-main">
@@ -60,7 +60,7 @@
 </tr>
 <tr>
 <td>Log date</td>
-<td>2026-11-15 00:14:29</td>
+<td>2026-11-15 00:29:41</td>
 </tr>
 <tr>
 <td>Battery OK</td>
@@ -163,7 +163,7 @@ new Chart("hourlyTempChart",
     labels: xLabels,
     datasets: [
     {
-      data: [16.7,16.4,16.9,16.5,16.5,16.5,16.3,17.4,19.1,19.8,20.9,20.9,20.6,20.0,19.8,19.7,18.4,17.6,17.6,16.8,16.7,17.3,16.9,16.3,16.7,16.3,16.0,15.8,15.5,15.3,15.6,17.0,18.0,19.5,18.1,19.9,20.4,19.7,20.0,19.9,18.4,17.3,16.5,16.2,15.8,15.3,15.3,15],
+      data: [16.7,16.4,16.9,16.5,16.5,16.5,16.3,17.4,19.1,19.8,20.9,20.9,20.6,20.0,19.8,19.7,18.4,17.6,17.6,16.8,16.7,17.3,16.9,16.3,16.7,16.3,16.0,15.8,15.5,15.3,15.6,17.0,18.0,19.5,18.1,19.9,20.4,19.7,20.0,19.9,18.4,17.3,16.5,16.2,15.8,15.3,15.3,15.0],
       borderColor: "blue",
       label: "Temperature (C)",
       yAxisID: 'y1',
@@ -176,7 +176,7 @@ new Chart("hourlyTempChart",
             // This case happens on initial chart load
             return;
           }
-          minValue = 15;
+          minValue = 15.0;
           maxValue = 20.9;
           return getGradient(ctx, chartArea, minValue, maxValue);
       }
@@ -391,7 +391,7 @@ new Chart("windPrevalenceChart",
     labels: xLabels,
     datasets: [
     {
-      data: [0,0,0,0,0,0,0,0,0,4,7,46,26,14,2,0],
+      data: [0,0,0,0,0,0,0,0,0,4,7,46,27,14,2,0],
       borderColor: "magenta",
       label: "Wind prevalence (%)",
       tension: 0.4,
@@ -1530,11 +1530,11 @@ new Chart("yearlyTempChart",
 </tr>
 <tr>
 <td>WiFi signal</td>
-<td>Link:47. Level:-63. Noise:-256</td>
+<td>Link:58. Level:-52. Noise:-256</td>
 </tr>
 <tr>
 <td>CPU temperature</td>
-<td>+39.2°C</td>
+<td>+38.1°C</td>
 </tr>
 </table>
 </section>
